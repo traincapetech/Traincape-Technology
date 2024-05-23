@@ -7,6 +7,15 @@ import consult from "../assets/Consulting-service.svg";
 import { useNavigate } from "react-router-dom";
 import hero from "../assets/Heroimg.svg";
 import call from "../assets/Call-small.svg";
+import heroDown from "../assets/HeroDownBG.png";
+import Services from "./Services";
+import cloud from "../assets/Cloud-services.svg";
+import UI from "../assets/UI-development.svg";
+import Digital from "../assets/Digital marketing.svg";
+import Web from "../assets/Web development.svg";
+import Software from "../assets/software-services.svg";
+import softwareDevelopment from "../assets/Software-development-Learnings.svg";
+import Consult from "../assets/smallImg.jpeg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -78,13 +87,101 @@ const Home = () => {
           <div className={style.call}>
             <img src={call} alt="Calling Image" />
             <div>
-              <p>
-                24 HOURS SERVICE AVAILABLE
-              </p>
+              <p>24 HOURS SERVICE AVAILABLE</p>
               <h4>Call Us: +(91) 123 456 789</h4>
             </div>
           </div>
-          <button onClick={() => navigate("/about-us")}>ABOUT US</button>
+          <button
+            className={style.herobtn}
+            onClick={() => navigate("/about-us")}
+          >
+            ABOUT US
+          </button>
+        </div>
+      </div>
+      <div className={style.heroDown}>
+        <p>OUR LATEST SERVICES</p>
+        <h1>
+          WHAT KIND OF SERVICES <br /> WE ARE OFFERING
+        </h1>
+        <div className={style.services}>
+          <div className={style.subSerices}>
+            <div className={style.service}>
+              <img src={cloud} alt="Cloud services" />
+              <h1>Cloud Services</h1>
+              <p>
+                Deliver plug commerce with dynamic is expertise. leading edge
+                products with business models
+              </p>
+              <button className={style.btn}>Read More </button>
+            </div>
+            <div className={style.service}>
+              <img src={UI} alt="UI development" />
+              <h1>UI Development</h1>
+              <p>
+                Deliver plug commerce with dynamic is expertise. leading edge
+                products with business models
+              </p>
+              <button className={style.btn}>Read More </button>
+            </div>
+            <div className={style.service}>
+              <img src={Digital} alt="Digital Marketing" />
+              <h1>Digital Marketing</h1>
+              <p>
+                Deliver plug commerce with dynamic is expertise. leading edge
+                products with business models
+              </p>
+              <button className={style.btn}>Read More </button>
+            </div>
+            <div className={style.service}>
+              <img src={Web} alt="Web Development" />
+              <h1>Web Development</h1>
+              <p>
+                Deliver plug commerce with dynamic is expertise. leading edge
+                products with business models
+              </p>
+              <button className={style.btn}>Read More </button>
+            </div>
+            <div className={style.service}>
+              <img src={Software} alt="Software services" />
+              <h1>Software Services</h1>
+              <p>
+                Deliver plug commerce with dynamic is expertise. leading edge
+                products with business models
+              </p>
+              <button className={style.btn}>Read More </button>
+            </div>
+            <div className={style.service}>
+              <img
+                src={softwareDevelopment}
+                alt="Software Development Learnings"
+              />
+              <h1>Software Development</h1>
+              <p>
+                Deliver plug commerce with dynamic is expertise. leading edge
+                products with business models
+              </p>
+              <button className={style.btn}>Read More </button>
+            </div>
+          </div>
+
+          <div className={style.consult}>
+            <img src={Consult} className={style.img} alt="Consult Image" />
+            <div className={style.consultdiv}>
+              <div className={style.consultText}>
+                <p>We are here to answer your questions 24/7</p>
+                <h1>Need A Consultation?</h1>
+              </div>
+              <div className={style.consultbtn}>
+                <button
+                  className={style.btn2}
+                  onClick={() => navigate("/contact-us")}
+                >
+                  GET A CONSULTATION
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
