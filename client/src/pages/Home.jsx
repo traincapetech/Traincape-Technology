@@ -169,8 +169,28 @@ const Home = () => {
             <img src={Consult} className={style.img} alt="Consult Image" />
             <div className={style.consultdiv}>
               <div className={style.consultText}>
-                <p>We are here to answer your questions 24/7</p>
-                <h1>Need A Consultation?</h1>
+                <p
+                  style={{
+                    fontSize: "15px",
+                    fontFamily: "poppins",
+                    color: "rgb(223, 210, 210)",
+                    fontWeight: "lighter",
+                    textAlign: "center",
+                  }}
+                >
+                  We are here to answer your questions 24/7
+                </p>
+                <h1
+                  style={{
+                    fontSize: "40px",
+                    fontFamily: "poppins",
+                    color: "rgb(223, 210, 210)",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                  }}
+                >
+                  Need A Consultation?
+                </h1>
               </div>
               <div className={style.consultbtn}>
                 <button
