@@ -1,0 +1,387 @@
+.container{
+width:100%;
+/* border:3px dashed red; */
+margin: 0;
+padding: 0;
+background: -webkit-linear-gradient(#d4cbcb, #d1c7c7);
+}
+
+
+.banner{
+width: 100%;
+display: flex;
+position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 400px;
+}
+
+.banner h1{
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    top:10%;
+    transform: translate(-50%, 5%);
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c5bbbb;
+
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* border: 3px dashed blue */
+}
+.info{
+    margin-left:10px;
+    width: 500px;
+
+    
+}
+.info h1{
+    /* font-family: 'Courier New', Courier, monospace;
+    */
+   font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.connect{
+    width: 500px;
+    /* height: 50px; */
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #fffefe;
+    margin: 15px;
+    border-radius: 10px;
+}
+.icon{
+    margin: 25px;
+    background: rgb(215, 224, 224);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 15px;
+    color: blue;
+    
+}
+p{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+form{
+    background: #95a9b0;
+    width: 100px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+input {
+    width: 400px;
+    margin :10px;
+    margin-left: 55px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+input::placeholder{
+font-size: 20px;
+flex-direction: row;
+font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+padding: 10px;
+margin: 10px;
+}
+.select{
+    width: 400px;
+    margin :10px;
+    margin-left: 55px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size:20px;
+    font-weight: bold;
+    color: #636566;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#btn{
+    width: 300px;
+    margin-left: 120px;
+    background: rgb(68, 179, 179);
+    font-weight: bold;
+    font-size:large;
+    margin-top:5px;
+}
+.msg{ 
+    width: "400px";
+     height: "70px" 
+    }
+
+
+
+/*-----------------Responsive ness----------------*/
+
+/* CSS for 300px */
+@media only screen and (max-width: 300px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: -webkit-linear-gradient(#eee, #eae5e5);
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .banner h1 {
+        font-size: 40px;
+        margin-top: -150px;
+        margin-left: 50px;
+    }
+    
+    .information {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info {
+        width: 90%;
+        margin-left: 0;
+    }
+    
+    .info h1 {
+        font-size: 20px;
+    }
+    
+    .connect {
+        width: 90%;
+    }
+    
+    form {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    form label {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+    
+    input {
+        width: 90%;
+        margin: 5px;
+        margin-left: 20px;
+        height: 30px;
+    }
+    
+    input::placeholder {
+        font-size: 16px;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .select {
+        width: 90%;
+        margin: 5px;
+        margin-left: 20px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    #btn {
+        width: 60%;
+        margin-left: 20%;
+        font-size: medium;
+        margin-top: 10px;
+    }
+    .msg{
+        width: 90%;
+        height: 70px;
+    }
+}
+
+/* CSS for 648px */
+@media only screen and (min-width: 301px) and (max-width: 748px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: -webkit-linear-gradient(#eee, #eae5e5);
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .banner h1 {
+        font-size: 20px;
+        bottom: 5%;
+        top:30%
+    }
+    
+    .information {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .info h1 {
+        font-size: 15px;
+    }
+    
+    .connect {
+        width: 100%;
+    }
+    
+    form {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    
+    form label {
+        font-size: 18px;
+        margin-top: 25px;
+        margin-left: 35px;
+        margin-bottom: 8px;
+        padding-bottom: 15px;
+    }
+    
+    input {
+        width: 90%;
+        margin: 8px;
+        margin-left: 35px;
+        height: 35px;
+    }
+    
+    input::placeholder {
+        font-size: 18px;
+        padding: 8px;
+        margin: 8px;
+    }
+    
+    .select {
+        width: 90%;
+        margin: 8px;
+        margin-left: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    #btn {
+        width: 50%;
+        margin-left: 25%;
+        font-size: large;
+        margin-top: 15px;
+    }
+}
+
+/* CSS for 1000px */
+@media only screen and (min-width: 748px) and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: -webkit-linear-gradient(#eee, #eae5e5);
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .banner h1 {
+        font-size: 80px;
+        bottom: 5%;
+        top: 35%;
+    }
+    
+    .information {
+        /* padding: 30px; */
+        gap: 10px;
+    }
+    
+    .info {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .info h1 {
+        font-size: 25px;
+    }
+    
+    .connect {
+        width: 100%;
+    }
+    
+    form {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    form label {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    
+    input {
+        width: 80%;
+        margin: 10px;
+        margin-left: 50px;
+        height: 40px;
+    }
+    
+    input::placeholder {
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .select {
+        width: 80%;
+        margin: 10px;
+        margin-left: 50px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    #btn {
+        width: 40%;
+        margin-left: 30%;
+        font-size: large;
+        margin-top: 20px;
+    }
+}

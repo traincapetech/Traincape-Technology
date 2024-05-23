@@ -1,0 +1,261 @@
+
+.container {
+    background-color: #2b2a2a;
+    overflow: hidden;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .logo {
+    flex: 1;
+    max-width: 300px;
+  }
+  .logo h3{
+    color:rgb(245, 241, 241);
+    text-align: center;
+    margin-top: -50px;
+  }
+  .logo img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .solutions,
+  .QuickLinks,
+  .contact {
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .links:hover {
+    color: #00bfff;
+
+    cursor: pointer;
+  }
+  
+  .links svg {
+    margin-right: 10px;
+  }
+  
+  .contact div {
+    margin-top: 20px;
+  }
+  
+  .contact h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contact h3 {
+    margin-bottom: 0px;
+  }
+  
+  .contact svg {
+    margin-right: 5px;
+  }
+  
+  .opening {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  
+
+/*-----------------Responsive ness----------------*/
+
+
+/* CSS for 300px */
+@media only screen and (max-width: 300px) {
+  .container {
+      padding: 30px 0;
+  }
+  
+  .footer {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .logo {
+      max-width: 200px;
+      margin-bottom: 30px;
+  }
+  
+  .logo h3 {
+      margin-top: -30px;
+  }
+  
+  .logo img {
+      width: 150px;
+      height: 150px;
+  }
+  
+  .solutions,
+  .QuickLinks,
+  .contact {
+      max-width: 200px;
+      margin-bottom: 30px;
+  }
+  
+  h1 {
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+  
+  .links {
+      margin-bottom: 8px;
+  }
+  
+  .contact div {
+      margin-top: 15px;
+  }
+  
+  .contact h1 {
+      font-size: 14px;
+      margin-bottom: 8px;
+  }
+  
+  .contact h3 {
+      font-size: 14px;
+  }
+  
+  .contact svg {
+      margin-right: 3px;
+  }
+}
+
+/* CSS for 648px */
+@media only screen and (min-width: 301px) and (max-width: 648px) {
+  .container {
+      padding: 40px 0;
+  }
+  
+  .footer {
+      justify-content: space-between;
+  }
+  
+  .logo {
+      max-width: 250px;
+      margin-bottom: 40px;
+  }
+  
+  .logo h3 {
+      margin-top: -40px;
+  }
+  
+  .logo img {
+      width: 180px;
+      height: 180px;
+  }
+  
+  .solutions,
+  .QuickLinks,
+  .contact {
+      max-width: 220px;
+      margin-bottom: 40px;
+  }
+  
+  h1 {
+      font-size: 18px;
+      margin-bottom: 18px;
+  }
+  
+  .links {
+      margin-bottom: 10px;
+  }
+  
+  .contact div {
+      margin-top: 18px;
+  }
+  
+  .contact h1 {
+      font-size: 15px;
+      margin-bottom: 10px;
+  }
+  
+  .contact h3 {
+      font-size: 15px;
+  }
+  
+  .contact svg {
+      margin-right: 4px;
+  }
+}
+
+/* CSS for 1000px */
+@media only screen and (min-width: 649px) and (max-width: 1000px) {
+  .container {
+      padding: 50px 0;
+  }
+  
+  .footer {
+      justify-content: space-around;
+  }
+  
+  .logo {
+      max-width: 300px;
+      margin-bottom: 50px;
+  }
+  
+  .logo h3 {
+      margin-top: -50px;
+  }
+  
+  .logo img {
+      width: 200px;
+      height: 200px;
+  }
+  
+  .solutions,
+  .QuickLinks,
+  .contact {
+      max-width: 250px;
+      margin-bottom: 50px;
+  }
+  
+  h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .links {
+      margin-bottom: 12px;
+  }
+  
+  .contact div {
+      margin-top: 20px;
+  }
+  
+  .contact h1 {
+      font-size: 16px;
+      margin-bottom: 12px;
+  }
+  
+  .contact h3 {
+      font-size: 16px;
+  }
+  
+  .contact svg {
+      margin-right: 5px;
+  }
+}

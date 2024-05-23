@@ -1,0 +1,200 @@
+.container{
+    width:100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    position: relative;
+    background: rgb(250, 249, 255);
+    /* box-sizing: border-box; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.navlinks{
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+    font-family: poppins;
+}
+.logo img{
+    display: flex;
+    width: 80px;
+    height: 100px;
+    margin-top: 10px;
+    max-height: 150px;
+}
+.links {
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+}
+
+.links:hover {
+    color: rgb(66, 162, 162); 
+    text-decoration: none;
+}
+
+.links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px; 
+    background-color: rgb(171, 63, 63);
+    transition: width 0.5s ease; 
+}
+
+.links:hover::after {
+    width: 100%; 
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: rgb(235, 123, 31);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: rgb(171, 63, 63);
+    color: white;
+    cursor: pointer;
+}
+.loginbtn{
+    width: 100px;
+    height: 40px;
+    background: rgb(235, 123, 31);
+    margin: 15px;
+}
+.Link{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+
+}
+.loginbtn:hover{
+    /* background: rgb(171, 63, 63); */
+    color: white;
+    cursor: pointer;
+}
+.loginbtn .Link:hover{
+    /* background: rgb(171, 63, 63); */
+    color: white;
+    cursor: pointer;
+}
+
+
+/*-----------------Responsive ness----------------*/
+
+
+
+/* CSS for 300px */
+@media only screen and (max-width: 300px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlinks {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .logo img {
+        width: 50px;
+        height: 80px;
+        max-height: 100px;
+    }
+    .links {
+        font-size: 18px;
+    }
+    .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+/* CSS for 648px */
+@media only screen and (min-width: 301px) and (max-width: 748px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navlinks {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .logo img {
+        width: 60px;
+        height: 90px;
+        max-height: 120px;
+    }
+    .links {
+        font-size: 22px;
+    }
+    .btn {
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+/* CSS for 1000px */
+@media only screen and (min-width: 748px) and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navlinks {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .logo img {
+        width: 70px;
+        height: 100px;
+        max-height: 150px;
+    }
+    .links {
+        font-size: 25px;
+    }
+    .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 17px;
+    }
+}
