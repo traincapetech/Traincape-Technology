@@ -1,7 +1,7 @@
 .container{
     width:100%;
     margin: 0;
-    background: rgb(250, 249, 255);
+    background: rgb(248, 248, 251);
     box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@
 
 .bannerText button{
     height: 40px;
-    background: rgb(104, 57, 0);
+    background: rgba(89, 101, 108, 0.079);
     color: aliceblue;
     font-weight: bold;
     border: none;
@@ -48,4 +48,108 @@
     cursor: pointer;
     font-size: 20px;
     font-family: poppins;
+}
+
+.bannerText button:hover{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.bannerImageDown{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    gap: 20px;
+}
+.servicediv img{
+    width: 50px;
+    height: 50px;
+}
+.servicediv {
+    /* border: 3px dashed black; */
+    position: relative;
+   margin-top:-5% ;
+   background: white;
+   border-radius: 10px;
+   padding: 5%
+}
+
+.servicediv p{
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: lighter;
+    margin-top: 10px;
+    color: rgb(182, 180, 180);
+}
+
+.readbtn{
+    border: none;
+    background: rgb(236, 232, 232);
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.readbtn:hover{
+    background: rgb(0, 0, 0);
+    color: white;   
+}
+
+.hero{
+    margin-top: 10%;
+    padding-left: 20%;
+    width: 90%;
+    height: 600px;
+    background: rgb(234, 234, 236);
+    color: black;
+    /* position: relative; */
+    background-image:  url(../assets/Back.jpg);
+    display: flex;
+}
+.heroText {
+    margin: 3%;
+    width: 30%;
+}
+.heroText h3{
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: bold;
+    color: rgb(250, 6, 205); 
+}
+.heroText h1{
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: bold;
+    color: #1A1A1A; 
+}
+.heroText p{
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: lighter;
+    color: #c1bfbf; 
+    margin-top: 10px;
+}
+
+.call {
+    display: flex;
+    background: white;
+}
+
+.call p{
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: bold;
+    color: #898787; 
+    margin-top: 15%;
+    margin-bottom: -10%;
+}
+
+.call img{
+    width: 30%;
+    height: 30%;
 }
