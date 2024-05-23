@@ -16,6 +16,8 @@ import Web from "../assets/Web development.svg";
 import Software from "../assets/software-services.svg";
 import softwareDevelopment from "../assets/Software-development-Learnings.svg";
 import Consult from "../assets/smallImg.jpeg";
+import memberImg from "../assets/workingboy.jpg";
+import RokeySir from "../assets/RokeySir.jpeg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -200,6 +202,31 @@ const Home = () => {
                   GET A CONSULTATION
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={style.ExpertContainer}>
+        <div className={style.ExpertTeam}>
+          <div className={style.ExpertText}>
+            <p> GREAT TEAM MEMBERS</p>
+            <h1>We Have Expert Team</h1>
+          </div>
+          <div className={style.ExpertMembers}>
+            <div className={style.member}>
+              <img src={memberImg} alt="Member Images" />
+              <h1>Parichay Singh Rana</h1>
+              <p>CEO</p>
+            </div>
+            <div className={style.member}>
+              <img src={RokeySir} alt="Member Images" />
+              <h1>Shivam Singh</h1>
+              <p>Manager</p>
+            </div>
+            <div className={style.member}>
+              <img src={memberImg} alt="Member Images" />
+              <h1>Parichay Singh Rana</h1>
+              <p>CEO</p>
             </div>
           </div>
         </div>
