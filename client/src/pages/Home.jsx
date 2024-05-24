@@ -18,6 +18,29 @@ import softwareDevelopment from "../assets/Software-development-Learnings.svg";
 import Consult from "../assets/smallImg.jpeg";
 import memberImg from "../assets/workingboy.jpg";
 import RokeySir from "../assets/RokeySir.jpeg";
+import lady from "../assets/Lady-Conversation.svg";
+import QuestionCard from "../components/QuestionCard";
+
+const questionsAndAnswers = [
+  {
+    id: 1,
+    question: "What is React?",
+    answer: "React is a JavaScript library for building user interfaces.",
+  },
+  {
+    id: 2,
+
+    question: "What is a component in React?",
+    answer:
+      "A component in React is a reusable piece of code that represents a part of the user interface.",
+  },
+  {
+    id: 3,
+    question: "What is JSX?",
+    answer:
+      "JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is used with React to describe what the UI should look like.JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is used with React to describe what the UI should look like.JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is used with React to describe what the UI should look like.",
+  },
+];
 
 const Home = () => {
   const navigate = useNavigate();
@@ -228,6 +251,24 @@ const Home = () => {
               <h1>Parichay Singh Rana</h1>
               <p>CEO</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className={style.help}>
+        <div className={style.ladyIMG}>
+          <img src={lady} alt="Image of lady conversation" />
+        </div>
+        <div className={style.helpText}>
+          <div className={style.helpTextDiv}>
+            <p>TALK ABOUT SOMETHING</p>
+            <h1>HOW CAN WE HELP YOU?</h1>
+            {questionsAndAnswers.map((item) => {
+              return (
+                <div key={item.id}>
+                  <QuestionCard {...item} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
