@@ -25,7 +25,9 @@ const Signup = () => {
           <div className={style.RememberPassword}>
             <lable>
               <input type="checkbox" />
-              <span>I agree to terms & conditions </span>
+              <span style={{ fontSize: "16px", fontWeight: "bold" }}>
+                I agree to terms & conditions{" "}
+              </span>
             </lable>
           </div>
           <button type="submit">Register</button>

@@ -20,6 +20,7 @@ import memberImg from "../assets/workingboy.jpg";
 import RokeySir from "../assets/RokeySir.jpeg";
 import lady from "../assets/Lady-Conversation.svg";
 import QuestionCard from "../components/QuestionCard";
+import connectingImg from "../assets/connecting people.svg";
 
 const questionsAndAnswers = [
   {
@@ -270,6 +271,48 @@ const Home = () => {
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className={style.connecting}>
+        <div className={style.ConnectingText}>
+          <h2>THE GREAT COMPANY SKILL</h2>
+          <h1>CONNECTING PEOPLE AND BUILD TECHNOLOGY</h1>
+          <p>
+            Energistically evisculate an expanded array of meta-services after
+            cross-media strategic theme areas. Interactively simplify
+            interactive customer service before fully tested relationship
+            parallel task high standards...
+          </p>
+          <div className={style.lineDiv}>
+            <div className={style.line}>
+              <h3>BUSINESS SECURITY</h3>
+              <h4>65%</h4>
+            </div>
+            <div className={style.divline}>
+              <div className={style.sweetline}></div>
+            </div>
+          </div>
+          <div className={style.lineDiv}>
+            <div className={style.line}>
+              <h3>BUSINESS SECURITY</h3>
+              <h4>65%</h4>
+            </div>
+            <div className={style.divline}>
+              <div className={style.sweetline}></div>
+            </div>
+          </div>
+          <div className={style.lineDiv}>
+            <div className={style.line}>
+              <h3>BUSINESS SECURITY</h3>
+              <h4>65%</h4>
+            </div>
+            <div className={style.divline}>
+              <div className={style.sweetline}></div>
+            </div>
+          </div>
+        </div>
+        <div className={style.connectingImg}>
+          <img src={connectingImg} alt="Connecting Image" />
         </div>
       </div>
     </div>

@@ -47,12 +47,12 @@ const Footer = () => {
               <IoArrowRedoOutline />
               About Us
             </Link>
-            <Link className={style.links} to="/Services">
+            <Link className={style.links} to="/our-services">
               {" "}
               <IoArrowRedoOutline />
               Our Services
             </Link>
-            <Link className={style.links}>
+            <Link className={style.links} to="/contact-us">
               {" "}
               <IoArrowRedoOutline />
               Contact Us

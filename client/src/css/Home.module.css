@@ -52,6 +52,7 @@
 
 .bannerText button:hover{
     background: rgb(0, 0, 0);
+    transition: background-color 1.9s ease;
     color: white;
 }
 
@@ -98,6 +99,8 @@
 .readbtn:hover{
     background: rgb(0, 0, 0);
     color: white;   
+    transition: background-color 1.9s ease;
+
 }
 
 .hero{
@@ -174,6 +177,8 @@
 .herobtn:hover{
     background: rgb(0, 0, 0);
     color: white;
+    transition: background-color 1.9s ease;
+
 }
 
 .heroDown{
@@ -252,6 +257,8 @@
     background: #0E5AF2;
     color: aliceblue;
     cursor: pointer;
+    transition: background-color 1.9s ease;
+
     font-weight: bold;
 }
 
@@ -299,6 +306,8 @@
 .btn2:hover{
     background: rgb(139, 138, 138);
     color: white;
+    transition: background-color 1.9s ease;
+
 }
 
 
@@ -416,4 +425,58 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.connecting{
+    /* margin-top: 10%; */
+    display: flex;
+    padding: 10%;
+}
+.ConnectingText{
+    width: 40%;
+    margin: 5%;
+}
+.ConnectingText h2{
+    font-size: 16px;
+    color: #0E5AF2;
+    font-family: poppins;
+    font-weight: bold;
+}
+.ConnectingText h1{
+    font-size: 48px;
+    font-family: poppins;
+    color: rgb(30, 31, 31);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ConnectingText p{
+    font-size: 16px;
+    font-family: poppins;
+    color: rgb(65, 67, 67);
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.connectingImg{
+    width: 40%;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+.divline{
+    width: 92%;
+    border: 1px solid rgb(91, 89, 89);
+    height: 3px;
+    border-radius: 5px;
+}
+ .sweetline{
+    width: 100%;
+    height: 1px;
+    /* padding: 5PX; */
+    background: rgb(27, 7, 248);
+    margin-top: 1px;
+    border-radius: 5px;
 }

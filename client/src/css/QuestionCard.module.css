@@ -4,6 +4,7 @@
     
     background: #f8f8fb;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .Pluscard{
@@ -27,6 +28,8 @@
     font-weight: bold;
     padding: 10px;
     margin-top: -5%;
+    transition: background-color 1.9s ease;
+
 }
 
 .Pluscard h2{
