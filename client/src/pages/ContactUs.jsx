@@ -49,7 +49,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className={style.formBox}>
-          <form action="#">
+          <form action="#" className={style.contactForm}>
             <label>
               First Name<span style={{ color: "red" }}>*</span>
             </label>

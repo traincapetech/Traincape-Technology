@@ -3,7 +3,7 @@ width:100%;
 /* border:3px dashed red; */
 margin: 0;
 padding: 0;
-background: -webkit-linear-gradient(#d4cbcb, #d1c7c7);
+background: -webkit-linear-gradient(#f9f6f6, #e4e4e4);
 }
 
 
@@ -73,13 +73,14 @@ p{
 
 
 
-form{
+.contactForm{
     background: #95a9b0;
-    width: 100px;
+    width: 500px;
     height: 600px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
     padding: 20px;
+    margin-right: 400px;
 }
 
 form label {
@@ -177,13 +178,13 @@ margin: 10px;
         width: 90%;
     }
     
-    form {
+    .contactForm {
         width: 90%;
         height: auto;
         padding: 10px;
     }
     
-    form label {
+    .contactForm label {
         font-size: 16px;
         margin-top: 20px;
         margin-left: 20px;
@@ -262,13 +263,13 @@ margin: 10px;
         width: 100%;
     }
     
-    form {
+    .contactForm {
         width: 100%;
         height: auto;
         padding: 15px;
     }
     
-    form label {
+    .contactForm label {
         font-size: 18px;
         margin-top: 25px;
         margin-left: 35px;
@@ -343,13 +344,13 @@ margin: 10px;
         width: 100%;
     }
     
-    form {
+    .contactForm {
         width: 100%;
         height: auto;
         padding: 20px;
     }
     
-    form label {
+    .contactForm label {
         font-size: 20px;
         margin-top: 30px;
         margin-left: 50px;

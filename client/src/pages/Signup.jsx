@@ -6,9 +6,9 @@ import { MdEmail } from "react-icons/md";
 
 const Signup = () => {
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapperSignup}>
       <div className={style.formBoxLogin}>
-        <form action="">
+        <form action="" className={style.singupForm}>
           <h1>Signup</h1>
           <div className={style.inputBox}>
             <input type="text" placeholder="Username" required />

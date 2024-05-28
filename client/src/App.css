@@ -1,0 +1,9 @@
+body{
+    width: 1440px;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(#eee, #eae5e5);
+    background: linear-gradient(#eee, #eae5e5);
+    overflow-x: hidden; 
+    
+}

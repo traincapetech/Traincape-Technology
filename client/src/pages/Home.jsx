@@ -59,7 +59,7 @@ const Home = () => {
             mindshare. Credibly coordinate reliable collaboration and
             idea-sharing after turnkey catalysts for change.
           </p>
-          <button onClick={() => navigate("/about")}>ABOUT US</button>
+          <button onClick={() => navigate("/about-us")}>ABOUT US</button>
         </div>
       </div>
       <div className={style.bannerImageDown}>

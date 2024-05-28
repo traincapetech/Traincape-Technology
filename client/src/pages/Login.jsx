@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.formBoxLogin}>
-        <form action="">
+        <form action="" className={style.LoginForm}>
           <h1>Login</h1>
           <div className={style.inputBox}>
             <input type="text" placeholder="Username" required />
@@ -20,7 +20,7 @@ const Login = () => {
           <div className={style.RememberPassword}>
             <div>
               <input type="checkbox" />
-              <span>Remember password</span>
+              <span className={style.spanbox}>Remember password</span>
             </div>
             <div className={style.RememberPasswordText}>
               <a href="#">Forget Password</a>
