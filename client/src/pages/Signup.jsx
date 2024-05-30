@@ -25,7 +25,7 @@ const Signup = () => {
           <div className={style.RememberPassword}>
             <lable>
               <input type="checkbox" />
-              <span style={{ fontSize: "16px", fontWeight: "bold" }}>
+              <span style={{ position: "relative", top: "-6px" }}>
                 I agree to terms & conditions{" "}
               </span>
             </lable>
@@ -34,7 +34,7 @@ const Signup = () => {
 
           <div className={style.registerLink}>
             <p>
-              Already have an account? <a href="/login">Login here..</a>
+              Already have an account? <a href="/login">Login here</a>
             </p>
           </div>
         </form>

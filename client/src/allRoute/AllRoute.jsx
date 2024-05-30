@@ -7,6 +7,7 @@ import ContactUs from "../pages/ContactUs";
 import Signup from "../pages/Signup";
 import FAQ from "../pages/FAQ";
 import Services from "../pages/Services";
+import TermsAndCondition from "../pages/TermsAndCondition";
 
 const AllRoute = () => {
   return (
@@ -18,6 +19,7 @@ const AllRoute = () => {
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/frequently-asked-questions" element={<FAQ />} />
       <Route path="/our-services" element={<Services />} />
+      <Route path="/Terms-and-Conditions" element={<TermsAndCondition />} />
     </Routes>
   );
 };

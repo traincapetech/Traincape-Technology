@@ -67,7 +67,7 @@ const Home = () => {
           <div className={style.imagediv}>
             <img src={develop} alt="Development Services" />
           </div>
-          <h1>Development Services</h1>
+          <h1>Cloud Computing</h1>
           <p>
             Completely implement via highly efficient process improvements.
             Engage high value before progressive data.
@@ -78,7 +78,7 @@ const Home = () => {
           <div className={style.imagediv}>
             <img src={market} alt="Marketing Services" />
           </div>
-          <h1>Marketing Services</h1>
+          <h1>Cyber Secruity</h1>
           <p>
             Completely implement via highly efficient process improvements.
             Engage high value before progressive data.
@@ -89,7 +89,7 @@ const Home = () => {
           <div className={style.imagediv}>
             <img src={consult} alt="Consulting Services" />
           </div>
-          <h1>Consulting Services</h1>
+          <h1>Project Management</h1>
           <p>
             Completely implement via highly efficient process improvements.
             Engage high value before progressive data.
@@ -114,7 +114,7 @@ const Home = () => {
             <img src={call} alt="Calling Image" />
             <div>
               <p>24 HOURS SERVICE AVAILABLE</p>
-              <h4>Call Us: +(91) 123 456 789</h4>
+              <h4>Call Us: +(91) 6280281505</h4>
             </div>
           </div>
           <button

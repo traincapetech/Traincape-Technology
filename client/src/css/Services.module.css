@@ -60,14 +60,14 @@
 
 
 .consult {
-    width: 100%;
+    width: 1440px;
     height: 250px;
     background: rgb(105, 139, 136);
     margin: auto;
 }
 .consult .img{
     position: absolute;
-    width: 100%;
+    width: 1440px;
     height: 250px;
 }
 

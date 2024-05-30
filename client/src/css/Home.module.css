@@ -106,7 +106,7 @@
 .hero{
     margin-top: 10%;
     padding-left: 20%;
-    width: 90%;
+    width: 1150px;
     height: 600px;
     background: rgb(234, 234, 236);
     color: black;
@@ -265,14 +265,14 @@
 
 
 .consult {
-    width: 100%;
+    width: 1440px;
     height: 250px;
     background: rgb(105, 139, 136);
-    margin: auto;
+    /* margin: auto; */
 }
 .consult .img{
     position: absolute;
-    width: 100%;
+    width:1440px;
     height: 250px;
 }
 

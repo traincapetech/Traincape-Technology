@@ -338,14 +338,17 @@ margin-top:-10px;
     color: white;
 }
 .consult {
-    width: 100%;
+    width: 1440px;
     height: 250px;
+    /* border: 2px dashed red; */
     background: rgb(105, 139, 136);
-    margin: auto;
+    /* margin: auto; */
+    margin-top: -20px;
+    background-size: cover;
 }
 .consult .img{
     position: absolute;
-    width: 100%;
+    width: 1440px;
     height: 250px;
 }
 

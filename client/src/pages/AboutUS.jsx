@@ -159,7 +159,12 @@ const AboutUS = () => {
       </div>
 
       <div className={style.consult}>
-        <img src={Consult} className={style.img} alt="Consult Image" />
+        <img
+          src={Consult}
+          className={style.img}
+          alt="Consult Image"
+          style={{ backgroundSize: "cover" }}
+        />
         <div className={style.consultdiv}>
           <div className={style.consultText}>
             <p>We are here to answer your questions 24/7</p>
