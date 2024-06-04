@@ -45,8 +45,9 @@
     margin-top: 5%;
     height: 35px;
     border-radius: 5px;
-    color: #0E5AF2;
+    color: #f4f6fa;
     border: navajowhite;
+    background: rgb(73, 80, 184);
     font-weight: bold;
 
 }
@@ -132,7 +133,7 @@
     margin-left: 15%;
 }
 .specializationDiv h3{
-    font-size: 12px;
+    font-size: 18px;
     align-items: center;
     font-family: poppins;
     color: rgb(109, 5, 245);
@@ -143,7 +144,7 @@
 }
 
 .specializationDiv h2{
-    font-size: 25px;
+    font-size: 40px;
     align-items: center;
     font-family: poppins;
     font-weight: bold;
@@ -164,12 +165,19 @@
     margin-top: 30px;
     margin-left: -50%;
 }
-
+.specialization h1{
+    font-size: 22px;
+    font-family: poppins;
+    color: rgb(24, 19, 19);
+    font-weight: bold;
+    text-align:left;
+    margin-top: 10px;
+}
 .specialization p{
     font-size: 15px;
     font-family: poppins;
     color: rgb(138, 137, 137);
     font-weight: lighter;
-    text-align: center;
+    text-align:left;
     margin-top: 10px;
 }

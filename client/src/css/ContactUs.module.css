@@ -1,18 +1,20 @@
 .container{
-width:100%;
+max-width:100%;
 /* border:3px dashed red; */
 margin: 0;
 padding: 0;
-background: -webkit-linear-gradient(#f9f6f6, #e4e4e4);
+background: white;
 }
 
 
 .banner{
-width: 100%;
+max-width: 100%;
 display: flex;
 position: relative;
 }
+
 .banner img{
+    display: block;
     width: 100%;
     height: 400px;
 }
@@ -29,360 +31,191 @@ position: relative;
 
 }
 
-.information{
+.OfficeAdress{
     display: flex;
+    width: 80%;
+    padding-left: 200px;
+    margin-top: 10%;
+    align-items: stretch;
     justify-content: space-between;
-    padding: 20px;
-    /* border: 3px dashed blue */
 }
-.info{
-    margin-left:10px;
-    width: 500px;
-
-    
-}
-.info h1{
-    /* font-family: 'Courier New', Courier, monospace;
-    */
-   font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.connect{
-    width: 500px;
-    /* height: 50px; */
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background: #fffefe;
-    margin: 15px;
+.OfficeDetails{
+    background:#EFF1F5;
+    padding: 5%;
     border-radius: 10px;
+    width: 40%;
+}
+
+.OfficeDetails h1{
+    font-size: 30px;
+    color: #1A1A1A;
+    font-weight: bold;
+    font-family:serif;
+}
+.OfficeAdress p{
+    font-size: 15px;
+    color: #878D97;
+    font-weight: lighter;
+    font-family:serif;
+}
+
+.addressdiv{
+    display: flex;
+    /* border:2px dashed black; */
+    padding: 2%;
+
+}
+.iconDiv{
+    padding: 2%;
+    /* border:2px dashed black; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .icon{
-    margin: 25px;
-    background: rgb(215, 224, 224);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 15px;
     color: blue;
-    
+    font-size: 25px;
+    margin-right: 10px;
 }
-p{
-    font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.underlinediv{
+    width: 100%;
+    height: 1px;
+    background: #878D97;
 }
 
-
-
-.contactForm{
-    background: #95a9b0;
-    width: 500px;
-    height: 600px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.officeMail{
+    width: 35%;
+    background:#EFF1F5;
+    padding: 5%;
     border-radius: 10px;
-    padding: 20px;
-    margin-right: 400px;
 }
-
-form label {
+.NameAndEmail{
+    display: flex;
+}
+.inputbox {
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 19px;
+    color: #373738;
+    font-weight: lighter;
+    font-family:serif;
+}
+.inputbox::placeholder{
+    font-size: 19px;
+    color: #878D97;
+    font-weight: lighter;
+    font-family:serif;
+    padding: 5px;
+}
+.contactLable{
     font-size: 20px;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 30px;
-    margin-left: 55px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
+    color: #878D97;
+    font-weight: lighter;
+    font-family:serif;
+   /* margin-bottom: 15px; */
 }
-input {
-    width: 400px;
-    margin :10px;
-    margin-left: 55px;
-    height: 40px;
+#select{
+    height: 46px;
+    width: 100%;
     border: none;
     border-radius: 5px;
+    margin: 5px;
+    font-size: 19px;
+    color: #424243;
+    font-weight: lighter;
+    font-family:serif;
+    padding: 5px;
 }
-input::placeholder{
-font-size: 20px;
-flex-direction: row;
-font-weight: bold;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-padding: 10px;
-margin: 10px;
-}
-.select{
-    width: 400px;
-    margin :10px;
-    margin-left: 55px;
-    height: 40px;
+.textarea{
+    width: 100%;
+    height: 200px;
     border: none;
     border-radius: 5px;
-    font-size:20px;
-    font-weight: bold;
-    color: #636566;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    font-size: 19px;
+    color: #48494a;
+    font-weight: lighter;
+    font-family:serif;
+    padding: 5px;
+}
+
+.contactBtn{
+    width: 150px;
+    height: 46px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 19px;
+    color: white;
+    font-weight: lighter;
+    font-family:serif;
+    padding: 5px;
+    background: rgb(255, 0, 166);
+}
+
+.contactMap{
+   overflow: hidden;
+   margin-top: 30px;
+   height: 0;
+   padding-bottom:30% ;
+   position: relative;
+}
+
+.contactMap iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
-#btn{
-    width: 300px;
-    margin-left: 120px;
-    background: rgb(68, 179, 179);
-    font-weight: bold;
-    font-size:large;
-    margin-top:5px;
-}
-.msg{ 
-    width: "400px";
-     height: "70px" 
-    }
-
-
-
-/*-----------------Responsive ness----------------*/
-
-/* CSS for 300px */
-@media only screen and (max-width: 300px) {
-    .container {
-        width: 100%;
+@media only screen and (max-width: 768px){
+    .container{
+        width:1100px;
+        /* border:3px dashed red; */
         margin: 0;
         padding: 0;
-        background: -webkit-linear-gradient(#eee, #eae5e5);
-    }
-    
-    .banner img {
-        width: 100%;
-        height: 300px;
-    }
-    
-    .banner h1 {
+        background: white;
+        overflow-x: hidden;
+        }
+    .banner h1{
+        position: absolute;
+        left: 20%;
+        top:20%;
+        transform: translate(-50%, 5%);
         font-size: 40px;
-        margin-top: -150px;
-        margin-left: 50px;
-    }
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #c5bbbb;
     
-    .information {
+    }
+    .OfficeAdress{
+        display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-    
-    .info {
         width: 90%;
-        margin-left: 0;
+        /* padding-left: 20px; */
+        margin-top: 10%;
+        margin-left: 10%;
+        gap: 20px;
+        align-items:self-start;
     }
     
-    .info h1 {
-        font-size: 20px;
-    }
-    
-    .connect {
-        width: 90%;
-    }
-    
-    .contactForm {
-        width: 90%;
-        height: auto;
-        padding: 10px;
-    }
-    
-    .contactForm label {
-        font-size: 16px;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-bottom: 5px;
-        padding-bottom: 10px;
-    }
-    
-    input {
-        width: 90%;
-        margin: 5px;
-        margin-left: 20px;
-        height: 30px;
-    }
-    
-    input::placeholder {
-        font-size: 16px;
-        padding: 5px;
-        margin: 5px;
-    }
-    
-    .select {
-        width: 90%;
-        margin: 5px;
-        margin-left: 20px;
-        height: 30px;
-        font-size: 16px;
-    }
-    
-    #btn {
-        width: 60%;
-        margin-left: 20%;
-        font-size: medium;
-        margin-top: 10px;
-    }
-    .msg{
-        width: 90%;
-        height: 70px;
-    }
+.OfficeDetails{
+    background:#EFF1F5;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: -245px;
 }
-
-/* CSS for 648px */
-@media only screen and (min-width: 301px) and (max-width: 748px) {
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background: -webkit-linear-gradient(#eee, #eae5e5);
-    }
-    
-    .banner img {
-        width: 100%;
-        height: 200px;
-    }
-    
-    .banner h1 {
-        font-size: 20px;
-        bottom: 5%;
-        top:30%
-    }
-    
-    .information {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .info {
-        width: 100%;
-        margin-left: 0;
-    }
-    
-    .info h1 {
-        font-size: 15px;
-    }
-    
-    .connect {
-        width: 100%;
-    }
-    
-    .contactForm {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-    }
-    
-    .contactForm label {
-        font-size: 18px;
-        margin-top: 25px;
-        margin-left: 35px;
-        margin-bottom: 8px;
-        padding-bottom: 15px;
-    }
-    
-    input {
-        width: 90%;
-        margin: 8px;
-        margin-left: 35px;
-        height: 35px;
-    }
-    
-    input::placeholder {
-        font-size: 18px;
-        padding: 8px;
-        margin: 8px;
-    }
-    
-    .select {
-        width: 90%;
-        margin: 8px;
-        margin-left: 35px;
-        height: 35px;
-        font-size: 18px;
-    }
-    
-    #btn {
-        width: 50%;
-        margin-left: 25%;
-        font-size: large;
-        margin-top: 15px;
-    }
+.officeMail{
+    width: 90%;
+    background:#EFF1F5;
+    padding: 5%;
+    border-radius: 10px;
+    margin-left:-245px;
 }
-
-/* CSS for 1000px */
-@media only screen and (min-width: 748px) and (max-width: 1000px) {
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background: -webkit-linear-gradient(#eee, #eae5e5);
-    }
-    
-    .banner img {
-        width: 100%;
-        height: 500px;
-    }
-    
-    .banner h1 {
-        font-size: 80px;
-        bottom: 5%;
-        top: 35%;
-    }
-    
-    .information {
-        /* padding: 30px; */
-        gap: 10px;
-    }
-    
-    .info {
-        width: 100%;
-        margin-left: 0;
-    }
-    
-    .info h1 {
-        font-size: 25px;
-    }
-    
-    .connect {
-        width: 100%;
-    }
-    
-    .contactForm {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-    
-    .contactForm label {
-        font-size: 20px;
-        margin-top: 30px;
-        margin-left: 50px;
-        margin-bottom: 10px;
-        padding-bottom: 20px;
-    }
-    
-    input {
-        width: 80%;
-        margin: 10px;
-        margin-left: 50px;
-        height: 40px;
-    }
-    
-    input::placeholder {
-        font-size: 20px;
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    .select {
-        width: 80%;
-        margin: 10px;
-        margin-left: 50px;
-        height: 40px;
-        font-size: 20px;
-    }
-    
-    #btn {
-        width: 40%;
-        margin-left: 30%;
-        font-size: large;
-        margin-top: 20px;
-    }
 }

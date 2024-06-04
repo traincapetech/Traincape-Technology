@@ -59,7 +59,7 @@
 .bannerImageDown{
     display: flex;
     width: 70%;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     margin-left: 15%;
     gap: 20px;
@@ -68,13 +68,21 @@
     width: 50px;
     height: 50px;
 }
+.servicediv h1{
+    font-size: 26px;
+    font-family: poppins;
+    font-weight: bold;
+    margin-top: 10px;
+}
 .servicediv {
+    width: 400px;
+    /* height: 250px; */
     /* border: 3px dashed black; */
     position: relative;
    margin-top:-5% ;
    background: white;
    border-radius: 10px;
-   padding: 5%
+   padding: 50px;
 }
 
 .servicediv p{
@@ -87,12 +95,15 @@
 
 .readbtn{
     border: none;
+    position: relative;
+    bottom: -10%;
+    right: -20%;
     background: rgb(236, 232, 232);
     color: blue;
     text-decoration: none;
     cursor: pointer;
     font: inherit;
-    padding: 3%;
+    /* padding: 3%; */
     border-radius: 5px;
 }
 
@@ -228,7 +239,11 @@
     padding: 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
+.service:hover{
+    /* background: #0E5AF2; */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: box-shadow 1.9s ease;
+}
 .service h1 {
     font-size: 20px;
     font-family: 'Poppins';
@@ -248,17 +263,17 @@
     margin-top: 5%;
     height: 35px;
     border-radius: 5px;
-    color: #0E5AF2;
+    color: #f6f6f6;
     border: navajowhite;
     font-weight: bold;
 
 }
 .btn:hover{
     background: #0E5AF2;
-    color: aliceblue;
+    color: rgb(17, 18, 18);
     cursor: pointer;
     transition: background-color 1.9s ease;
-
+    transition: color 1.9s ease;
     font-weight: bold;
 }
 

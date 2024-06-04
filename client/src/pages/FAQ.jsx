@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "../css/FAQ.module.css";
 
 const FAQ = () => {
@@ -7,6 +7,10 @@ const FAQ = () => {
     setShow(!show);
     console.log("clicked");
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={style.container}>
       <div className={style.faq}>
@@ -233,9 +237,7 @@ const FAQ = () => {
         {!show && <div className={style.under}></div>}
         {show && (
           <div>
-            <p>
-              
-            </p>
+            <p></p>
 
             <div className={style.under}></div>
           </div>

@@ -54,7 +54,7 @@
 }
 
 .inputBox input {
-    width: 80%;
+    width: 90%;
     height: 100%;
     border: none;
     outline: none;
@@ -72,17 +72,17 @@
     position: absolute;
     /* top: -5%; */
     left: 4%;
-    top: 1%;
-}
-
-.inputBox .icon {
+    top: 35%;
+  }
+  
+  .inputBox .icon {
     position: absolute;
-    right: 20px;
-    top: 65%;
-    transform: translateY(-40%);
+    right: 10px;
+    top: 25%;
+    /* transform: translateY(-40%); */
     font-size: 36px;
     color: #6b6969;
-}
+  }
 
 .RememberPassword  {
     width: 100%;

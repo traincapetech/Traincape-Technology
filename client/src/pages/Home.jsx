@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../css/Home.module.css";
 import BannerImage from "../assets/hero-1-2.jpg.svg";
 import develop from "../assets/Development-Service.svg";
@@ -44,6 +44,9 @@ const questionsAndAnswers = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={style.container}>
@@ -69,21 +72,34 @@ const Home = () => {
           </div>
           <h1>Cloud Computing</h1>
           <p>
-            Completely implement via highly efficient process improvements.
-            Engage high value before progressive data.
+            Cloud computing is a model for delivering computing services over
+            the internet, allowing users to access and utilize resources such as
+            servers, storage, databases, networking, software, analytics, and
+            intelligence on-demand.
           </p>
-          <button className={style.readbtn}>Read More</button>
+          <button
+            className={style.readbtn}
+            onClick={() => navigate("/Courses-details")}
+          >
+            Read More
+          </button>
         </div>
         <div className={style.servicediv}>
           <div className={style.imagediv}>
             <img src={market} alt="Marketing Services" />
           </div>
-          <h1>Cyber Secruity</h1>
+          <h1>Cyber Security</h1>
           <p>
-            Completely implement via highly efficient process improvements.
-            Engage high value before progressive data.
+            Cybersecurity is the practice of protecting systems, networks, and
+            data from digital attacks. It involves measures to prevent, detect,
+            and respond to threats such as malware, hacking, and data breaches.
           </p>
-          <button className={style.readbtn}>Read More</button>
+          <button
+            className={style.readbtn}
+            onClick={() => navigate("/Courses-details")}
+          >
+            Read More
+          </button>
         </div>
         <div className={style.servicediv}>
           <div className={style.imagediv}>
@@ -91,10 +107,17 @@ const Home = () => {
           </div>
           <h1>Project Management</h1>
           <p>
-            Completely implement via highly efficient process improvements.
-            Engage high value before progressive data.
+            Project management is the process of leading the work of a team to
+            achieve all project goals within the given constraints. It involves
+            planning, executing, tracking, and completing projects with the help
+            of a project team.
           </p>
-          <button className={style.readbtn}>Read More</button>
+          <button
+            className={style.readbtn}
+            onClick={() => navigate("/Courses-details")}
+          >
+            Read More
+          </button>
         </div>
       </div>
       <div className={style.hero}>
@@ -136,8 +159,12 @@ const Home = () => {
               <img src={cloud} alt="Cloud services" />
               <h1>Cloud Services</h1>
               <p>
-                Deliver plug commerce with dynamic is expertise. leading edge
-                products with business models
+                Cloud services provide computing resources over the internet,
+                allowing users to access and use them on-demand without
+                maintaining the underlying infrastructure. These services offer
+                benefits such as cost optimization, scalability, accessibility,
+                reliability, and innovation. The main types are IaaS, PaaS, and
+                SaaS.
               </p>
               <button className={style.btn}>Read More </button>
             </div>
@@ -145,8 +172,12 @@ const Home = () => {
               <img src={UI} alt="UI development" />
               <h1>UI Development</h1>
               <p>
-                Deliver plug commerce with dynamic is expertise. leading edge
-                products with business models
+                UI development involves designing and developing visual and
+                interactive components for websites and applications. Key skills
+                include HTML, CSS, JavaScript, responsive design, and
+                accessibility. UI developers bridge the presentation and backend
+                layers, creating intuitive interfaces. The job outlook is
+                positive, with competitive salaries.
               </p>
               <button className={style.btn}>Read More </button>
             </div>
@@ -154,8 +185,12 @@ const Home = () => {
               <img src={Digital} alt="Digital Marketing" />
               <h1>Digital Marketing</h1>
               <p>
-                Deliver plug commerce with dynamic is expertise. leading edge
-                products with business models
+                Digital marketing uses online strategies and channels to promote
+                products and services, connecting businesses with customers.
+                Techniques include SEO, PPC, social media, content marketing,
+                and leveraging offline media. It offers benefits like
+                cost-effectiveness, wider reach, measurability, adaptability,
+                and improved engagement.
               </p>
               <button className={style.btn}>Read More </button>
             </div>
@@ -163,8 +198,13 @@ const Home = () => {
               <img src={Web} alt="Web Development" />
               <h1>Web Development</h1>
               <p>
-                Deliver plug commerce with dynamic is expertise. leading edge
-                products with business models
+                Web development involves creating and maintaining websites and
+                web applications. It includes frontend development (user
+                interface), backend development (server-side logic), and
+                full-stack development (both). Common languages are HTML, CSS,
+                JavaScript. The process includes analysis, planning, design,
+                content creation, testing, and maintenance. It is essential for
+                establishing an online presence effectively.
               </p>
               <button className={style.btn}>Read More </button>
             </div>
@@ -172,8 +212,11 @@ const Home = () => {
               <img src={Software} alt="Software services" />
               <h1>Software Services</h1>
               <p>
-                Deliver plug commerce with dynamic is expertise. leading edge
-                products with business models
+                Software services include custom software development, web
+                development, mobile app development, cloud computing, quality
+                assurance, software maintenance, and consulting. These services
+                help businesses achieve their goals by providing tailored
+                solutions, ensuring quality, and offering ongoing support.
               </p>
               <button className={style.btn}>Read More </button>
             </div>
@@ -184,8 +227,12 @@ const Home = () => {
               />
               <h1>Software Development</h1>
               <p>
-                Deliver plug commerce with dynamic is expertise. leading edge
-                products with business models
+                Software development is the process of designing, creating,
+                testing, and maintaining computer programs and applications. It
+                involves identifying needs, analyzing requirements, designing,
+                developing, testing, deploying, and maintaining software. This
+                field is essential for creating custom applications that
+                automate processes and improve efficiency.
               </p>
               <button className={style.btn}>Read More </button>
             </div>

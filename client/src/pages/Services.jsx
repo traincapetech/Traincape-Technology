@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../css/Services.module.css";
 import banner from "../assets/servicesBanner.svg";
 import cloud from "../assets/Cloud-services.svg";
@@ -16,6 +16,9 @@ import Building from "../assets/Start Building.svg";
 
 const Services = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={style.container}>
       <div className={style.banner}>
@@ -27,8 +30,12 @@ const Services = () => {
             <img src={cloud} alt="Cloud services" />
             <h1>Cloud Services</h1>
             <p>
-              Deliver plug commerce with dynamic is expertise. leading edge
-              products with business models
+              Cloud services provide computing resources over the internet,
+              allowing users to access and use them on-demand without
+              maintaining the underlying infrastructure. These services offer
+              benefits such as cost optimization, scalability, accessibility,
+              reliability, and innovation. The main types are IaaS, PaaS, and
+              SaaS.
             </p>
             <button className={style.btn}>Read More </button>
           </div>
@@ -36,8 +43,12 @@ const Services = () => {
             <img src={UI} alt="UI development" />
             <h1>UI Development</h1>
             <p>
-              Deliver plug commerce with dynamic is expertise. leading edge
-              products with business models
+              UI development involves designing and developing visual and
+              interactive components for websites and applications. Key skills
+              include HTML, CSS, JavaScript, responsive design, and
+              accessibility. UI developers bridge the presentation and backend
+              layers, creating intuitive interfaces. The job outlook is
+              positive, with competitive salaries.
             </p>
             <button className={style.btn}>Read More </button>
           </div>
@@ -45,8 +56,12 @@ const Services = () => {
             <img src={Digital} alt="Digital Marketing" />
             <h1>Digital Marketing</h1>
             <p>
-              Deliver plug commerce with dynamic is expertise. leading edge
-              products with business models
+              Digital marketing uses online strategies and channels to promote
+              products and services, connecting businesses with customers.
+              Techniques include SEO, PPC, social media, content marketing, and
+              leveraging offline media. It offers benefits like
+              cost-effectiveness, wider reach, measurability, adaptability, and
+              improved engagement.
             </p>
             <button className={style.btn}>Read More </button>
           </div>
@@ -54,8 +69,13 @@ const Services = () => {
             <img src={Web} alt="Web Development" />
             <h1>Web Development</h1>
             <p>
-              Deliver plug commerce with dynamic is expertise. leading edge
-              products with business models
+              Web development involves creating and maintaining websites and web
+              applications. It includes frontend development (user interface),
+              backend development (server-side logic), and full-stack
+              development (both). Common languages are HTML, CSS, JavaScript.
+              The process includes analysis, planning, design, content creation,
+              testing, and maintenance. It is essential for establishing an
+              online presence effectively.
             </p>
             <button className={style.btn}>Read More </button>
           </div>
@@ -63,8 +83,11 @@ const Services = () => {
             <img src={Software} alt="Software services" />
             <h1>Software Services</h1>
             <p>
-              Deliver plug commerce with dynamic is expertise. leading edge
-              products with business models
+              Software services include custom software development, web
+              development, mobile app development, cloud computing, quality
+              assurance, software maintenance, and consulting. These services
+              help businesses achieve their goals by providing tailored
+              solutions, ensuring quality, and offering ongoing support.
             </p>
             <button className={style.btn}>Read More </button>
           </div>
@@ -75,8 +98,12 @@ const Services = () => {
             />
             <h1>Software Development</h1>
             <p>
-              Deliver plug commerce with dynamic is expertise. leading edge
-              products with business models
+              Software development is the process of designing, creating,
+              testing, and maintaining computer programs and applications. It
+              involves identifying needs, analyzing requirements, designing,
+              developing, testing, deploying, and maintaining software. This
+              field is essential for creating custom applications that automate
+              processes and improve efficiency.
             </p>
             <button className={style.btn}>Read More </button>
           </div>
@@ -86,8 +113,28 @@ const Services = () => {
           <img src={Consult} className={style.img} alt="Consult Image" />
           <div className={style.consultdiv}>
             <div className={style.consultText}>
-              <p>We are here to answer your questions 24/7</p>
-              <h1>Need A Consultation?</h1>
+              <p
+                style={{
+                  fontSize: "15px",
+                  fontFamily: "poppins",
+                  color: "rgb(223, 210, 210)",
+                  fontWeight: "lighter",
+                  textAlign: "center",
+                }}
+              >
+                We are here to answer your questions 24/7
+              </p>
+              <h1
+                style={{
+                  fontSize: "40px",
+                  fontFamily: "poppins",
+                  color: "rgb(223, 210, 210)",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                }}
+              >
+                Need A Consultation?
+              </h1>
             </div>
             <div className={style.consultbtn}>
               <button
@@ -109,8 +156,9 @@ const Services = () => {
               <img src={project} alt="" />
               <h1>Project Planning</h1>
               <p>
-                Internal or "organic" sources without turnkey growth strategies.
-                Seamlessly promote client-centered
+                Project planning involves defining objectives, scope, budget,
+                timeline, and deliverables to manage resources and ensure
+                project success.
               </p>
             </div>
 
@@ -120,10 +168,12 @@ const Services = () => {
 
             <div>
               <img src={Request} alt="" />
-              <h1>Project Planning</h1>
+              <h1>Request A Meeting </h1>
               <p>
-                Internal or "organic" sources without turnkey growth strategies.
-                Seamlessly promote client-centered
+                A meeting request email includes a clear subject, polite
+                introduction, meeting details, and flexibility for alternative
+                times. Best practices are a compelling subject line,
+                introduction, explaining purpose, suggesting times.
               </p>
             </div>
             <div>
@@ -132,10 +182,11 @@ const Services = () => {
 
             <div>
               <img src={Building} alt="" />
-              <h1>Project Planning</h1>
+              <h1>Start Building Project</h1>
               <p>
-                Internal or "organic" sources without turnkey growth strategies.
-                Seamlessly promote client-centered
+                To start building a project, have a clear plan, understand
+                requirements, break tasks into smaller steps, collaborate with
+                team members, and focus on learning through practical projects.
               </p>
             </div>
           </div>

@@ -1,77 +1,68 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../css/AboutUS.module.css";
-import banner from "../assets/About1.jpg";
+import banner from "../assets/about-us-Bg.jpg";
 import { SiAmazonsimpleemailservice } from "react-icons/si";
 import { SiEsotericsoftware } from "react-icons/si";
 import { MdCall } from "react-icons/md";
 import { GrServices } from "react-icons/gr";
-import childimg from "../assets/discussionArea.jpg";
+import childimg from "../assets/disccuss.jpg";
 import memberImg from "../assets/workingboy.jpg";
 import RokeySir from "../assets/RokeySir.jpeg";
 import Consult from "../assets/smallImg.jpeg";
 import { useNavigate } from "react-router-dom";
+import jasveer from "../assets/jasveergill.png";
+import traincapeInfo from "../assets/Traincape-info.jpg";
 
 const AboutUS = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const handlePdf = () => {
+    const pdfUrl =
+      "https://drive.google.com/file/d/1NdZDoLk-q9saDgfrWzNQ9mLIgUZHGKg8/view?usp=sharing"; // Replace with your PDF file URL
+    window.open(pdfUrl, "_blank");
+  };
   return (
     <div className={style.container}>
       <div className={style.banner}>
-        <img src={banner} alt="Default image" />
+        {/* <img src={banner} alt="Default image" /> */}
         <h1>About Us</h1>
       </div>
-      <div className={style.bannerdown}>
-        <div className={style.info}>
-          <div className={style.infodiv}>
-            <div>
-              <SiAmazonsimpleemailservice className={style.img} />
-            </div>
-            <h2>01</h2>
+      <div className={style.PdfDiv}>
+        <img src={traincapeInfo} alt="PDF IMAGE" />
+        <div className={style.pdftext}>
+          <div className={style.textpdf}>
+            <h1>
+              Traincape Technology Pvt Ltd was founded in 2021 by Parichay Singh
+              Rana with a vision to revolutionize the way businesses approach
+              technology. With years of experience in the industry, we
+              recognized the need for a company that could provide tailored,
+              reliable, and cutting-edge tech solutions. Our mission is to
+              empower businesses by leveraging the latest technologies and
+              innovations to drive growth, efficiency, and innovation. Our team
+              of experts has extensive experience in developing and implementing
+              custom software solutions, mobile apps, and web applications that
+              meet the unique needs of our clients. We pride ourselves on our
+              ability to understand our clients' business goals and develop
+              solutions that align with their objectives.
+            </h1>
+            <button className={style.pdfDownloadBtn} onClick={handlePdf}>
+              Download Our Presentation
+            </button>
           </div>
-          <h1>Cloud Services</h1>
-          <p>
-            Cardinate premier technology without sustainabile leadership
-            work.....
-          </p>
-          <button className={style.btn}>Read More...</button>
-        </div>
-        <div className={style.info}>
-          <div className={style.infodiv}>
-            <div>
-              <SiEsotericsoftware className={style.img} />
-            </div>
-            <h2>02</h2>
-          </div>
-          <h1>Software Services</h1>
-          <p>
-            Cardinate premier technology without sustainabile leadership
-            work.....
-          </p>
-          <button className={style.btn}>Read More...</button>
-        </div>
-        <div className={style.info}>
-          <div className={style.infodiv}>
-            <div>
-              <GrServices className={style.img} />
-            </div>
-            <h2>03</h2>
-          </div>
-          <h1>Machine Learning</h1>
-          <p>
-            Cardinate premier technology without sustainabile leadership
-            work.....
-          </p>
-          <button className={style.btn}>Read More...</button>
         </div>
       </div>
-
       <div className={style.parent}>
         <div className={style.child1}>
           <h4>Get Best IT Solutiion 2022</h4>
           <h1>Inspiring Tech Needs For Bussiness</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-            animi necessitatibus, officiis unde hic eligendi corrupti. Facere
-            maxime voluptatem iusto?
+            Traincape Technology was founded in 2021 by Parichay Singh Rana with
+            a vision to revolutionize the way businesses approach technology.
+            With years of experience in the industry, we recognized the need for
+            a company that could provide tailored, reliable, and cutting-edge
+            tech solutions.
           </p>
           <div className={style.childdiv}>
             <div className={style.call}>
@@ -80,7 +71,7 @@ const AboutUS = () => {
               </div>
               <div>
                 <h2>Call To Ask Any Query</h2>
-                <h1>+91 1234567890</h1>
+                <h1>+91 6280281505</h1>
               </div>
             </div>
             <div className={style.border}></div>
@@ -133,27 +124,30 @@ const AboutUS = () => {
         <div className={style.ReviewPersonDiv}>
           <div className={style.Reviewdiv1}>
             <div className={style.ReviewPerson}>
-              <img src={memberImg} alt="IMage" />
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocI9VN6rcL2ZiH4q_UjppPI_CwuPobfiO3NOzKzXTVx0GDydug=w75-h75-p-rp-mo-br100"
+                alt="IMage"
+              />
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptates, tenetur. Consectetur laudantium voluptates aut ad
-                quidem ab eius amet rem.
+                These guys are awesome 🤩. Whatever you wanna do just tell them.
+                They offer comprehensive training programs for all level I.T
+                programs.
               </p>
             </div>
-            <h1>Lorem ipsum</h1>
+            <h1>DA BRO's</h1>
             <h2>IT Customer</h2>
           </div>
           <div className={style.Reviewdiv1}>
             <div className={style.ReviewPerson}>
-              <img src={memberImg} alt="IMage" />
+              <img src={jasveer} alt="IMage" />
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptates, tenetur. Consectetur laudantium voluptates aut ad
-                quidem ab eius amet rem.
+                I did my azure training and certification from Traincape
+                technology is just smooth experience. Going work on more goals
+                in near future. Thanks Parichay and team.
               </p>
             </div>
-            <h1>Lorem ipsum</h1>
-            <h2>IT Customer</h2>
+            <h1>Jasvir Gill</h1>
+            <h2>Azure Training</h2>
           </div>
         </div>
       </div>

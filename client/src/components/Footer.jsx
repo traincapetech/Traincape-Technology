@@ -25,15 +25,15 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className={style.address}>
+          {/* <div className={style.address}>
             <div className={style.iconDiv}>
               <LuTimerReset className={style.icon} />
             </div>
-            <div>
+             <div>
               <h1>WORKING HOURS</h1>
               <p>Mon - Sat : 11am - 7pm</p>
-            </div>
-          </div>{" "}
+            </div> 
+          </div>{" "} */}
           <div className={style.address}>
             <div className={style.iconDiv}>
               <TbPhoneCall className={style.icon} />
@@ -41,7 +41,7 @@ const Footer = () => {
             <div>
               <h1>CONTACT - US</h1>
               <p>sales@traincaapetech.info</p>
-              <p style={{ marginTop: "-10px" }}>+91 6280281505</p>
+              <p>+91 6280281505</p>
             </div>
           </div>
         </div>
@@ -97,10 +97,12 @@ const Footer = () => {
           </div>
           <div className={style.footerdiv}>
             <h1>Explore</h1>
-            <Link className={style.linksfooter}>What we do</Link>
+            <Link className={style.linksfooter} to={"/about-us"}>What we do</Link>
             <Link className={style.linksfooter}>Blogs</Link>
             <Link className={style.linksfooter}>Latest Posts</Link>
-            <Link className={style.linksfooter}>Help Center</Link>
+            <Link to="/contact-us" className={style.linksfooter}>
+              Contact Us
+            </Link>
           </div>
           <div className={style.footerdiv}>
             <h1>Office Map</h1>

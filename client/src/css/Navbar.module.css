@@ -209,6 +209,7 @@
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 20px;
+  color: #070707;
 }
 
 .showDropdownSection {
@@ -217,6 +218,22 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    width: 1100px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: sticky;
+    z-index: 101;
+    /* overflow: hidden; */
+    /* position: relative; */
+    background: rgb(11, 2, 2);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
   .navlinks {
     display: none;
     flex-direction: column;
@@ -240,6 +257,7 @@
 
   .hamburgerSymbol {
     display: block;
+    color: white;
   }
 
   .buttons {

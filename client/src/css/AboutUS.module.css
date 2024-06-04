@@ -8,14 +8,16 @@
 
 .banner{
     width: 100%;
+    height: 300px;
     display: flex;
     position: relative;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment : fixed;
+    background-image: url("../assets/about-us-Bg.jpg");
 }
 
-.banner img{
-    width: 100%;
-    height: 300px;
-}
+
 
 .banner h1{
      position: absolute;
@@ -26,87 +28,52 @@
      font-family: poppins;
      font-weight: bold;
 }
-.bannerdown{
-    width: 60%;
-    margin-left:20%;
+
+.PdfDiv{
     display: flex;
-    /* border:2px dashed red; */
-    margin-top:40px;
+    background: rgb(251, 246, 246);
 }
-.info{
-    /* width: 50%; */
-    display: flex;
-    flex-direction: column;
-    /* border:2px dashed rgb(33, 173, 28); */
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    background: rgb(255, 252, 253);
-   
+.PdfDiv img{
+    width: 800px;
+    height: 500px;
+    /* position: relative; */
 }
-
-.infodiv{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    /* border:2px dashed rgb(25, 23, 23); */
-    /* margin: 5px; */
-    padding: 10px;
+.textpdf{
+    max-width: 100%;
+    /* position: absolute; */
+    margin-left: -30px;
+    background: rgb(240, 252, 254);
+    padding: 5%;
+    margin-top: 40px;
+    border-radius: 20%;
 }
-.infodiv div .img{
-    /* margin: 10px; */
-    padding: 10px;
-    width: 30%;
-    height: 60%;
-    /* border:2px dashed rgb(25, 23, 23); */
-    margin-left: 15px;
-    border-radius: 50%;
-    background: rgb(222, 224, 224);
-    align-items: center;
-    position: absolute;
-    color: blue;
-}
-
-.infodiv h2{
-    font-size: 50px;
-    font-family: poppins;
-    font-weight: bold;
-    color: rgb(208, 203, 203);
-}
-
-
-.info h1{
-    font-size: 30px;
-    font-family: poppins;
-    font-weight: bold;
-    color: rgb(83, 77, 77);
-}
-.info p{
-    font-size: 20px;
+.textpdf h1{
+    font-size: 25px;
     font-family: poppins;
     color: rgb(138, 133, 133);
     font-weight: lighter;
 }
-.btn{
+.pdfDownloadBtn{
+    width: 300px;
+    height: 50px;
+    background: blue;
+    color: white;
     border: none;
-    background: none;
-    color: blue;
-    text-decoration: none;
-    cursor: pointer;
-    font: inherit;
-    padding: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: bold;
+    transition: ease-out 1.9s;
 }
 
 .parent{
     display: flex;
     background: rgb(226, 224, 224);
     /* border:2px dashed rgb(25, 23, 23); */
-    margin-top: 50px;
 }
 .child1{
-    margin-left: 22%;
+    margin-left: 11%;
     margin-right: 20px;
 }
 .child1 h1{
@@ -114,12 +81,12 @@
 }
 .child1 h4{
     color: blue;
-    font-size: 15px;
+    font-size: 23px;
     font-family: poppins;
     font-weight: bold;
 }
 .child1 p{
-    font-size: 15px;
+    font-size: 25px;
     font-family: poppins;
     color: rgb(138, 133, 133);
     font-weight: lighter;
@@ -131,8 +98,8 @@
     margin-top: 20px;
 }
 .border{
-    width: 2px;
-    height: 50px;
+    width: 3px;
+    height: 90px;
     background: blue;
     border-radius: 5px;
 }
@@ -141,8 +108,8 @@
 }
 .icondiv{
     position: relative;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     padding: 15px;
     background: white;
     border-radius: 50%;
@@ -156,7 +123,7 @@
     
 }
 .call h2{
-    font-size: 15px;
+    font-size: 19px;
     font-family: poppins;
     color: rgb(76, 74, 74);
     font-weight: lighter;
@@ -164,25 +131,25 @@
     margin-top: 5px;
 }
 .call h1{
-    font-size: 15px;
+    font-size: 19px;
     font-family: poppins;
     color: rgb(13, 28, 228);
     font-weight: bold;
     margin-left: 20px;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .founder h3{
-font-size: 15px;
+font-size: 25px;
 font-family: poppins;
 color: rgb(78, 78, 77);
 margin-top:-10px;
 }
 .founder{
-    margin-top: -13px;
+    margin-top: -30px;
 }
 .child2 img{
-    width: 700px;
-    height: 400px;
+    width: 800px;
+    height: 500px;
 }
 .ExpertTeam{
     display: flex;
@@ -204,14 +171,14 @@ margin-top:-10px;
     text-align: center;
 }
 .ExpertText p{
-    font-size: 15px;
+    font-size: 23px;
     font-family: poppins;
     color: rgb(18, 7, 232);
     font-weight: lighter;
 }
 
 .ExpertText h1{
-    font-size: 30px;
+    font-size: 50px;
     font-family: poppins;
     color: rgb(65, 67, 67);
     font-weight: bold;
@@ -225,12 +192,13 @@ margin-top:-10px;
     background: rgb(242, 242, 246);
 }
 .member img{
-    width: 100%;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    /* position: fixed; */
 }
 
 .member h1{
-    font-size: 19px;
+    font-size: 30px;
     font-family: poppins;
     color: rgb(65, 67, 67);
     font-weight: bold;
@@ -238,7 +206,7 @@ margin-top:-10px;
 }
 
 .member p{
-    font-size: 15px;
+    font-size: 23px;
     font-family: poppins;
     color: rgb(17, 29, 200);
     font-weight: lighter;
@@ -269,10 +237,10 @@ margin-top:-10px;
 }
 
 .ReviewPerson img{
-    width: 70px;
+    width: 80px;
 }
 .ReviewPerson p{
-    font-size: 15px;
+    font-size: 23px;
     font-family: poppins;
     color: rgb(121, 121, 123);
     font-weight: lighter;
@@ -281,14 +249,14 @@ margin-top:-10px;
 }
 
 .Reviewdiv1 h2{
-    font-size: 15px;
+    font-size: 16px;
     font-family: poppins;
     color: rgb(19, 19, 207);
     font-weight: lighter;
     margin:5px;
 }
 .Reviewdiv1 h1{
-    font-size: large;
+    font-size: 23px;
     font-family: poppins;
     color: rgb(45, 45, 47);
     font-weight: bold;
@@ -306,7 +274,7 @@ margin-top:-10px;
 .Quote p{
     text-align: center;
     color: blue;
-    font-size: 15px;
+    font-size: 23px;
     font-family: poppins;
     font-weight: lighter;
 }
@@ -314,7 +282,7 @@ margin-top:-10px;
 .Quote h1{
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 50px;
     font-family: poppins;
     font-weight: bold;
 }
@@ -336,9 +304,10 @@ margin-top:-10px;
 .btn1:hover{
     background: rgb(0, 0, 0);
     color: white;
+    transition: ease-in-out 1.9s;
 }
 .consult {
-    width: 1440px;
+    width: 100%;
     height: 250px;
     /* border: 2px dashed red; */
     background: rgb(105, 139, 136);
@@ -348,7 +317,8 @@ margin-top:-10px;
 }
 .consult .img{
     position: absolute;
-    width: 1440px;
+    display: block;
+    width: 100%;
     height: 250px;
 }
 
@@ -363,14 +333,14 @@ margin-top:-10px;
     top:30%
 }
 .consultText p{
-    font-size: 15px;
+    font-size: 23px;
     font-family: poppins;
     color: rgb(255, 255, 255);
     font-weight: lighter;
     text-align: center;
 }
 .consultText h1{
-    font-size: 25px;
+    font-size: 50px;
     font-family: poppins;
     color: rgb(255, 255, 255);
     font-weight: bold;
