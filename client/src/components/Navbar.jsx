@@ -62,14 +62,14 @@ const Navbar = () => {
             to="/about-us"
             onClick={handleLinkClick}
           >
-            About Us
+            About
           </Link>
           <Link
             className={style.links}
             to="/our-services"
             onClick={handleLinkClick}
           >
-            Our Services
+            Services
           </Link>
           {/* <Link className={style.links} to="#" onClick={handleLinkClick}>
             Our Customers
@@ -87,7 +87,7 @@ const Navbar = () => {
             to="/contact-us"
             onClick={handleLinkClick}
           >
-            Contact Us
+            Contact
           </Link>
         </div>
 
@@ -108,14 +108,14 @@ const Navbar = () => {
               to="/about-us"
               onClick={handleLinkClick}
             >
-              About Us
+              About
             </Link>
             <Link
               className={style.links}
               to="/about-us"
               onClick={handleLinkClick}
             >
-              Our Services
+              Services
             </Link>
             {/* <Link
               className={style.links}
@@ -129,7 +129,7 @@ const Navbar = () => {
               to="/about-us"
               onClick={handleLinkClick}
             >
-              Contact Us
+              Contact
             </Link>
             <Link
               className={style.links}

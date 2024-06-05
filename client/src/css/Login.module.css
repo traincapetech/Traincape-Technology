@@ -1,7 +1,7 @@
 
 .wrapper {
-    width: 100%;
-    height: 800px;
+    min-width: 100%;
+    min-height: 800px;
     margin-top: 0px;
     padding: 0.5px;
     color: #fff;
@@ -15,7 +15,7 @@
 
 
 .LoginForm{
-    width: 600px;
+    min-width: 600px;
     border-radius: 5px;
     color: #040000;
     background-color: white;

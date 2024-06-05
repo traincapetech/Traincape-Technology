@@ -157,7 +157,7 @@ const Home = () => {
           <div className={style.subSerices}>
             <div className={style.service}>
               <img src={cloud} alt="Cloud services" />
-              <h1>Cloud Services</h1>
+              <h2>Cloud Services</h2>
               <p>
                 Cloud services provide computing resources over the internet,
                 allowing users to access and use them on-demand without
@@ -170,7 +170,7 @@ const Home = () => {
             </div>
             <div className={style.service}>
               <img src={UI} alt="UI development" />
-              <h1>UI Development</h1>
+              <h2>UI Development</h2>
               <p>
                 UI development involves designing and developing visual and
                 interactive components for websites and applications. Key skills
@@ -183,7 +183,7 @@ const Home = () => {
             </div>
             <div className={style.service}>
               <img src={Digital} alt="Digital Marketing" />
-              <h1>Digital Marketing</h1>
+              <h2>Digital Marketing</h2>
               <p>
                 Digital marketing uses online strategies and channels to promote
                 products and services, connecting businesses with customers.
@@ -196,7 +196,7 @@ const Home = () => {
             </div>
             <div className={style.service}>
               <img src={Web} alt="Web Development" />
-              <h1>Web Development</h1>
+              <h2>Web Development</h2>
               <p>
                 Web development involves creating and maintaining websites and
                 web applications. It includes frontend development (user
@@ -210,7 +210,7 @@ const Home = () => {
             </div>
             <div className={style.service}>
               <img src={Software} alt="Software services" />
-              <h1>Software Services</h1>
+              <h2>Software Services</h2>
               <p>
                 Software services include custom software development, web
                 development, mobile app development, cloud computing, quality
@@ -225,7 +225,7 @@ const Home = () => {
                 src={softwareDevelopment}
                 alt="Software Development Learnings"
               />
-              <h1>Software Development</h1>
+              <h2>Software Development</h2>
               <p>
                 Software development is the process of designing, creating,
                 testing, and maintaining computer programs and applications. It

@@ -1,6 +1,6 @@
 /* Default styles for desktop and larger screens */
 .wrapperSignup {
-    height: 800px;
+    min-height: 800px;
     margin-top: 0px;
     padding: 0.5px;
     color: #fff;
@@ -12,7 +12,7 @@
   }
   
   .singupForm {
-    width: 600px;
+    min-width: 600px;
     border-radius: 5px;
     color: #040000;
     background-color: white;

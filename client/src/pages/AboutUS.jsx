@@ -20,8 +20,8 @@ const AboutUS = () => {
   }, []);
   const handlePdf = () => {
     const pdfUrl =
-      "https://drive.google.com/file/d/1NdZDoLk-q9saDgfrWzNQ9mLIgUZHGKg8/view?usp=sharing"; // Replace with your PDF file URL
-    window.open(pdfUrl, "_blank");
+      "https://drive.google.com/uc?export=download&id=1NdZDoLk-q9saDgfrWzNQ9mLIgUZHGKg8";
+    window.open(pdfUrl);
   };
   return (
     <div className={style.container}>
