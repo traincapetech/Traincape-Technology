@@ -92,14 +92,24 @@ const Footer = () => {
             <Link to="/terms-and-conditions" className={style.linksfooter}>
               Terms & Conditions
             </Link>
-            <Link className={style.linksfooter}>Policy</Link>
-            <Link className={style.linksfooter}>Career</Link>
+            <Link to="/Our-Policies" className={style.linksfooter}>
+              Policy
+            </Link>
+            <Link to="/Career-details" className={style.linksfooter}>
+              Career
+            </Link>
           </div>
           <div className={style.footerdiv}>
             <h1>Explore</h1>
-            <Link className={style.linksfooter} to={"/about-us"}>What we do</Link>
-            <Link className={style.linksfooter}>Blogs</Link>
-            <Link className={style.linksfooter}>Latest Posts</Link>
+            <Link className={style.linksfooter} to={"/about-us"}>
+              What we do
+            </Link>
+            <Link to="/Our-Blogs" className={style.linksfooter}>
+              Blogs
+            </Link>
+            <Link to="/Our-Blogs" className={style.linksfooter}>
+              Latest Posts
+            </Link>
             <Link to="/contact-us" className={style.linksfooter}>
               Contact Us
             </Link>

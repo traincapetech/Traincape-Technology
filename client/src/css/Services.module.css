@@ -7,13 +7,15 @@
 }
 
 .subSerices {
-    width: 70%;
+    grid-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 0 15%;
-    margin-top: 10%;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 10%;
+    margin-top: 10%;
+    padding: 0px;
+    max-width: 80%;
+    margin: 0px auto;
 }
 
 .service {
@@ -56,14 +58,18 @@
 
 
 .consult {
-    width: 1440px;
-    height: 250px;
+    display: block;
+    max-width: 100%;
+    min-height: 250px;
     background: rgb(105, 139, 136);
-    margin: auto;
+    overflow-x: auto;
+    position: relative;
+    /* margin: auto; */
 }
 .consult .img{
     position: absolute;
-    width: 1440px;
+    display: block;
+    width: 100%;
     height: 250px;
 }
 
@@ -115,17 +121,17 @@
 }
 
 .specializationContainer{
-    width: 70%;
     align-items: center;
-    background: rgb(247, 250, 252);
-    margin-left: 15%;
+    background: #f7fafc;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .specializationDiv{
-    width: 70%;
     align-items: center;
+    margin: 0px auto;
     padding: 20px;
-    margin-left: 15%;
+    max-width: 80%;
 }
 .specializationDiv h3{
     font-size: 18px;
@@ -175,4 +181,25 @@
     font-weight: lighter;
     text-align:left;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .subSerices {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+       place-items: center;
+    }
+    .specialization{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+       place-items: center;
+    }
+    .consultdiv {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+       place-items: center;
+    }
+    .arrow{
+        display: none;
+    }
 }

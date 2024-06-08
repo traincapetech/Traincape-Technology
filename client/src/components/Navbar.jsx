@@ -112,7 +112,7 @@ const Navbar = () => {
             </Link>
             <Link
               className={style.links}
-              to="/about-us"
+              to="/our-services"
               onClick={handleLinkClick}
             >
               Services
@@ -126,7 +126,7 @@ const Navbar = () => {
             </Link> */}
             <Link
               className={style.links}
-              to="/about-us"
+              to="/contact-us"
               onClick={handleLinkClick}
             >
               Contact
@@ -136,15 +136,32 @@ const Navbar = () => {
               to="/Courses-details"
               onClick={handleLinkClick}
             >
-              Courses / Sources
+              Courses
             </Link>
             <div className={style.hamburgerMenuButtons}>
-              <button
-                className={style.btn}
-                onClick={() => navigate("/payment")}
+              <div
+                className={style.dropdownLinkSection}
+                onMouseEnter={() => setShowDropdown(true)}
+                onMouseLeave={() => setShowDropdown(false)}
               >
-                Pay Now
-              </button>
+                <button
+                  className={style.btn}
+                  onClick={() => setShowDropdown(!showDropdown)}
+                >
+                  Pay Now
+                </button>
+                <div
+                  className={`${style.dropdownSection} ${
+                    showDropdown ? style.showDropdownSection : ""
+                  }`}
+                >
+                  <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
+                    Pay Pal
+                  </Link>
+                  <Link to="#">Credit / Debit Card</Link>
+                  <Link onClick={() => alert(alertMessage)}>Bank Transfer</Link>
+                </div>
+              </div>
               <button
                 className={style.loginbtn}
                 onClick={() => navigate("/signup")}
@@ -161,13 +178,7 @@ const Navbar = () => {
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
-            <button
-              className={style.btn}
-              onClick={() =>
-                (window.location.href =
-                  "https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB")
-              }
-            >
+            <button className={style.btn} onClick>
               Pay Now
             </button>
             <div
@@ -175,7 +186,9 @@ const Navbar = () => {
                 showDropdown ? style.showDropdownSection : ""
               }`}
             >
-              <Link to="#">Pay Pal</Link>
+              <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
+                Pay Pal
+              </Link>
               <Link to="#">Credit / Debit Card</Link>
               <Link onClick={() => alert(alertMessage)}>Bank Transfer</Link>
             </div>

@@ -237,7 +237,33 @@ const FAQ = () => {
         {!show && <div className={style.under}></div>}
         {show && (
           <div>
-            <p></p>
+            <p>
+              With 150+ IT and non-IT courses available, each course has its own
+              unique fee structure and duration. The cost of a course can vary
+              widely based on factors such as the complexity of the subject
+              matter, the level of expertise it offers, the duration of the
+              course (whether it's short-term or long-term), and the institution
+              or platform offering the course.
+              <br />
+              For example, IT courses might include programming languages like
+              Python, Java, or C++, cybersecurity training, data science and
+              machine learning, web development, cloud computing, and more.
+              <br />
+              Non-IT courses could range from business management and finance to
+              creative arts, languages, health sciences, and many others. To
+              determine the cost of a specific course, it's essential to look at
+              the details provided by the course provider.
+              <br />
+              This information typically includes the course syllabus, duration
+              (in weeks or months), whether it's self-paced or instructor-led,
+              any certifications offered upon completion, and of course, the fee
+              structure. Some courses may offer installment plans or discounts
+              for early registration, while others might include additional
+              resources or support services in their pricing. For accurate and
+              detailed cost information, I recommend checking the official
+              website or contacting the institution or platform offering the
+              course directly.
+            </p>
 
             <div className={style.under}></div>
           </div>

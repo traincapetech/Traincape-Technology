@@ -1,39 +1,55 @@
-// import express from "express";
-// import mongoose from "mongoose";
-// import dotenv from "dotenv";
-// import cors from "cors";
-// import userRoute from "./route/user.route.js";
-
-const express = require("express");
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+const express= require("express");
+const { connection } = require("./db");
+const { userRouter } = require("./routes/user.routes");
+const { noteRouter } = require("./routes/note.routes");
 const cors = require("cors");
-const userRoute = require("./route/user.route.js");
+const swaggerJSDoc = require("swagger-jsdoc");
+const swaggerUi= require("swagger-ui-express")
+const app= express();
+app.use(express.json())
+app.use(cors())
+app.use("/users", userRouter)
 
-const app = express();
 
-app.use(cors());
-app.use(express.json());
 
-dotenv.config();
 
-const PORT = process.env.PORT || 4000;
-const URI = process.env.MongoDBURI;
 
-// connect to mongoDB
-try {
-  mongoose.connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  console.log("Connected to mongoDB");
-} catch (error) {
-  console.log("Error: ", error);
+
+// openapi definitions
+const options={
+    definition:{
+        openapi:"3.0.0",
+        info:{
+            title:"Full Stack Api docs",
+            version:"2.0.0"
+        },
+        server:[
+            {
+                url:"http://localhost:8080"
+            }
+        ]
+    },
+
+    apis:["./routes/*.js"]
 }
+// specification
 
-// defining routes
-app.use("/user", userRoute);
 
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
-});
+const swaggerSpec=swaggerJSDoc(options);
+//built the Ui
+app.use("/apidocs", swaggerUi.serve,swaggerUi.setup(swaggerSpec))
+
+app.get("/",(req,res)=>{
+    res.status(200).send({"msg":"This is the Home "})
+})
+
+
+app.listen(8080,async()=>{
+    try {
+        await connection
+        console.log("Connected to the DB")
+        console.log("Server is running on Port 8080")
+    } catch (error) {
+        console.log(error)
+    }
+})

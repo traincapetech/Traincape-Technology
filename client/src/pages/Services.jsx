@@ -19,6 +19,9 @@ const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const handleClick = () => {
+    navigate("/Courses-details");
+  };
   return (
     <div className={style.container}>
       <div className={style.banner}>
@@ -37,7 +40,9 @@ const Services = () => {
               reliability, and innovation. The main types are IaaS, PaaS, and
               SaaS.
             </p>
-            <button className={style.btn}>Read More </button>
+            <button className={style.btn} onClick={handleClick}>
+              Read More{" "}
+            </button>
           </div>
           <div className={style.service}>
             <img src={UI} alt="UI development" />
@@ -50,7 +55,9 @@ const Services = () => {
               layers, creating intuitive interfaces. The job outlook is
               positive, with competitive salaries.
             </p>
-            <button className={style.btn}>Read More </button>
+            <button className={style.btn} onClick={handleClick}>
+              Read More{" "}
+            </button>
           </div>
           <div className={style.service}>
             <img src={Digital} alt="Digital Marketing" />
@@ -63,7 +70,9 @@ const Services = () => {
               cost-effectiveness, wider reach, measurability, adaptability, and
               improved engagement.
             </p>
-            <button className={style.btn}>Read More </button>
+            <button className={style.btn} onClick={handleClick}>
+              Read More{" "}
+            </button>
           </div>
           <div className={style.service}>
             <img src={Web} alt="Web Development" />
@@ -77,7 +86,9 @@ const Services = () => {
               testing, and maintenance. It is essential for establishing an
               online presence effectively.
             </p>
-            <button className={style.btn}>Read More </button>
+            <button className={style.btn} onClick={handleClick}>
+              Read More{" "}
+            </button>
           </div>
           <div className={style.service}>
             <img src={Software} alt="Software services" />
@@ -89,7 +100,9 @@ const Services = () => {
               help businesses achieve their goals by providing tailored
               solutions, ensuring quality, and offering ongoing support.
             </p>
-            <button className={style.btn}>Read More </button>
+            <button className={style.btn} onClick={handleClick}>
+              Read More{" "}
+            </button>
           </div>
           <div className={style.service}>
             <img
@@ -105,7 +118,9 @@ const Services = () => {
               field is essential for creating custom applications that automate
               processes and improve efficiency.
             </p>
-            <button className={style.btn}>Read More </button>
+            <button className={style.btn} onClick={handleClick}>
+              Read More{" "}
+            </button>
           </div>
         </div>
 

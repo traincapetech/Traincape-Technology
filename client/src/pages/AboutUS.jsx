@@ -30,7 +30,7 @@ const AboutUS = () => {
         <h1>About Us</h1>
       </div>
       <div className={style.PdfDiv}>
-        <img src={traincapeInfo} alt="PDF IMAGE" />
+        <img src={traincapeInfo} alt="PDF IMAGE" className={style.pdfImg} />
         <div className={style.pdftext}>
           <div className={style.textpdf}>
             <h1>
@@ -85,7 +85,7 @@ const AboutUS = () => {
           <img src={childimg} alt="Child Image" />
         </div>
       </div>
-      <div className={style.ExpertContainer}>
+      {/* <div className={style.ExpertContainer}>
         <div className={style.ExpertTeam}>
           <div className={style.ExpertText}>
             <p> GREAT TEAM MEMBERS</p>
@@ -109,7 +109,7 @@ const AboutUS = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={style.Review}>
         <div className={style.ReviewDiv}>

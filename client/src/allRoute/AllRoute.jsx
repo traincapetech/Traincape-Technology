@@ -9,6 +9,10 @@ import FAQ from "../pages/FAQ";
 import Services from "../pages/Services";
 import TermsAndCondition from "../pages/TermsAndCondition";
 import Courses from "../pages/Courses";
+import Career from "../pages/Career/Career";
+import Policy from "../pages/Policy";
+import PageNotFound from "../pages/404/PageNotFound";
+import Blogs from "../pages/Blogs/Blogs";
 
 const AllRoute = () => {
   return (
@@ -22,6 +26,10 @@ const AllRoute = () => {
       <Route path="/our-services" element={<Services />} />
       <Route path="/Terms-and-Conditions" element={<TermsAndCondition />} />
       <Route path="/Courses-details" element={<Courses />} />
+      <Route path="/Career-details" element={<Career />} />
+      <Route path="/Our-Policies" element={<Policy />} />
+      <Route path="/Our-Blogs" element={<Blogs />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 };

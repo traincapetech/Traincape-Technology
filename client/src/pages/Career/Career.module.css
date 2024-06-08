@@ -1,0 +1,94 @@
+.container{
+    /* max-width: fit-content; */
+}
+
+.bannerIMG{
+    position: relative;
+    width: 100%;
+}
+.bannerimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.bannerText{
+    position: absolute;
+    top: 6%;
+    right: 50%;
+    max-width: 40%;
+    color: aliceblue;
+    font-family: poppins;
+    font-weight: bold;
+}
+.bannerText h1{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: poppins;
+    font-weight: bold;
+}
+.bannerText p{
+    color: aliceblue;
+    font-size: 23px;
+    font-family: poppins;
+    font-weight: bold;
+}
+.joinBtn{
+    color: antiquewhite;
+    background: blue;
+}
+.joinBtn:hover{
+    background: black;
+    color: aliceblue;
+    transition: 1.9s ease-in-out;
+}
+.benefits{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+.banefit{
+    display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.icon{
+    font-size: 50px;
+    color: aqua;
+}
+
+@media screen and (max-width: 900px) {
+    .bannerText{
+        position: absolute;
+        top: 4.5%;
+        right: 10%;
+        max-width: 100%;
+        color: aliceblue;
+        font-family: poppins;
+        font-weight: bold
+    }
+    .bannerText h1{
+        color: aliceblue;
+        font-size: 16px;
+        font-family: poppins;
+        font-weight: bold;
+    }
+    .bannerText p{
+        color: aliceblue;
+        font-size: 10px;
+        font-family: poppins;
+        font-weight: bold;
+    }
+    .joinBtn{
+        font-size: 10px;
+        color: antiquewhite;
+        background: blue;
+    }
+    .benefits{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+    }
+}

@@ -140,12 +140,14 @@ const Home = () => {
               <h4>Call Us: +(91) 6280281505</h4>
             </div>
           </div>
-          <button
-            className={style.herobtn}
-            onClick={() => navigate("/about-us")}
-          >
-            ABOUT US
-          </button>
+          <div className={style.btnDiv}>
+            <button
+              className={style.herobtn}
+              onClick={() => navigate("/about-us")}
+            >
+              ABOUT US
+            </button>
+          </div>
         </div>
       </div>
       <div className={style.heroDown}>
@@ -166,7 +168,12 @@ const Home = () => {
                 reliability, and innovation. The main types are IaaS, PaaS, and
                 SaaS.
               </p>
-              <button className={style.btn}>Read More </button>
+              <button
+                className={style.btn}
+                onClick={() => navigate("/Courses-details")}
+              >
+                Read More{" "}
+              </button>
             </div>
             <div className={style.service}>
               <img src={UI} alt="UI development" />
@@ -179,7 +186,12 @@ const Home = () => {
                 layers, creating intuitive interfaces. The job outlook is
                 positive, with competitive salaries.
               </p>
-              <button className={style.btn}>Read More </button>
+              <button
+                className={style.btn}
+                onClick={() => navigate("/Courses-details")}
+              >
+                Read More{" "}
+              </button>
             </div>
             <div className={style.service}>
               <img src={Digital} alt="Digital Marketing" />
@@ -192,7 +204,12 @@ const Home = () => {
                 cost-effectiveness, wider reach, measurability, adaptability,
                 and improved engagement.
               </p>
-              <button className={style.btn}>Read More </button>
+              <button
+                className={style.btn}
+                onClick={() => navigate("/Courses-details")}
+              >
+                Read More{" "}
+              </button>
             </div>
             <div className={style.service}>
               <img src={Web} alt="Web Development" />
@@ -206,7 +223,12 @@ const Home = () => {
                 content creation, testing, and maintenance. It is essential for
                 establishing an online presence effectively.
               </p>
-              <button className={style.btn}>Read More </button>
+              <button
+                className={style.btn}
+                onClick={() => navigate("/Courses-details")}
+              >
+                Read More{" "}
+              </button>
             </div>
             <div className={style.service}>
               <img src={Software} alt="Software services" />
@@ -218,7 +240,12 @@ const Home = () => {
                 help businesses achieve their goals by providing tailored
                 solutions, ensuring quality, and offering ongoing support.
               </p>
-              <button className={style.btn}>Read More </button>
+              <button
+                className={style.btn}
+                onClick={() => navigate("/Courses-details")}
+              >
+                Read More{" "}
+              </button>
             </div>
             <div className={style.service}>
               <img
@@ -234,7 +261,12 @@ const Home = () => {
                 field is essential for creating custom applications that
                 automate processes and improve efficiency.
               </p>
-              <button className={style.btn}>Read More </button>
+              <button
+                className={style.btn}
+                onClick={() => navigate("/Courses-details")}
+              >
+                Read More{" "}
+              </button>
             </div>
           </div>
 
@@ -277,7 +309,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={style.ExpertContainer}>
+      {/* <div className={style.ExpertContainer}>
         <div className={style.ExpertTeam}>
           <div className={style.ExpertText}>
             <p> GREAT TEAM MEMBERS</p>
@@ -301,7 +333,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={style.help}>
         <div className={style.ladyIMG}>
           <img src={lady} alt="Image of lady conversation" />
@@ -330,7 +362,7 @@ const Home = () => {
             interactive customer service before fully tested relationship
             parallel task high standards...
           </p>
-          <div className={style.lineDiv}>
+          {/* <div className={style.lineDiv}>
             <div className={style.line}>
               <h3>BUSINESS SECURITY</h3>
               <h4>65%</h4>
@@ -356,7 +388,7 @@ const Home = () => {
             <div className={style.divline}>
               <div className={style.sweetline}></div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={style.connectingImg}>
           <img src={connectingImg} alt="Connecting Image" />

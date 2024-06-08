@@ -41,8 +41,8 @@
 .courses{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+   place-items: center;
 }
 .course{
     /* border: 2px dashed red; */
