@@ -13,7 +13,14 @@ import Career from "../pages/Career/Career";
 import Policy from "../pages/Policy";
 import PageNotFound from "../pages/404/PageNotFound";
 import Blogs from "../pages/Blogs/Blogs";
-
+import MicrosoftSinglePage from "../SinglePage/microsoft/MicrosoftSinglePage";
+import CiscoSinglePage from "../SinglePage/Cisco/CiscoSinglePage";
+import AWSsinglePage from "../SinglePage/AWS/AWSsinglePage";
+import IIBAsinglePage from "../SinglePage/IIBA/IIBAsinglePage";
+import ScrumStudySinglePage from "../SinglePage/ScrumStudy/ScrumStudySinglePage";
+import PMIsinglePage from "../SinglePage/PMI/PMIsinglePage";
+import CompTIAsinglePage from "../SinglePage/CompTIA/CompTIAsinglePage";
+import OracleSinglePage from "../SinglePage/Oracle/OracleSinglePage";
 const AllRoute = () => {
   return (
     <Routes>
@@ -30,6 +37,17 @@ const AllRoute = () => {
       <Route path="/Our-Policies" element={<Policy />} />
       <Route path="/Our-Blogs" element={<Blogs />} />
       <Route path="*" element={<PageNotFound />} />
+      <Route path="/Microsoft-single-page" element={<MicrosoftSinglePage />} />
+      <Route path="/Cisco-single-page" element={<CiscoSinglePage />} />
+      <Route path="/AWS-single-page" element={<AWSsinglePage />} />
+      <Route path="/IIBA-single-page" element={<IIBAsinglePage />} />
+      <Route path="/PMI-single-page" element={<PMIsinglePage />} />
+      <Route path="/CompTIA-single-page" element={<CompTIAsinglePage />} />
+      <Route path="/Oracle-single-page" element={<OracleSinglePage />} />
+      <Route
+        path="/ScrumStudy-single-page"
+        element={<ScrumStudySinglePage />}
+      />
     </Routes>
   );
 };

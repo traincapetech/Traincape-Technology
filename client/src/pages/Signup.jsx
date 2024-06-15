@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import style from "../css/Signup.module.css";
+import signuppage from "../css/Signup.module.css";
 import { FaCircleUser } from "react-icons/fa6";
-import { RiLockPasswordFill } from "react-icons/ri";
+import { FaRegEyeSlash } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -31,11 +31,11 @@ const Signup = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={style.wrapperSignup}>
-      <div className={style.formBoxLogin}>
-        <form onSubmit={handleSubmit} className={style.singupForm}>
+    <div className={signuppage.wrapperSignup}>
+      <div className={signuppage.formBoxLogin}>
+        <form onSubmit={handleSubmit} className={signuppage.singupForm}>
           <h1>Signup</h1>
-          <div className={style.inputBox}>
+          <div className={signuppage.inputBox}>
             <input
               type="text"
               placeholder="Username"
@@ -43,9 +43,9 @@ const Signup = () => {
               required
               onChange={handleChange}
             />
-            <FaCircleUser className={style.icon} />
+            <FaCircleUser className={signuppage.icon} />
           </div>
-          <div className={style.inputBox}>
+          <div className={signuppage.inputBox}>
             <input
               type="email"
               placeholder="Email"
@@ -53,9 +53,9 @@ const Signup = () => {
               required
               onChange={handleChange}
             />
-            <MdEmail className={style.icon} />
+            <MdEmail className={signuppage.icon} />
           </div>
-          <div className={style.inputBox}>
+          <div className={signuppage.inputBox}>
             <input
               type="password"
               placeholder="Password"
@@ -63,9 +63,9 @@ const Signup = () => {
               required
               onChange={handleChange}
             />
-            <RiLockPasswordFill className={style.icon} />
+            <FaRegEyeSlash className={signuppage.icon} />
           </div>
-          <div className={style.RememberPassword}>
+          <div className={signuppage.RememberPassword}>
             <lable>
               <input type="checkbox" required />
               <span style={{ position: "relative", top: "-6px" }}>
@@ -75,7 +75,7 @@ const Signup = () => {
           </div>
           <button type="submit">Register</button>
 
-          <div className={style.registerLink}>
+          <div className={signuppage.registerLink}>
             <p>
               Already have an account? <a href="/login">Login here</a>
             </p>

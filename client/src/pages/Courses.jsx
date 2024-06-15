@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import style from "../css/Courses.module.css";
+import { useNavigate } from "react-router-dom";
+import courses from "../css/Courses.module.css";
 import microsoft from "../assets/microsoft.jpg";
 import Vmware from "../assets/VMware.webp";
 import cisco from "../assets/cisco.jpg";
@@ -21,185 +22,255 @@ import csa from "../assets/CSA.png";
 import officeTraining from "../assets/Offsec training.jpg";
 
 const Courses = () => {
+  const navigate = useNavigate();
+  // const btnText = "COMING SOON";
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const handleAlert = () => {
+    alert(
+      "Thank you for visiting! We're sorry, but at this time we are unable to add the selected course. However, please be assured that we will add it as soon as possible. We appreciate your understanding and look forward to serving you in the future."
+    );
+  };
+
   return (
-    <div className={style.cloudContainer}>
-      <div className={style.cloudBanner}>
+    <div className={courses.cloudContainer}>
+      <div className={courses.cloudBanner}>
         <h1>Courses</h1>
-        <div className={style.underline}></div>
+        <div className={courses.underline}></div>
       </div>
-      <div className={style.bannerDown}>
+      <div className={courses.bannerDown}>
         <h1>Explore Our Courses</h1>
       </div>
-      <div className={style.courses}>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
+      <div className={courses.courses}>
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
             <img src={microsoft} alt="MicroSoft" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>Microsoft</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/Microsoft-single-page")}
+            >
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={aws} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={aws} alt="AWS" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>AWS</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/AWS-single-page")}
+            >
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={Vmware} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={Vmware} alt="VMware" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>Vmware</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={cisco} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={cisco} alt="Cisco" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>CISCO</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/Cisco-single-page")}
+            >
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={oracle} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={oracle} alt="oracle" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>Oracle</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={()=> navigate("/Oracle-single-page")}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={EcCouncil} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={EcCouncil} alt="EcConcil" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>EC-Council</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={axelos} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={axelos} alt="Axelos" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>AXELOS</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={isaca} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={isaca} alt="ISACA" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>ISACA</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={pmi} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={pmi} alt="PMI-Image" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>PMI</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/PMI-single-page")}
+            >
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={comptia} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={comptia} alt="COMPTIA" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>CompTIA</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/CompTIA-single-page")}
+            >
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={pecb} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={pecb} alt="PECB" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>PECB</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={istqb} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={istqb} alt="ISTQB" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>ISTQB</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={iiba} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={iiba} alt="IIBA" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>IIBA</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/IIBA-single-page")}
+            >
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={scrumStudy} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={scrumStudy} alt="ScrumStudy" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>SCRUMstudy</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/ScrumStudy-single-page")}
+            >
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={suse} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={suse} alt="SUse" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>SUSE</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
-        <div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={theopenGroup} alt="MicroSoft" />
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={theopenGroup} alt="TheOpenGroup" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>The Open Group</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
-        </div><div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={apmg} alt="MicroSoft" />
+        </div>
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={apmg} alt="APMG" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>APMG</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
-        </div><div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={csa} alt="MicroSoft" />
+        </div>
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={csa} alt="CSA" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>Cloud Security Alliance</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
-        </div><div className={style.course}>
-          <div className={style.CourseImg}>
-            <img src={officeTraining} alt="MicroSoft" />
+        </div>
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={officeTraining} alt="OfficeTraining" />
           </div>
-          <div className={style.CourseText}>
+          <div className={courses.CourseText}>
             <h1>OffSec Training</h1>
-            <button className={style.courseBtn}>Know More</button>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
           </div>
         </div>
       </div>

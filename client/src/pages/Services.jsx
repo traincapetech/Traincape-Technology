@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import style from "../css/Services.module.css";
+import servicepage from "../css/Services.module.css";
 import banner from "../assets/servicesBanner.svg";
 import cloud from "../assets/Cloud-services.svg";
 import UI from "../assets/UI-development.svg";
@@ -23,13 +23,13 @@ const Services = () => {
     navigate("/Courses-details");
   };
   return (
-    <div className={style.container}>
-      <div className={style.banner}>
+    <div className={servicepage.container}>
+      <div className={servicepage.banner}>
         <img src={banner} alt="Banner" />
       </div>
-      <div className={style.services}>
-        <div className={style.subSerices}>
-          <div className={style.service}>
+      <div className={servicepage.services}>
+        <div className={servicepage.subSerices}>
+          <div className={servicepage.service}>
             <img src={cloud} alt="Cloud services" />
             <h1>Cloud Services</h1>
             <p>
@@ -40,11 +40,11 @@ const Services = () => {
               reliability, and innovation. The main types are IaaS, PaaS, and
               SaaS.
             </p>
-            <button className={style.btn} onClick={handleClick}>
+            <button className={servicepage.btn} onClick={handleClick}>
               Read More{" "}
             </button>
           </div>
-          <div className={style.service}>
+          <div className={servicepage.service}>
             <img src={UI} alt="UI development" />
             <h1>UI Development</h1>
             <p>
@@ -55,11 +55,11 @@ const Services = () => {
               layers, creating intuitive interfaces. The job outlook is
               positive, with competitive salaries.
             </p>
-            <button className={style.btn} onClick={handleClick}>
+            <button className={servicepage.btn} onClick={handleClick}>
               Read More{" "}
             </button>
           </div>
-          <div className={style.service}>
+          <div className={servicepage.service}>
             <img src={Digital} alt="Digital Marketing" />
             <h1>Digital Marketing</h1>
             <p>
@@ -70,11 +70,11 @@ const Services = () => {
               cost-effectiveness, wider reach, measurability, adaptability, and
               improved engagement.
             </p>
-            <button className={style.btn} onClick={handleClick}>
+            <button className={servicepage.btn} onClick={handleClick}>
               Read More{" "}
             </button>
           </div>
-          <div className={style.service}>
+          <div className={servicepage.service}>
             <img src={Web} alt="Web Development" />
             <h1>Web Development</h1>
             <p>
@@ -86,11 +86,11 @@ const Services = () => {
               testing, and maintenance. It is essential for establishing an
               online presence effectively.
             </p>
-            <button className={style.btn} onClick={handleClick}>
+            <button className={servicepage.btn} onClick={handleClick}>
               Read More{" "}
             </button>
           </div>
-          <div className={style.service}>
+          <div className={servicepage.service}>
             <img src={Software} alt="Software services" />
             <h1>Software Services</h1>
             <p>
@@ -100,11 +100,11 @@ const Services = () => {
               help businesses achieve their goals by providing tailored
               solutions, ensuring quality, and offering ongoing support.
             </p>
-            <button className={style.btn} onClick={handleClick}>
+            <button className={servicepage.btn} onClick={handleClick}>
               Read More{" "}
             </button>
           </div>
-          <div className={style.service}>
+          <div className={servicepage.service}>
             <img
               src={softwareDevelopment}
               alt="Software Development Learnings"
@@ -118,55 +118,54 @@ const Services = () => {
               field is essential for creating custom applications that automate
               processes and improve efficiency.
             </p>
-            <button className={style.btn} onClick={handleClick}>
+            <button className={servicepage.btn} onClick={handleClick}>
               Read More{" "}
             </button>
           </div>
         </div>
-
-        <div className={style.consult}>
-          <img src={Consult} className={style.img} alt="Consult Image" />
-          <div className={style.consultdiv}>
-            <div className={style.consultText}>
-              <p
-                style={{
-                  fontSize: "15px",
-                  fontFamily: "poppins",
-                  color: "rgb(223, 210, 210)",
-                  fontWeight: "lighter",
-                  textAlign: "center",
-                }}
-              >
-                We are here to answer your questions 24/7
-              </p>
-              <h1
-                style={{
-                  fontSize: "40px",
-                  fontFamily: "poppins",
-                  color: "rgb(223, 210, 210)",
-                  fontWeight: "bold",
-                  textAlign: "center",
-                }}
-              >
-                Need A Consultation?
-              </h1>
-            </div>
-            <div className={style.consultbtn}>
-              <button
-                className={style.btn2}
-                onClick={() => navigate("/contact-us")}
-              >
-                GET A CONSULTATION
-              </button>
-            </div>
+      </div>
+      <div className={servicepage.consult}>
+        <img src={Consult} className={servicepage.img} alt="Consult Image" />
+        <div className={servicepage.consultdiv}>
+          <div className={servicepage.consultText}>
+            <p
+              style={{
+                fontSize: "15px",
+                fontFamily: "poppins",
+                color: "rgb(223, 210, 210)",
+                fontWeight: "lighter",
+                textAlign: "center",
+              }}
+            >
+              We are here to answer your questions 24/7
+            </p>
+            <h1
+              style={{
+                fontSize: "40px",
+                fontFamily: "poppins",
+                color: "rgb(223, 210, 210)",
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              Need A Consultation?
+            </h1>
+          </div>
+          <div className={servicepage.consultbtn}>
+            <button
+              className={servicepage.btn2}
+              onClick={() => navigate("/contact-us")}
+            >
+              GET A CONSULTATION
+            </button>
           </div>
         </div>
       </div>
-      <div className={style.specializationContainer}>
-        <div className={style.specializationDiv}>
+      <div className={servicepage.specializationContainer}>
+        <div className={servicepage.specializationDiv}>
           <h3>WHAT WE DO FOR YOU</h3>
           <h2>Our Specialization</h2>
-          <div className={style.specialization}>
+          <div className={servicepage.specialization}>
             <div>
               <img src={project} alt="" />
               <h1>Project Planning</h1>
@@ -178,7 +177,7 @@ const Services = () => {
             </div>
 
             <div>
-              <img src={arrow} className={style.arrow} alt="" />
+              <img src={arrow} className={servicepage.arrow} alt="" />
             </div>
 
             <div>
@@ -192,7 +191,7 @@ const Services = () => {
               </p>
             </div>
             <div>
-              <img src={arrow} className={style.arrow} alt="" />
+              <img src={arrow} className={servicepage.arrow} alt="" />
             </div>
 
             <div>

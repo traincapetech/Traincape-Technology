@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import style from "../css/Home.module.css";
+import home from "../css/Home.module.css";
 import BannerImage from "../assets/hero-1-2.jpg.svg";
 import develop from "../assets/Development-Service.svg";
 import market from "../assets/Marketing-services.svg";
@@ -49,25 +49,25 @@ const Home = () => {
   }, []);
   const navigate = useNavigate();
   return (
-    <div className={style.container}>
-      <div className={style.banner}>
-        <div className={style.bannerImg}>
+    <div className={home.container}>
+      <div className={home.banner}>
+        <div className={home.bannerImg}>
           <img src={BannerImage} alt="Banner" />
         </div>
-        <div className={style.bannerText}>
+        <div className={home.bannerText}>
           <h1>TOP IT</h1>
           <h1>SUPPORT & MANAGEMENT</h1>
           <p>
-            Professionally repurpose intuitive total linkage after timely
-            mindshare. Credibly coordinate reliable collaboration and
-            idea-sharing after turnkey catalysts for change.
+            Discover top-tier IT support and management services designed to
+            streamline your technology operations. our expert team is dedicated
+            to providing efficient and effective solutions for your IT needs.
           </p>
           <button onClick={() => navigate("/about-us")}>ABOUT US</button>
         </div>
       </div>
-      <div className={style.bannerImageDown}>
-        <div className={style.servicediv}>
-          <div className={style.imagediv}>
+      <div className={home.bannerImageDown}>
+        <div className={home.servicediv}>
+          <div className={home.imagediv}>
             <img src={develop} alt="Development Services" />
           </div>
           <h1>Cloud Computing</h1>
@@ -78,14 +78,14 @@ const Home = () => {
             intelligence on-demand.
           </p>
           <button
-            className={style.readbtn}
+            className={home.readbtn}
             onClick={() => navigate("/Courses-details")}
           >
             Read More
           </button>
         </div>
-        <div className={style.servicediv}>
-          <div className={style.imagediv}>
+        <div className={home.servicediv}>
+          <div className={home.imagediv}>
             <img src={market} alt="Marketing Services" />
           </div>
           <h1>Cyber Security</h1>
@@ -95,14 +95,14 @@ const Home = () => {
             and respond to threats such as malware, hacking, and data breaches.
           </p>
           <button
-            className={style.readbtn}
+            className={home.readbtn}
             onClick={() => navigate("/Courses-details")}
           >
             Read More
           </button>
         </div>
-        <div className={style.servicediv}>
-          <div className={style.imagediv}>
+        <div className={home.servicediv}>
+          <div className={home.imagediv}>
             <img src={consult} alt="Consulting Services" />
           </div>
           <h1>Project Management</h1>
@@ -113,18 +113,18 @@ const Home = () => {
             of a project team.
           </p>
           <button
-            className={style.readbtn}
+            className={home.readbtn}
             onClick={() => navigate("/Courses-details")}
           >
             Read More
           </button>
         </div>
       </div>
-      <div className={style.hero}>
-        <div className={style.heroImg}>
+      <div className={home.hero}>
+        <div className={home.heroImg}>
           <img src={hero} alt="Hero Image" />
         </div>
-        <div className={style.heroText}>
+        <div className={home.heroText}>
           <h3>GET BEST IT SOLUTIONS 2022</h3>
           <h1>TRUST OUR BEST IT SOLUTIONS FOR YOUR BUSINESS</h1>
           <p>
@@ -133,16 +133,16 @@ const Home = () => {
             Assertively benchmark visionary quality vectors after covalent
             e-tailers. Intrinsicly enhance 24/7 users and supply process
           </p>
-          <div className={style.call}>
+          <div className={home.call}>
             <img src={call} alt="Calling Image" />
             <div>
               <p>24 HOURS SERVICE AVAILABLE</p>
               <h4>Call Us: +(91) 6280281505</h4>
             </div>
           </div>
-          <div className={style.btnDiv}>
+          <div className={home.btnDiv}>
             <button
-              className={style.herobtn}
+              className={home.herobtn}
               onClick={() => navigate("/about-us")}
             >
               ABOUT US
@@ -150,14 +150,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={style.heroDown}>
+      <div className={home.heroDown}>
         <p>OUR LATEST SERVICES</p>
         <h1>
           WHAT KIND OF SERVICES <br /> WE ARE OFFERING
         </h1>
-        <div className={style.services}>
-          <div className={style.subSerices}>
-            <div className={style.service}>
+        <div className={home.services}>
+          <div className={home.subSerices}>
+            <div className={home.service}>
               <img src={cloud} alt="Cloud services" />
               <h2>Cloud Services</h2>
               <p>
@@ -169,13 +169,13 @@ const Home = () => {
                 SaaS.
               </p>
               <button
-                className={style.btn}
+                className={home.btn}
                 onClick={() => navigate("/Courses-details")}
               >
                 Read More{" "}
               </button>
             </div>
-            <div className={style.service}>
+            <div className={home.service}>
               <img src={UI} alt="UI development" />
               <h2>UI Development</h2>
               <p>
@@ -187,13 +187,13 @@ const Home = () => {
                 positive, with competitive salaries.
               </p>
               <button
-                className={style.btn}
+                className={home.btn}
                 onClick={() => navigate("/Courses-details")}
               >
                 Read More{" "}
               </button>
             </div>
-            <div className={style.service}>
+            <div className={home.service}>
               <img src={Digital} alt="Digital Marketing" />
               <h2>Digital Marketing</h2>
               <p>
@@ -205,13 +205,13 @@ const Home = () => {
                 and improved engagement.
               </p>
               <button
-                className={style.btn}
+                className={home.btn}
                 onClick={() => navigate("/Courses-details")}
               >
                 Read More{" "}
               </button>
             </div>
-            <div className={style.service}>
+            <div className={home.service}>
               <img src={Web} alt="Web Development" />
               <h2>Web Development</h2>
               <p>
@@ -224,13 +224,13 @@ const Home = () => {
                 establishing an online presence effectively.
               </p>
               <button
-                className={style.btn}
+                className={home.btn}
                 onClick={() => navigate("/Courses-details")}
               >
                 Read More{" "}
               </button>
             </div>
-            <div className={style.service}>
+            <div className={home.service}>
               <img src={Software} alt="Software services" />
               <h2>Software Services</h2>
               <p>
@@ -241,13 +241,13 @@ const Home = () => {
                 solutions, ensuring quality, and offering ongoing support.
               </p>
               <button
-                className={style.btn}
+                className={home.btn}
                 onClick={() => navigate("/Courses-details")}
               >
                 Read More{" "}
               </button>
             </div>
-            <div className={style.service}>
+            <div className={home.service}>
               <img
                 src={softwareDevelopment}
                 alt="Software Development Learnings"
@@ -262,7 +262,7 @@ const Home = () => {
                 automate processes and improve efficiency.
               </p>
               <button
-                className={style.btn}
+                className={home.btn}
                 onClick={() => navigate("/Courses-details")}
               >
                 Read More{" "}
@@ -270,10 +270,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={style.consult}>
-            <img src={Consult} className={style.img} alt="Consult Image" />
-            <div className={style.consultdiv}>
-              <div className={style.consultText}>
+          <div className={home.consult}>
+            <img src={Consult} className={home.img} alt="Consult Image" />
+            <div className={home.consultdiv}>
+              <div className={home.consultText}>
                 <p
                   style={{
                     fontSize: "15px",
@@ -297,9 +297,9 @@ const Home = () => {
                   Need A Consultation?
                 </h1>
               </div>
-              <div className={style.consultbtn}>
+              <div className={home.consultbtn}>
                 <button
-                  className={style.btn2}
+                  className={home.btn2}
                   onClick={() => navigate("/contact-us")}
                 >
                   GET A CONSULTATION
@@ -309,24 +309,24 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className={style.ExpertContainer}>
-        <div className={style.ExpertTeam}>
-          <div className={style.ExpertText}>
+      {/* <div className={home.ExpertContainer}>
+        <div className={home.ExpertTeam}>
+          <div className={home.ExpertText}>
             <p> GREAT TEAM MEMBERS</p>
             <h1>We Have Expert Team</h1>
           </div>
-          <div className={style.ExpertMembers}>
-            <div className={style.member}>
+          <div className={home.ExpertMembers}>
+            <div className={home.member}>
               <img src={memberImg} alt="Member Images" />
               <h1>Parichay Singh Rana</h1>
               <p>CEO</p>
             </div>
-            <div className={style.member}>
+            <div className={home.member}>
               <img src={RokeySir} alt="Member Images" />
               <h1>Shivam Singh</h1>
               <p>Manager</p>
             </div>
-            <div className={style.member}>
+            <div className={home.member}>
               <img src={memberImg} alt="Member Images" />
               <h1>Parichay Singh Rana</h1>
               <p>CEO</p>
@@ -334,12 +334,12 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      <div className={style.help}>
-        <div className={style.ladyIMG}>
+      <div className={home.help}>
+        <div className={home.ladyIMG}>
           <img src={lady} alt="Image of lady conversation" />
         </div>
-        <div className={style.helpText}>
-          <div className={style.helpTextDiv}>
+        <div className={home.helpText}>
+          <div className={home.helpTextDiv}>
             <p>TALK ABOUT SOMETHING</p>
             <h1>HOW CAN WE HELP YOU?</h1>
             {questionsAndAnswers.map((item) => {
@@ -352,8 +352,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={style.connecting}>
-        <div className={style.ConnectingText}>
+      <div className={home.connecting}>
+        <div className={home.ConnectingText}>
           <h2>THE GREAT COMPANY SKILL</h2>
           <h1>CONNECTING PEOPLE AND BUILD TECHNOLOGY</h1>
           <p>
@@ -362,35 +362,35 @@ const Home = () => {
             interactive customer service before fully tested relationship
             parallel task high standards...
           </p>
-          {/* <div className={style.lineDiv}>
-            <div className={style.line}>
+          {/* <div className={home.lineDiv}>
+            <div className={home.line}>
               <h3>BUSINESS SECURITY</h3>
               <h4>65%</h4>
             </div>
-            <div className={style.divline}>
-              <div className={style.sweetline}></div>
+            <div className={home.divline}>
+              <div className={home.sweetline}></div>
             </div>
           </div>
-          <div className={style.lineDiv}>
-            <div className={style.line}>
+          <div className={home.lineDiv}>
+            <div className={home.line}>
               <h3>BUSINESS SECURITY</h3>
               <h4>65%</h4>
             </div>
-            <div className={style.divline}>
-              <div className={style.sweetline}></div>
+            <div className={home.divline}>
+              <div className={home.sweetline}></div>
             </div>
           </div>
-          <div className={style.lineDiv}>
-            <div className={style.line}>
+          <div className={home.lineDiv}>
+            <div className={home.line}>
               <h3>BUSINESS SECURITY</h3>
               <h4>65%</h4>
             </div>
-            <div className={style.divline}>
-              <div className={style.sweetline}></div>
+            <div className={home.divline}>
+              <div className={home.sweetline}></div>
             </div>
           </div> */}
         </div>
-        <div className={style.connectingImg}>
+        <div className={home.connectingImg}>
           <img src={connectingImg} alt="Connecting Image" />
         </div>
       </div>

@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
-import style from "../css/TermsAndConditions.module.css";
+import terms from "../css/TermsAndConditions.module.css";
 
 const TermsAndCondition = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={style.container}>
-      <div className={style.wrapper}>
-        <h1 className={style.heading}>Terms and Conditions</h1>
-        <p className={style.paragraph}>
-          <h2 className={style.heading}>RETURNS</h2>
+    <div className={terms.container}>
+      <div className={terms.wrapper}>
+        <h1 className={terms.heading}>Terms and Conditions</h1>
+        <p className={terms.paragraph}>
+          <h2 className={terms.heading}>RETURNS</h2>
           Traincape Technology provides certificates for various courses,
           including PMP, Azure, and many more. These courses are designed to
           ensure that working professionals can attend and complete them within
@@ -28,14 +28,14 @@ const TermsAndCondition = () => {
           not be accepted and no refund will be provided. Refunds will be
           processed within 10 working days after the refund request is approved.
         </p>
-        <h2 className={style.heading}>Exchanges</h2>
-        <p className={style.paragraph}>
+        <h2 className={terms.heading}>Exchanges</h2>
+        <p className={terms.paragraph}>
           The fastest way to ensure you get what you want is to return the
           course you have, and once the return is accepted, make a separate
           purchase for the new item.
         </p>
-        <h2 className={style.heading}>Refunds</h2>
-        <p className={style.paragraph}>
+        <h2 className={terms.heading}>Refunds</h2>
+        <p className={terms.paragraph}>
           Once we receive and inspect your return, we will notify you regarding
           the status of your refund. If approved, your refund will be processed
           automatically on your original payment method within 10 business days.

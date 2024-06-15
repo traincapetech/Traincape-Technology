@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import style from "../css/ContactUs.module.css";
+import contactus from "../css/ContactUs.module.css";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { GrLocation } from "react-icons/gr";
 import { RiTeamLine } from "react-icons/ri";
@@ -60,60 +60,60 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className={style.container}>
-      <div className={style.banner}>
+    <div className={contactus.container}>
+      <div className={contactus.banner}>
         <img src={banner} alt="IMG" />
         <h1>Contact Us</h1>
       </div>
-      <div className={style.OfficeAdress}>
-        <div className={style.OfficeDetails}>
+      <div className={contactus.OfficeAdress}>
+        <div className={contactus.OfficeDetails}>
           <h1>Delhi Office Address</h1>
           <p>
             Khandolia Plaza, 118\C, Dabri - Palam Rd, Vaishali Colony, Dashrath
             Puri, New Delhi, Delhi, 110045
           </p>
-          <div className={style.addressdiv}>
-            <div className={style.iconDiv}>
-              <HiDevicePhoneMobile className={style.icon} />
-              <IoMailOutline className={style.icon} />
+          <div className={contactus.addressdiv}>
+            <div className={contactus.iconDiv}>
+              <HiDevicePhoneMobile className={contactus.icon} />
+              <IoMailOutline className={contactus.icon} />
             </div>
-            <div className={style.textdiv}>
+            <div className={contactus.textdiv}>
               <h2>Phone Number & Email</h2>
               <p>+91 6280281505</p>
               <p>sales@traincapetech.info</p>
             </div>
           </div>
-          <div className={style.underlinediv}></div>
-          <div className={style.addressdiv}>
-            <div className={style.iconDiv}>
-              <GrLocation className={style.icon} />
+          <div className={contactus.underlinediv}></div>
+          <div className={contactus.addressdiv}>
+            <div className={contactus.iconDiv}>
+              <GrLocation className={contactus.icon} />
             </div>
-            <div className={style.textdiv}>
+            <div className={contactus.textdiv}>
               <h2>Our Office Address</h2>
               <p>118/C, Dabri - Palam Rd, Vaishali colony, Dashrath Puri,</p>
             </div>
           </div>
-          <div className={style.underlinediv}></div>
-          <div className={style.addressdiv}>
-            <div className={style.iconDiv}>
-              <RiTeamLine className={style.icon} />
+          <div className={contactus.underlinediv}></div>
+          <div className={contactus.addressdiv}>
+            <div className={contactus.iconDiv}>
+              <RiTeamLine className={contactus.icon} />
             </div>
-            <div className={style.textdiv}>
+            <div className={contactus.textdiv}>
               <h2>Office Work Time</h2>
               <p>Mon - Sat : 11am - 7pm</p>
             </div>
           </div>
         </div>
-        <div className={style.officeMail}>
+        <div className={contactus.officeMail}>
           <h1>Leave A Message</h1>
           <p>We're Ready To Help You</p>
-          <div className={style.NameAndEmail}>
+          <div className={contactus.NameAndEmail}>
             <br />
             <input
               type="text"
               name="name"
               value={payoload.name}
-              className={style.inputbox}
+              className={contactus.inputbox}
               placeholder="Your Name"
               required
               onChange={handleChange}
@@ -123,7 +123,7 @@ const ContactUs = () => {
               type="email"
               name="email"
               value={payoload.email}
-              className={style.inputbox}
+              className={contactus.inputbox}
               placeholder="Your Email"
               required
               onChange={handleChange}
@@ -134,18 +134,18 @@ const ContactUs = () => {
             type="number"
             name="phoneNumber"
             value={payoload.phoneNumber}
-            className={style.inputbox}
+            className={contactus.inputbox}
             placeholder="Whatsapp Number"
             required
             onChange={handleChange}
           />
           <select
             name="subject"
-            id={style.select}
+            id={contactus.select}
             required
             onChange={handleChange}
           >
-            <option value="select course">Select Course</option>
+            <option value="select course">Select Service</option>
             <option value="Cloud Computing">Cloud Computing</option>
             <option value="Cyber Security">Cyber Security</option>
             <option value="Project Management">Project Management</option>
@@ -154,18 +154,18 @@ const ContactUs = () => {
           <br />
           <textarea
             name="message"
-            className={style.textarea}
+            className={contactus.textarea}
             cols="30"
             rows="10"
             placeholder="Your Message"
             onChange={handleChange}
           ></textarea>
-          <button className={style.contactBtn} onClick={handleSubmit}>
+          <button className={contactus.contactBtn} onClick={handleSubmit}>
             Send Message
           </button>
         </div>
       </div>
-      <div className={style.contactMap}>
+      <div className={contactus.contactMap}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.744145964281!2d77.07744151353839!3d28.607451408196102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05ecdc6529c1%3A0x7419fbbcac72b568!2sTraincape%20technology%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1717065345903!5m2!1sen!2sin"
           allowFullScreen=""

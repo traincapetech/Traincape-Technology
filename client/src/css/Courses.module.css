@@ -39,23 +39,32 @@
 }
 
 .courses{
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    width: 100%;
+    grid-template-columns: repeat(4,23%);
+    justify-content: space-between;
+    align-items: stretch;
    place-items: center;
+   row-gap: 15px;
+   margin-bottom: 30px;
 }
 .course{
     /* border: 2px dashed red; */
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    gap: 15px;
-    padding: 15px;
+    /* border: 2px dashed red; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:30px 15px;
 }
 .course img{
-    width: 100x;
-    height: 100px;
+    width: 100%;
+    height: 150px;
+    display: block;
     object-fit: cover;
 }
 .course h1{
@@ -63,21 +72,19 @@
     font-family: poppins;
     color: rgb(0, 0, 0);
 }
-.CourseText{
-    margin-top: -40px;
-}
 
 .courseBtn{
-    width: 120px;
-    height: 50px;
-    background: rgb(86, 207, 195);
-    color: blue;
+    width: 115px;
+    height: 40px;
+    background: #80669d;
+    color: rgb(254, 254, 255);
     cursor: pointer;
     padding: 2px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: poppins;
     font-weight: lighter; 
+    border: none;
 }
 
 .courseBtn:hover{
@@ -87,3 +94,43 @@
     transition: all 1.9s ease;
 }
 
+@media screen and (max-width: 1250px) {
+    .courses{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3,30%);
+        justify-content: space-between;
+        align-items: stretch;
+       place-items: center;
+       row-gap: 15px;
+       margin-bottom: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .courses{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,47%);
+        justify-content: space-between;
+        align-items: stretch;
+       place-items: center;
+       row-gap: 15px;
+       margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .courses{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,99%);
+        justify-content: space-between;
+        align-items: stretch;
+       place-items: center;
+       row-gap: 15px;
+       margin-bottom: 30px;
+    }
+}

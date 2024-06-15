@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import style from "../css/AboutUS.module.css";
+import aboutus from "../css/AboutUS.module.css";
 import banner from "../assets/about-us-Bg.jpg";
 import { SiAmazonsimpleemailservice } from "react-icons/si";
 import { SiEsotericsoftware } from "react-icons/si";
@@ -12,6 +12,7 @@ import Consult from "../assets/smallImg.jpeg";
 import { useNavigate } from "react-router-dom";
 import jasveer from "../assets/jasveergill.png";
 import traincapeInfo from "../assets/Traincape-info.jpg";
+import review from "../assets/Feedback Gif.gif";
 
 const AboutUS = () => {
   const navigate = useNavigate();
@@ -24,15 +25,15 @@ const AboutUS = () => {
     window.open(pdfUrl);
   };
   return (
-    <div className={style.container}>
-      <div className={style.banner}>
+    <div className={aboutus.container}>
+      <div className={aboutus.banner}>
         {/* <img src={banner} alt="Default image" /> */}
         <h1>About Us</h1>
       </div>
-      <div className={style.PdfDiv}>
-        <img src={traincapeInfo} alt="PDF IMAGE" className={style.pdfImg} />
-        <div className={style.pdftext}>
-          <div className={style.textpdf}>
+      <div className={aboutus.PdfDiv}>
+        <img src={traincapeInfo} alt="PDF IMAGE" className={aboutus.pdfImg} />
+        <div className={aboutus.pdftext}>
+          <div className={aboutus.textpdf}>
             <h1>
               Traincape Technology Pvt Ltd was founded in 2021 by Parichay Singh
               Rana with a vision to revolutionize the way businesses approach
@@ -47,14 +48,14 @@ const AboutUS = () => {
               ability to understand our clients' business goals and develop
               solutions that align with their objectives.
             </h1>
-            <button className={style.pdfDownloadBtn} onClick={handlePdf}>
+            <button className={aboutus.pdfDownloadBtn} onClick={handlePdf}>
               Download Our Presentation
             </button>
           </div>
         </div>
       </div>
-      <div className={style.parent}>
-        <div className={style.child1}>
+      <div className={aboutus.parent}>
+        <div className={aboutus.child1}>
           <h4>Get Best IT Solutiion 2022</h4>
           <h1>Inspiring Tech Needs For Bussiness</h1>
           <p>
@@ -64,45 +65,45 @@ const AboutUS = () => {
             a company that could provide tailored, reliable, and cutting-edge
             tech solutions.
           </p>
-          <div className={style.childdiv}>
-            <div className={style.call}>
-              <div className={style.icondiv}>
-                <MdCall className={style.icon} />
+          <div className={aboutus.childdiv}>
+            <div className={aboutus.call}>
+              <div className={aboutus.icondiv}>
+                <MdCall className={aboutus.icon} />
               </div>
               <div>
                 <h2>Call To Ask Any Query</h2>
                 <h1>+91 6280281505</h1>
               </div>
             </div>
-            <div className={style.border}></div>
-            <div className={style.founder}>
+            <div className={aboutus.border}></div>
+            <div className={aboutus.founder}>
               <p>Founder & CEO</p>
               <h3>Parichay Singh Rana</h3>
             </div>
           </div>
         </div>
-        <div className={style.child2}>
+        <div className={aboutus.child2}>
           <img src={childimg} alt="Child Image" />
         </div>
       </div>
-      {/* <div className={style.ExpertContainer}>
-        <div className={style.ExpertTeam}>
-          <div className={style.ExpertText}>
+      {/* <div className={aboutus.ExpertContainer}>
+        <div className={aboutus.ExpertTeam}>
+          <div className={aboutus.ExpertText}>
             <p> GREAT TEAM MEMBERS</p>
             <h1>We Have Expert Team</h1>
           </div>
-          <div className={style.ExpertMembers}>
-            <div className={style.member}>
+          <div className={aboutus.ExpertMembers}>
+            <div className={aboutus.member}>
               <img src={memberImg} alt="Member Images" />
               <h1>Parichay Singh Rana</h1>
               <p>CEO</p>
             </div>
-            <div className={style.member}>
+            <div className={aboutus.member}>
               <img src={RokeySir} alt="Member Images" />
               <h1>Shivam Singh</h1>
               <p>Manager</p>
             </div>
-            <div className={style.member}>
+            <div className={aboutus.member}>
               <img src={memberImg} alt="Member Images" />
               <h1>Parichay Singh Rana</h1>
               <p>CEO</p>
@@ -111,19 +112,19 @@ const AboutUS = () => {
         </div>
       </div> */}
 
-      <div className={style.Review}>
-        <div className={style.ReviewDiv}>
-          <div className={style.Quote}>
+      <div className={aboutus.Review}>
+        <div className={aboutus.ReviewDiv}>
+          <div className={aboutus.Quote}>
             <p>OUR BEST REVIEWS</p>
             <h1>Inspiring Tech Needs For Business</h1>
           </div>
-          <div className={style.vdobtn}>
-            <button className={style.btn1}>WATCH VIDEO</button>
+          <div className={aboutus.vdobtn}>
+            <button className={aboutus.btn1}>WATCH VIDEO</button>
           </div>
         </div>
-        <div className={style.ReviewPersonDiv}>
-          <div className={style.Reviewdiv1}>
-            <div className={style.ReviewPerson}>
+        <div className={aboutus.ReviewPersonDiv}>
+          <div className={aboutus.Reviewdiv1}>
+            <div className={aboutus.ReviewPerson}>
               <img
                 src="https://lh3.googleusercontent.com/a/ACg8ocI9VN6rcL2ZiH4q_UjppPI_CwuPobfiO3NOzKzXTVx0GDydug=w75-h75-p-rp-mo-br100"
                 alt="IMage"
@@ -137,8 +138,8 @@ const AboutUS = () => {
             <h1>DA BRO's</h1>
             <h2>IT Customer</h2>
           </div>
-          <div className={style.Reviewdiv1}>
-            <div className={style.ReviewPerson}>
+          <div className={aboutus.Reviewdiv1}>
+            <div className={aboutus.ReviewPerson}>
               <img src={jasveer} alt="IMage" />
               <p>
                 I did my azure training and certification from Traincape
@@ -151,22 +152,41 @@ const AboutUS = () => {
           </div>
         </div>
       </div>
+      <div className={aboutus.Postreview}>
+        <div className={aboutus.PostReviewText}>
+          <h1>
+            Traincape technology Pvt Ltd would love your feedback. Post a review
+            to our profile.{" "}
+          </h1>
+          <button
+            className={aboutus.reviewBTN}
+            onClick={() =>
+              window.open("https://g.page/r/CWi1cqy8-xl0EBE/review")
+            }
+          >
+            Post A Review
+          </button>
+        </div>
+        <div className={aboutus.reviewGif}>
+          <img src={review} alt="Feedback GIF" />
+        </div>
+      </div>
 
-      <div className={style.consult}>
+      <div className={aboutus.consult}>
         <img
           src={Consult}
-          className={style.img}
+          className={aboutus.img}
           alt="Consult Image"
           style={{ backgroundSize: "cover" }}
         />
-        <div className={style.consultdiv}>
-          <div className={style.consultText}>
+        <div className={aboutus.consultdiv}>
+          <div className={aboutus.consultText}>
             <p>We are here to answer your questions 24/7</p>
             <h1>Need A Consultation?</h1>
           </div>
-          <div className={style.consultbtn}>
+          <div className={aboutus.consultbtn}>
             <button
-              className={style.btn2}
+              className={aboutus.btn2}
               onClick={() => navigate("/contact-us")}
             >
               GET A CONSULTATION

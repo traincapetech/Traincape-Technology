@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import style from "../css/Navbar.module.css";
+import nav from "../css/Navbar.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/New-Logo-removebg-preview.png";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -48,34 +48,34 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={style.container}>
-      <div className={style.navbar}>
-        <div className={style.logo} onClick={() => navigate("/")}>
+    <nav className={nav.container}>
+      <div className={nav.navbar}>
+        <div className={nav.logo} onClick={() => navigate("/")}>
           <img src={logo} alt="Traincape Technology" />
         </div>
-        <div className={style.hamburgerSymbol} onClick={toggleMenu}>
+        <div className={nav.hamburgerSymbol} onClick={toggleMenu}>
           {isMenuOpen ? <ImCross /> : <GiHamburgerMenu />}
         </div>
-        <div className={`${style.navlinks}`}>
+        <div className={`${nav.navlinks}`}>
           <Link
-            className={style.links}
+            className={nav.links}
             to="/about-us"
             onClick={handleLinkClick}
           >
             About
           </Link>
           <Link
-            className={style.links}
+            className={nav.links}
             to="/our-services"
             onClick={handleLinkClick}
           >
             Services
           </Link>
-          {/* <Link className={style.links} to="#" onClick={handleLinkClick}>
+          {/* <Link className={nav.links} to="#" onClick={handleLinkClick}>
             Our Customers
           </Link> */}
           <Link
-            className={style.links}
+            className={nav.links}
             to="Courses-details"
             onClick={handleLinkClick}
           >
@@ -83,7 +83,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            className={style.links}
+            className={nav.links}
             to="/contact-us"
             onClick={handleLinkClick}
           >
@@ -92,67 +92,67 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`${style.hamburgerSection} ${
-            isMenuOpen ? style.showHamburgerSection : ""
+          className={`${nav.hamburgerSection} ${
+            isMenuOpen ? nav.showHamburgerSection : ""
           }`}
         >
-          <div className={style.hamburgerOverlay} onClick={toggleMenu}></div>
+          <div className={nav.hamburgerOverlay} onClick={toggleMenu}></div>
           <div
-            className={`${style.hamburgerMenu} ${
-              isMenuOpen ? style.showHamburgerMenu : ""
+            className={`${nav.hamburgerMenu} ${
+              isMenuOpen ? nav.showHamburgerMenu : ""
             }`}
           >
             <ImCross onClick={toggleMenu} />
             <Link
-              className={style.links}
+              className={nav.links}
               to="/about-us"
               onClick={handleLinkClick}
             >
               About
             </Link>
             <Link
-              className={style.links}
+              className={nav.links}
               to="/our-services"
               onClick={handleLinkClick}
             >
               Services
             </Link>
             {/* <Link
-              className={style.links}
+              className={nav.links}
               to="/about-us"
               onClick={handleLinkClick}
             >
               Our Customers
             </Link> */}
             <Link
-              className={style.links}
+              className={nav.links}
               to="/contact-us"
               onClick={handleLinkClick}
             >
               Contact
             </Link>
             <Link
-              className={style.links}
+              className={nav.links}
               to="/Courses-details"
               onClick={handleLinkClick}
             >
               Courses
             </Link>
-            <div className={style.hamburgerMenuButtons}>
+            <div className={nav.hamburgerMenuButtons}>
               <div
-                className={style.dropdownLinkSection}
+                className={nav.dropdownLinkSection}
                 onMouseEnter={() => setShowDropdown(true)}
                 onMouseLeave={() => setShowDropdown(false)}
               >
                 <button
-                  className={style.btn}
+                  className={nav.btn}
                   onClick={() => setShowDropdown(!showDropdown)}
                 >
                   Pay Now
                 </button>
                 <div
-                  className={`${style.dropdownSection} ${
-                    showDropdown ? style.showDropdownSection : ""
+                  className={`${nav.dropdownSection} ${
+                    showDropdown ? nav.showDropdownSection : ""
                   }`}
                 >
                   <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
@@ -163,27 +163,27 @@ const Navbar = () => {
                 </div>
               </div>
               <button
-                className={style.loginbtn}
+                className={nav.loginbtn}
                 onClick={() => navigate("/signup")}
               >
-                Login / Signup
+                Login
               </button>
             </div>
           </div>
         </div>
 
-        <div className={style.buttons}>
+        <div className={nav.buttons}>
           <div
-            className={style.dropdownLinkSection}
+            className={nav.dropdownLinkSection}
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
-            <button className={style.btn} onClick>
+            <button className={nav.btn} onClick>
               Pay Now
             </button>
             <div
-              className={`${style.dropdownSection} ${
-                showDropdown ? style.showDropdownSection : ""
+              className={`${nav.dropdownSection} ${
+                showDropdown ? nav.showDropdownSection : ""
               }`}
             >
               <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
@@ -195,10 +195,10 @@ const Navbar = () => {
           </div>
 
           <button
-            className={style.loginbtn}
+            className={nav.loginbtn}
             onClick={() => navigate("/signup")}
           >
-            Login / Signup
+            Login
           </button>
         </div>
       </div>

@@ -80,6 +80,8 @@
    background: white;
    border-radius: 10px;
    padding: 50px;
+   padding-bottom: 60px;
+   border: 3px solid rgb(242, 238, 238);
 }
 
 .servicediv p{
@@ -92,11 +94,12 @@
 
 .readbtn{
     border: none;
-    position: relative;
-    bottom: -10%;
-    right: -20%;
-    background: rgb(236, 232, 232);
-    color: blue;
+    width: 120px;
+    padding: 5px;
+    position: absolute;
+    bottom: 20px;
+    background:  #80669d;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
     font: inherit;
@@ -112,7 +115,8 @@
 
 .hero{
     
-    margin-top: 10%;
+    display: flex;
+    margin-top: 6%;
     padding-top: 40px;
     /* padding-left: 20%; */
     min-height: 600px;
@@ -120,8 +124,8 @@
     color: black;
     justify-content: center;
     position: relative;
+    gap: 60px;
     background-image:  url(../assets/Back.jpg);
-    display: flex;
 }
 .heroImg img{
     display: block;
@@ -146,7 +150,7 @@
     color: #1A1A1A; 
 }
 .heroText p{
-    font-size: 15px;
+    font-size: 19px;
     font-family: poppins;
     font-weight: lighter;
     color: #c1bfbf; 
@@ -159,12 +163,12 @@
 }
 
 .call p{
-    font-size: 15px;
+    font-size: 19px;
     font-family: poppins;
     font-weight: bold;
     color: #898787; 
     margin-top: 15%;
-    margin-bottom: -10%;
+    margin-bottom: -4%;
 }
 
 .call img{
@@ -177,13 +181,16 @@
 }
 .herobtn{
     border: none;
-    background: rgb(251, 113, 232);
+    width: 120px;
+    padding: 5px;
+    background:  #80669d;
     color:rgb(245, 245, 248);
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
     /* padding: 3%; */
     margin: 0 auto;
+    margin-top: 15px;
     border-radius: 5px;
 }
 
@@ -195,11 +202,11 @@
 }
 
 .heroDown{
+    display: flex;
     width: 100%;
     background: rgb(255, 255, 255);
     color: black;
     align-items: center;
-    display: flex;
     flex-direction: column;
     background-image:  url(../assets/HeroDownBG.png) ;
 }
@@ -236,7 +243,9 @@
 
 .service {
     padding: 40px;
+    position: relative;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-bottom: 70px;
 }
 .service:hover{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -258,20 +267,24 @@
 }
 
 .btn{
+    position: absolute;
     margin-top: 5%;
+    bottom: 30px;
+    left: 125px;
     height: 35px;
     border-radius: 5px;
+    background:  #80669d;
     color: #f6f6f6;
     border: navajowhite;
     font-weight: bold;
 
 }
 .btn:hover{
-    background: #0E5AF2;
-    color: rgb(17, 18, 18);
+    background: #80669d;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     transition: background-color 1.9s ease;
-    transition: color 1.9s ease;
+    transition: ease-out 1s ease-in-out;
     font-weight: bold;
 }
 
@@ -412,11 +425,13 @@
     height: 500px;
     position: absolute;
     left: 50%;
+    padding: 30px;
     background-image: url(../assets/Blue-ShapeBG.svg); 
 }
 .helpTextDiv{
     max-width: 100%;
     align-items: center;
+    /* padding: 20px; */
 
 }
 
@@ -438,6 +453,7 @@
     width: 90%;
     display: flex;
     justify-content: center;
+    margin: auto;
     padding: 0px;
 }
 .ConnectingText{
@@ -466,9 +482,7 @@
     margin-bottom: 10px;
 }
 
-.connectingImg{
-    width: 100%;
-}
+
 
 .line{
     display: flex;
@@ -497,6 +511,18 @@
         color: rgb(245, 245, 243);
         
     }
+    .bannerText h1{
+        font-size: 25px;
+        font-family: poppins;
+        color: rgb(245, 245, 243);
+        font-weight: bold;
+    }
+    .bannerText p{
+        font-size: 19px;
+        font-family: poppins;
+        color: rgb(245, 245, 243);
+        font-weight: lighter;
+    }
     .bannerImageDown{
         display: flex;
         flex-direction: column;
@@ -514,6 +540,7 @@
        background: white;
        border-radius: 10px;
        padding: 50px;
+       padding-bottom: 50px;
     }
 
     .servicediv p{
@@ -526,6 +553,8 @@
 
     .readbtn{
         border: none;   
+        position : absolute;
+        bottom: 10px;
         background: rgb(236, 232, 232);
         color: blue;
         text-decoration: none;  
@@ -535,9 +564,27 @@
         border-radius: 5px;
         font-size: 15px;
         font-family: poppins;
+        
         font-weight: lighter;
     }   
 
+    .service{
+        position: relative;
+        padding-bottom:50px ;
+    }
+    .btn{
+        position: absolute;
+        margin-top: 5%;
+        bottom: 10px;
+        left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        color: #f6f6f6;
+        border: navajowhite;
+        font-weight: bold;
+    
+    }
     .hero{
 
         display: flex;
@@ -595,4 +642,67 @@
 .connectingImg{
    display: none;
 }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .service{
+        position: relative;
+        padding-bottom:50px ;
+        /* border: 3px dashed red; */
+    }
+    .btn{
+        position: absolute;
+        margin-top: 5%;
+        bottom: 10px;
+        left: 20%;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        color: #f6f6f6;
+        border: navajowhite;
+        font-weight: bold;
+    
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 900px){
+    .service{
+        position: relative;
+        padding-bottom:50px ;
+        /* border: 3px dashed red; */
+    }
+    .btn{
+        position: absolute;
+        margin-top: 5%;
+        bottom: 10px;
+        left: 25%;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        color: #f6f6f6;
+        border: navajowhite;
+        font-weight: bold;
+    
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px){
+    
+    .service{
+        position: relative;
+        padding-bottom:60px ;
+        /* border: 3px dashed red; */
+    }
+    .btn{
+        position: absolute;
+        margin-top: 5%;
+        bottom: 10px;
+        left: 20%;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        color: #f6f6f6;
+        border: navajowhite;
+        font-weight: bold;
+    
+    }
 }

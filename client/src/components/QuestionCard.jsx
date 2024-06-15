@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import style from "../css/QuestionCard.module.css";
+import questionCard from "../css/QuestionCard.module.css";
 
 const QuestionCard = ({ question, answer }) => {
   const [showAnswer, setShowAnswer] = useState(false);
   return (
-    <div className={style.container}>
-      <div className={style.Pluscard}>
+    <div className={questionCard.container}>
+      <div className={questionCard.Pluscard}>
         <h2>{question}</h2>
         {showAnswer ? (
           <button onClick={() => setShowAnswer(!showAnswer)}>-</button>

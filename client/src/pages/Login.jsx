@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import style from "../css/Login.module.css";
+import loginpage from "../css/Login.module.css";
 import { FaCircleUser } from "react-icons/fa6";
-import { RiLockPasswordFill } from "react-icons/ri";
+import { FaRegEyeSlash } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -31,11 +31,11 @@ const Login = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={style.wrapper}>
-      <div className={style.formBoxLogin}>
-        <form onSubmit={handleSubmit} className={style.LoginForm}>
+    <div className={loginpage.wrapper}>
+      <div className={loginpage.formBoxLogin}>
+        <form onSubmit={handleSubmit} className={loginpage.LoginForm}>
           <h1>Login</h1>
-          <div className={style.inputBox}>
+          <div className={loginpage.inputBox}>
             <input
               type="text"
               placeholder="Username"
@@ -43,9 +43,9 @@ const Login = () => {
               required
               onChange={handleChange}
             />
-            <FaCircleUser className={style.icon} />
+            <FaCircleUser className={loginpage.icon} />
           </div>
-          <div className={style.inputBox}>
+          <div className={loginpage.inputBox}>
             <input
               type="password"
               placeholder="Password"
@@ -53,20 +53,20 @@ const Login = () => {
               required
               onChange={handleChange}
             />
-            <RiLockPasswordFill className={style.icon} />
+            <FaRegEyeSlash className={loginpage.icon} />
           </div>
-          <div className={style.RememberPassword}>
+          <div className={loginpage.RememberPassword}>
             <div>
               <input type="checkbox" required />
-              <span className={style.spanbox}>Remember password</span>
+              <span className={loginpage.spanbox}>Remember password</span>
             </div>
-            <div className={style.RememberPasswordText}>
+            <div className={loginpage.RememberPasswordText}>
               <a href="#">Forget Password</a>
             </div>
           </div>
           <button type="submit">Login</button>
 
-          <div className={style.registerLink}>
+          <div className={loginpage.registerLink}>
             <p>
               Don't have an account? <a href="/signup">Register here..</a>
             </p>
