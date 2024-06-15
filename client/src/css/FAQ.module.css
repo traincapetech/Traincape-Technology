@@ -1,6 +1,5 @@
 .container{
 
-    /* border:3px dashed red; */
     background: rgb(240, 243, 246);
 }
 .faq{
@@ -16,7 +15,6 @@
     font-family:serif;
 }
 .underline{
-    /* width: 550px; */
     background: brown;
     height: 2px;
     justify-content:center ;
@@ -43,12 +41,8 @@
     width:60%;
     margin: 0% 10% 0% 17%;
     background: #f3fbfc;
-    /* border: 3px dashed black; */
     padding: 20px;
     box-shadow: rgba(1, 20, 39, 0.2) 0px 8px 24px;
-
-    /* display: flex; */
-    /* justify-content: space-between; */
 }
 .ques{
     display: flex;
