@@ -658,6 +658,7 @@
         width: 150px;
         height: 50px;
         border-radius: 5px;
+        /* background: #80669d; */
         color: #f6f6f6;
         border: navajowhite;
         font-weight: bold;
@@ -665,6 +666,12 @@
     }
 }
 @media screen and (min-width: 401px) and (max-width: 900px){
+    .bannerText{
+        /* position: absolute; */
+        top: 20%;
+        left: 10%;
+        
+    }
     .service{
         position: relative;
         padding-bottom:50px ;

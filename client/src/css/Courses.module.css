@@ -8,7 +8,6 @@
     object-fit: cover;
     background-size: cover;
     background-attachment : fixed;
-    /* background-repeat: no-repeat; */
 }
 
 .cloudBanner h1{    
@@ -49,14 +48,12 @@
    margin-bottom: 30px;
 }
 .course{
-    /* border: 2px dashed red; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    /* border: 2px dashed red; */
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding:30px 15px;

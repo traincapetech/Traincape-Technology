@@ -34,11 +34,9 @@
 .PdfDiv img{
     width: 800px;
     height: 500px;
-    /* position: relative; */
 }
 .textpdf{
     max-width: 100%;
-    /* position: absolute; */
     margin-left: -30px;
     background: rgb(240, 252, 254);
     padding: 5%;
@@ -68,7 +66,6 @@
 .parent{
     display: flex;
     background: rgb(226, 224, 224);
-    /* border:2px dashed rgb(25, 23, 23); */
 }
 .child1{
     margin-left: 11%;
@@ -153,7 +150,6 @@ margin-top:-10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 3px dashed blue; */
     margin: 20px;
     padding: 20px;
 }
@@ -162,7 +158,6 @@ margin-top:-10px;
     display: flex;
     gap: 10px;
     padding: 10px;
-    /* border: 2px dashed green; */
 }
 .ExpertText {
     text-align: center;
@@ -182,7 +177,6 @@ margin-top:-10px;
 }
 
 .member{
-    /* border: 2px dashed yellow; */
     padding: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     text-align: center;
@@ -191,7 +185,6 @@ margin-top:-10px;
 .member img{
     width: 300px;
     height: 300px;
-    /* position: fixed; */
 }
 
 .member h1{
@@ -262,7 +255,6 @@ margin-top:-10px;
 .Reviewdiv1{
     margin-left:10px;
     right:5%;
-    /* border:3px dashed black; */
     background: rgb(255, 255, 255);
     width: 50%;
     margin-bottom: 20px;
@@ -284,7 +276,6 @@ margin-top:-10px;
     font-weight: bold;
 }
 .btn1{
-    /* border: none; */
     background: rgb(86, 207, 195);
     color: rgb(18, 18, 18);
     text-decoration: none;
@@ -331,9 +322,7 @@ margin-top:-10px;
     margin-top: 10px;
     width: 100%;
     height: 250px;
-    /* border: 2px dashed red; */
     background: rgb(105, 139, 136);
-    /* margin: auto; */
     margin-top: -20px;
     background-size: cover;
 }
