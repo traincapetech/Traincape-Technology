@@ -102,7 +102,10 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>Oracle</h1>
-            <button className={courses.courseBtn} onClick={()=> navigate("/Oracle-single-page")}>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/Oracle-single-page")}
+            >
               Know More
             </button>
           </div>
@@ -113,7 +116,10 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>EC-Council</h1>
-            <button className={courses.courseBtn} onClick={handleAlert}>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/EcCouncil-single-page")}
+            >
               Know More
             </button>
           </div>
@@ -135,7 +141,10 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>ISACA</h1>
-            <button className={courses.courseBtn} onClick={handleAlert}>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/ISACA-single-page")}
+            >
               Know More
             </button>
           </div>

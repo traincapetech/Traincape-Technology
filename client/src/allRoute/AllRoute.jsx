@@ -21,6 +21,8 @@ import ScrumStudySinglePage from "../SinglePage/ScrumStudy/ScrumStudySinglePage"
 import PMIsinglePage from "../SinglePage/PMI/PMIsinglePage";
 import CompTIAsinglePage from "../SinglePage/CompTIA/CompTIAsinglePage";
 import OracleSinglePage from "../SinglePage/Oracle/OracleSinglePage";
+import ISACAsinglePage from "../SinglePage/ISACA/ISACAsinglePage";
+import EcCouncilSinglePage from "../SinglePage/EcCouncil/EcCouncilSinglePage";
 const AllRoute = () => {
   return (
     <Routes>
@@ -44,6 +46,8 @@ const AllRoute = () => {
       <Route path="/PMI-single-page" element={<PMIsinglePage />} />
       <Route path="/CompTIA-single-page" element={<CompTIAsinglePage />} />
       <Route path="/Oracle-single-page" element={<OracleSinglePage />} />
+      <Route path="/ISACA-single-page" element={<ISACAsinglePage />} />
+      <Route path="/EcCouncil-single-page" element={<EcCouncilSinglePage />} />
       <Route
         path="/ScrumStudy-single-page"
         element={<ScrumStudySinglePage />}
