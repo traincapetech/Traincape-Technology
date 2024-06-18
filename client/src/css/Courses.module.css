@@ -36,7 +36,14 @@
   color: #8A99B4;
   font-size: 40px;
 }
-
+.bannerDown h1{
+  font-family: poppins;
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+}
 .courses{
     display: grid;
     width: 100%;
@@ -129,5 +136,11 @@
        place-items: center;
        row-gap: 15px;
        margin-bottom: 30px;
+    }
+    .cloudBanner h1{
+        left: 20%;
+    }
+    .cloudBanner .underline{
+        left: 25%;
     }
 }
