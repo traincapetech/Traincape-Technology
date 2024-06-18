@@ -27,6 +27,7 @@ import AxelosSinglePage from "../SinglePage/Axelos/AxelosSinglePage";
 import TheOpenGroupSinglePage from "../SinglePage/TheOpenGroup/TheOpenGroupSinglePage";
 import OffSecTrainingSinglePage from "../SinglePage/OffSecTraining/OffSecTrainingSinglePage";
 import APMGsinglePage from "../SinglePage/APMG/APMGsinglePage";
+import CloudSecurityAllianceSinglePage from "../SinglePage/CloudSecurityAlliance/CloudSecurityAllianceSinglePage";
 const AllRoute = () => {
   return (
     <Routes>
@@ -53,6 +54,10 @@ const AllRoute = () => {
       <Route path="/ISACA-single-page" element={<ISACAsinglePage />} />
       <Route path="/EcCouncil-single-page" element={<EcCouncilSinglePage />} />
       <Route path="/Axelos-single-page" element={<AxelosSinglePage />} />
+      <Route
+        path="/Cloud-security-alliance-single-page"
+        element={<CloudSecurityAllianceSinglePage />}
+      />
       <Route
         path="/TheOpenGroup-single-page"
         element={<TheOpenGroupSinglePage />}

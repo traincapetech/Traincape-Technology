@@ -265,7 +265,10 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>Cloud Security Alliance</h1>
-            <button className={courses.courseBtn} onClick={handleAlert}>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/Cloud-security-alliance-single-page")}
+            >
               Know More
             </button>
           </div>
