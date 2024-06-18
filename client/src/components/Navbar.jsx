@@ -57,11 +57,7 @@ const Navbar = () => {
           {isMenuOpen ? <ImCross /> : <GiHamburgerMenu />}
         </div>
         <div className={`${nav.navlinks}`}>
-          <Link
-            className={nav.links}
-            to="/about-us"
-            onClick={handleLinkClick}
-          >
+          <Link className={nav.links} to="/about-us" onClick={handleLinkClick}>
             About
           </Link>
           <Link
@@ -102,72 +98,86 @@ const Navbar = () => {
               isMenuOpen ? nav.showHamburgerMenu : ""
             }`}
           >
-            <ImCross onClick={toggleMenu} />
-            <Link
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                padding: "10px 10px 0 0",
+                marginBottom: "20px",
+              }}
+            >
+              <ImCross
+                onClick={toggleMenu}
+                style={{
+                  color: "black",
+                  width: "20px",
+                  height: "20px",
+                  alignItems: "right",
+                  mb: "10px",
+                }}
+              />
+            </div>
+            <div className={nav.hamburgerLinksActive}>
+              <Link className={nav.links} to="/about-us" onClick={toggleMenu}>
+                About
+              </Link>
+              <Link
+                className={nav.links}
+                to="/our-services"
+                onClick={toggleMenu}
+              >
+                Services
+              </Link>
+              {/* <Link
               className={nav.links}
               to="/about-us"
               onClick={handleLinkClick}
-            >
-              About
-            </Link>
-            <Link
-              className={nav.links}
-              to="/our-services"
-              onClick={handleLinkClick}
-            >
-              Services
-            </Link>
-            {/* <Link
-              className={nav.links}
-              to="/about-us"
-              onClick={handleLinkClick}
-            >
+              >
               Our Customers
-            </Link> */}
-            <Link
-              className={nav.links}
-              to="/contact-us"
-              onClick={handleLinkClick}
-            >
-              Contact
-            </Link>
-            <Link
-              className={nav.links}
-              to="/Courses-details"
-              onClick={handleLinkClick}
-            >
-              Courses
-            </Link>
-            <div className={nav.hamburgerMenuButtons}>
-              <div
-                className={nav.dropdownLinkSection}
-                onMouseEnter={() => setShowDropdown(true)}
-                onMouseLeave={() => setShowDropdown(false)}
+              </Link> */}
+              <Link className={nav.links} to="/contact-us" onClick={toggleMenu}>
+                Contact
+              </Link>
+              <Link
+                className={nav.links}
+                to="/Courses-details"
+                onClick={toggleMenu}
               >
-                <button
-                  className={nav.btn}
-                  onClick={() => setShowDropdown(!showDropdown)}
-                >
-                  Pay Now
-                </button>
+                Courses
+              </Link>
+              <div className={nav.hamburgerMenuButtons}>
                 <div
-                  className={`${nav.dropdownSection} ${
-                    showDropdown ? nav.showDropdownSection : ""
-                  }`}
+                  className={nav.dropdownLinkSection}
+                  onMouseEnter={() => setShowDropdown(true)}
+                  onMouseLeave={() => setShowDropdown(false)}
                 >
-                  <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
-                    Pay Pal
-                  </Link>
-                  <Link to="#">Credit / Debit Card</Link>
-                  <Link onClick={() => alert(alertMessage)}>Bank Transfer</Link>
+                  <button
+                    className={nav.btn}
+                    onClick={() => setShowDropdown(!showDropdown)}
+                  >
+                    Pay Now
+                  </button>
+                  <div
+                    className={`${nav.dropdownSection} ${
+                      showDropdown ? nav.showDropdownSection : ""
+                    }`}
+                  >
+                    <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
+                      Pay Pal
+                    </Link>
+                    <Link to="#">Credit / Debit Card</Link>
+                    <Link onClick={() => alert(alertMessage)}>
+                      Bank Transfer
+                    </Link>
+                  </div>
                 </div>
+                <button
+                  className={nav.loginbtn}
+                  onClick={() => navigate("/signup")}
+                >
+                  Login
+                </button>
               </div>
-              <button
-                className={nav.loginbtn}
-                onClick={() => navigate("/signup")}
-              >
-                Login
-              </button>
             </div>
           </div>
         </div>
@@ -194,10 +204,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <button
-            className={nav.loginbtn}
-            onClick={() => navigate("/signup")}
-          >
+          <button className={nav.loginbtn} onClick={() => navigate("/signup")}>
             Login
           </button>
         </div>

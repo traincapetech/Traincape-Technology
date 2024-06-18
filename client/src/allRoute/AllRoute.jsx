@@ -23,6 +23,7 @@ import CompTIAsinglePage from "../SinglePage/CompTIA/CompTIAsinglePage";
 import OracleSinglePage from "../SinglePage/Oracle/OracleSinglePage";
 import ISACAsinglePage from "../SinglePage/ISACA/ISACAsinglePage";
 import EcCouncilSinglePage from "../SinglePage/EcCouncil/EcCouncilSinglePage";
+import AxelosSinglePage from "../SinglePage/Axelos/AxelosSinglePage";
 const AllRoute = () => {
   return (
     <Routes>
@@ -48,6 +49,7 @@ const AllRoute = () => {
       <Route path="/Oracle-single-page" element={<OracleSinglePage />} />
       <Route path="/ISACA-single-page" element={<ISACAsinglePage />} />
       <Route path="/EcCouncil-single-page" element={<EcCouncilSinglePage />} />
+      <Route path="/Axelos-single-page" element={<AxelosSinglePage />} />
       <Route
         path="/ScrumStudy-single-page"
         element={<ScrumStudySinglePage />}

@@ -71,17 +71,7 @@ const Courses = () => {
             </button>
           </div>
         </div>
-        <div className={courses.course}>
-          <div className={courses.CourseImg}>
-            <img src={Vmware} alt="VMware" />
-          </div>
-          <div className={courses.CourseText}>
-            <h1>Vmware</h1>
-            <button className={courses.courseBtn} onClick={handleAlert}>
-              Know More
-            </button>
-          </div>
-        </div>
+       
         <div className={courses.course}>
           <div className={courses.CourseImg}>
             <img src={cisco} alt="Cisco" />
@@ -130,7 +120,10 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>AXELOS</h1>
-            <button className={courses.courseBtn} onClick={handleAlert}>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/Axelos-single-page")}
+            >
               Know More
             </button>
           </div>
@@ -277,6 +270,17 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>OffSec Training</h1>
+            <button className={courses.courseBtn} onClick={handleAlert}>
+              Know More
+            </button>
+          </div>
+        </div>
+        <div className={courses.course}>
+          <div className={courses.CourseImg}>
+            <img src={Vmware} alt="VMware" />
+          </div>
+          <div className={courses.CourseText}>
+            <h1>Vmware</h1>
             <button className={courses.courseBtn} onClick={handleAlert}>
               Know More
             </button>
