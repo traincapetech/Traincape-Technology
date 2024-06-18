@@ -25,6 +25,8 @@ import ISACAsinglePage from "../SinglePage/ISACA/ISACAsinglePage";
 import EcCouncilSinglePage from "../SinglePage/EcCouncil/EcCouncilSinglePage";
 import AxelosSinglePage from "../SinglePage/Axelos/AxelosSinglePage";
 import TheOpenGroupSinglePage from "../SinglePage/TheOpenGroup/TheOpenGroupSinglePage";
+import OffSecTrainingSinglePage from "../SinglePage/OffSecTraining/OffSecTrainingSinglePage";
+import APMGsinglePage from "../SinglePage/APMG/APMGsinglePage";
 const AllRoute = () => {
   return (
     <Routes>
@@ -51,7 +53,15 @@ const AllRoute = () => {
       <Route path="/ISACA-single-page" element={<ISACAsinglePage />} />
       <Route path="/EcCouncil-single-page" element={<EcCouncilSinglePage />} />
       <Route path="/Axelos-single-page" element={<AxelosSinglePage />} />
-      <Route path="/TheOpenGroup-single-page" element={<TheOpenGroupSinglePage />} />
+      <Route
+        path="/TheOpenGroup-single-page"
+        element={<TheOpenGroupSinglePage />}
+      />
+      <Route
+        path="/OffSec-Training-single-page"
+        element={<OffSecTrainingSinglePage />}
+      />
+      <Route path="/APMG-single-page" element={<APMGsinglePage />} />
       <Route
         path="/ScrumStudy-single-page"
         element={<ScrumStudySinglePage />}
