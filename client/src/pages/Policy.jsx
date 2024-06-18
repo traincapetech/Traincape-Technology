@@ -8,7 +8,18 @@ const Policy = () => {
   return (
     <div className={policypage.container}>
       <div className={policypage.wrapper}>
-        <h1 className={policypage.heading}>Terms and Conditions</h1>
+        <h1
+          className={policypage.heading}
+          style={{
+            textAlign: "center",
+            marginBottom: "20px",
+            fontWeight: "bold",
+            fontSize: "40px",
+            color: "#2c2d30",
+          }}
+        >
+          Policy
+        </h1>
         <p className={policypage.paragraph}>
           <h2 className={policypage.heading}>RETURNS</h2>
           Traincape Technology provides certificates for various courses,

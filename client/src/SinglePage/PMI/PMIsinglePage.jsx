@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import React from "react";
+import React,{ useEffect} from "react";
 import pmiSingle from "./PMIsinglePage.module.css";
 import pmi from "../../assets/pmi-6.svg";
 
 const PMIsinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={pmiSingle.container}>

@@ -1,9 +1,12 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import isacasingle from "./ISACAsinglePage.module.css";
 import { useNavigate } from "react-router-dom";
 import isaca from "../../assets/ISACA-2.webp";
 
 const ISACAsinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={isacasingle.container}>

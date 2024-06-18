@@ -71,7 +71,7 @@ const Courses = () => {
             </button>
           </div>
         </div>
-       
+
         <div className={courses.course}>
           <div className={courses.CourseImg}>
             <img src={cisco} alt="Cisco" />
@@ -237,7 +237,10 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>The Open Group</h1>
-            <button className={courses.courseBtn} onClick={handleAlert}>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/TheOpenGroup-single-page")}
+            >
               Know More
             </button>
           </div>

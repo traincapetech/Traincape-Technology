@@ -1,9 +1,13 @@
 import React from "react";
 import axelos from "./AxelosSinglePage.module.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import Axelos from "../../assets/axelos-2.webp";
 
 const AxelosSinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={axelos.container}>

@@ -1,9 +1,12 @@
-import React from "react";
+import React,{ useEffect} from "react";
 import oracleSingle from "./OracleSinglePage.module.css";
 import oracle from "../../assets/oracle-2.svg";
 import { useNavigate } from "react-router-dom";
 
 const OracleSinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={oracleSingle.container}>

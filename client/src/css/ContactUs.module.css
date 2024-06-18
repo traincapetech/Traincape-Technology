@@ -178,13 +178,8 @@ position: relative;
       overflow-x: hidden;
     }
     .banner h1 {
-      position: absolute;
-      left: 20%;
       top: 30%;
-      transform: translate(-50%, 5%);
-      font-size: 30px; /* Adjust font size for mobile devices */
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: #c5bbbb;
+      font-size: 19px; /* Adjust font size for mobile devices */
     }
     .OfficeAdress {
       display: flex;

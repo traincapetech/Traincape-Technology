@@ -1,9 +1,12 @@
-import React from "react";
+import React,{ useEffect} from "react";
 import Iiba from "./IIBAsinglePage.module.css";
 import { useNavigate } from "react-router-dom";
 import iiba from "../../assets/iiba-1-svg.svg";
 
 const IIBAsinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={Iiba.container}>

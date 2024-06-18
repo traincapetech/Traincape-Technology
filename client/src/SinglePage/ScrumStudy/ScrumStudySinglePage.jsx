@@ -1,9 +1,12 @@
-import React from "react";
+import React,{ useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import scrumStudy from "./ScrumStudySinglePage.module.css";
 import scrumstudy from "../../assets/scrumstudy-1.svg";
 
 const ScrumStudySinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
 
   return (

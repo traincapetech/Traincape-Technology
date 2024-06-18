@@ -8,7 +8,18 @@ const TermsAndCondition = () => {
   return (
     <div className={terms.container}>
       <div className={terms.wrapper}>
-        <h1 className={terms.heading}>Terms and Conditions</h1>
+        <h1
+          className={terms.heading}
+          style={{
+            textAlign: "center",
+            marginBottom: "20px",
+            fontWeight: "bold",
+            fontSize: "40px",
+            color: "#2c2d30",
+          }}
+        >
+          Terms and Conditions
+        </h1>
         <p className={terms.paragraph}>
           <h2 className={terms.heading}>RETURNS</h2>
           Traincape Technology provides certificates for various courses,

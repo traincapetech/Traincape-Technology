@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import compTiaSingle from "./CompTIAsinglePage.module.css";
 import comptia from "../../assets/comptia-2.webp";
 
 const CompTIAsinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={compTiaSingle.container}>

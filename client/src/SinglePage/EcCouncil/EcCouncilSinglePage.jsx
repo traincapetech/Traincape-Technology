@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import Eccouncil from "../../assets/ec-council-2.png";
 import EcCouncilSinle from "./EcCouncilSinglePage.module.css";
 
 const EcCouncilSinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={EcCouncilSinle.container}>

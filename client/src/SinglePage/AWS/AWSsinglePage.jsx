@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AWSsingle from "./AWSsinglePage.module.css";
 import aws from "../../assets/Amazon_Web_Services_Logo.svg.png";
 import { useNavigate } from "react-router-dom";
 
 const AWSsinglePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div className={AWSsingle.container}>
