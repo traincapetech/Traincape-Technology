@@ -235,6 +235,26 @@ const SUSESinglePage = () => {
               </button>
             </div>
           </div>
+
+          <div className={suse.certificateDiv}>
+            <h1>KUB211v1.24 Rancher Kubernetes Engine 2 Deploymentt</h1>
+
+            <div className={suse.certificateBtn}>
+              <button onClick={() => navigate("/contact-us")}>
+                Get Course
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/13q0mKzrfmwGB88wm8R2D833KFvtNouXs/view",
+                    "_blank"
+                  )
+                }
+              >
+                Course Details
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
