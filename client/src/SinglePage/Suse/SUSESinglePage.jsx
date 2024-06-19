@@ -295,6 +295,28 @@ const SUSESinglePage = () => {
               </button>
             </div>
           </div>
+
+          <div className={suse.certificateDiv}>
+            <h1>
+              HAE311v15 SUSE Linux Enterprise 15 High Availability Deployment
+            </h1>
+
+            <div className={suse.certificateBtn}>
+              <button onClick={() => navigate("/contact-us")}>
+                Get Course
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1ty2cxciYylutsFhTMTglUSuAZxgsppS2/view",
+                    "_blank"
+                  )
+                }
+              >
+                Course Details
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
