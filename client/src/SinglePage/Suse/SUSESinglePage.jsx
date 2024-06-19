@@ -255,6 +255,26 @@ const SUSESinglePage = () => {
               </button>
             </div>
           </div>
+
+          <div className={suse.certificateDiv}>
+            <h1>RAN211v2.7 Rancher Prime Manager 2.7 Deployment</h1>
+
+            <div className={suse.certificateBtn}>
+              <button onClick={() => navigate("/contact-us")}>
+                Get Course
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1cRr29lb3d82QjxhtPLseO6eJz7zRu5ue/view",
+                    "_blank"
+                  )
+                }
+              >
+                Course Details
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
