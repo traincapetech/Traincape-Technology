@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import aboutus from "../css/AboutUS.module.css";
-import banner from "../assets/about-us-Bg.jpg";
+import banner from "../assets/about-us-new.jpeg";
 import { SiAmazonsimpleemailservice } from "react-icons/si";
 import { SiEsotericsoftware } from "react-icons/si";
 import { MdCall } from "react-icons/md";
@@ -27,7 +27,7 @@ const AboutUS = () => {
   return (
     <div className={aboutus.container}>
       <div className={aboutus.banner}>
-        {/* <img src={banner} alt="Default image" /> */}
+        <img src={banner} alt="Default image" />
         <h1>About Us</h1>
       </div>
       <div className={aboutus.PdfDiv}>

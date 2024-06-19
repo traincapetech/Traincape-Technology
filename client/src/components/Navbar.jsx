@@ -160,12 +160,12 @@ const Navbar = () => {
                   onMouseEnter={() => setShowDropdown(true)}
                   onMouseLeave={() => setShowDropdown(false)}
                 >
-                  <button
-                    className={nav.btn}
+                  <Link
+                    className={nav.links}
                     onClick={() => setShowDropdown(!showDropdown)}
                   >
                     Pay Now
-                  </button>
+                  </Link>
                   <div
                     className={`${nav.dropdownSection} ${
                       showDropdown ? nav.showDropdownSection : ""
@@ -188,12 +188,9 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </div>
-                <button
-                  className={nav.loginbtn}
-                  onClick={() => navigate("/signup")}
-                >
+                <Link className={nav.links} onClick={() => navigate("/signup")}>
                   Login
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -213,11 +210,18 @@ const Navbar = () => {
                 showDropdown ? nav.showDropdownSection : ""
               }`}
             >
-              <Link className={nav.links} to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
+              <Link
+                className={nav.links}
+                to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB"
+              >
                 Pay Pal
               </Link>
-              <Link className={nav.links} to="#">Credit / Debit Card</Link>
-              <Link className={nav.links} onClick={() => alert(alertMessage)}>Bank Transfer</Link>
+              <Link className={nav.links} to="#">
+                Credit / Debit Card
+              </Link>
+              <Link className={nav.links} onClick={() => alert(alertMessage)}>
+                Bank Transfer
+              </Link>
             </div>
           </div>
 
