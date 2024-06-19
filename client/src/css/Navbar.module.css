@@ -174,6 +174,7 @@
   top: 0;
   /* right: -20px; */
   width: 200px;
+  height: 20vh;
   background-color: rgb(244, 244, 244);
 
   transition: right 0.7s ease-out;
@@ -244,7 +245,7 @@
   /* margin-top: 30px; */
 }
 .hamburgerLinksActive >div{
-  display: flex;
+  display: flex; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -257,10 +258,9 @@
   }
 
   .links {
-    font-size: 30px;
+    font-size: 0.5rem;
     font-weight: bold;
     color: #042698;
-    margin-top: 20px;
   }
 
   .hamburgerSymbol {
@@ -271,11 +271,31 @@
   .buttons {
     display: none;
   }
-  .hamburgerMenu .navlinks{
-   
-    /* margin-top: 30px; */
-    /* padding: 10%; */
-    row-gap: 20px;
+  .btn {
+    width: 50px;
+    font-size: 0.5rem;
+    height: 30px;
+    background:  #80669d;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .loginbtn {
+    width: 50px;
+    font-size: 0.5rem;
+    height: 30px;
+    background:  #80669d;
+    color: white;
+  
+    font-weight: bold;
+  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0;
   }
 }
 

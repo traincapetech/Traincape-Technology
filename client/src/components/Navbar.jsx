@@ -145,6 +145,15 @@ const Navbar = () => {
               >
                 Courses
               </Link>
+              <Link to="/Career-details" className={nav.links}>
+                Career
+              </Link>
+              <Link to="/Our-Blogs" className={nav.links}>
+                Blogs
+              </Link>
+              <Link to="/frequently-asked-questions" className={nav.links}>
+                FAQ
+              </Link>
               <div className={nav.hamburgerMenuButtons}>
                 <div
                   className={nav.dropdownLinkSection}

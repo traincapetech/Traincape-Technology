@@ -67,7 +67,7 @@
 }
 .address h1{
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 20px;
     font-family: poppins;
     /* margin-left: 10px; */
     /* align-items: center; */
@@ -76,7 +76,7 @@
 }
 .address p{
     color: #8A99B4;
-    font-size: 23px;
+    font-size: 16px;
     font-family: poppins;
     text-align: center;
     margin: 0 auto;
@@ -95,20 +95,20 @@
 }
 .middle h1{
     color: #FFFFFF;
-    font-size: 34px;
+    font-size: 20px;
     font-family: poppins;
     font-weight: bold;
 }
 .middle p{
-    font-size: 20px;
+    font-size: 16px;
     font-family: poppins;
     font-weight: lighter;
     color: #8A99B4;
 
 }
 .SocailDiv{
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     background: #1a2c4e;
     border-radius: 5px;
     margin-left: 10px;
@@ -124,7 +124,7 @@
     justify-content: center;
     align-items: center;
     place-items: center;
-    font-size: 30px;
+    font-size: 20px;
     color: #FFFFFF;
     font-weight: 400;
     margin:15%;
@@ -138,7 +138,7 @@
 .linksfooter{
     text-decoration: none;
     color: #8A99B4;
-    font-size: 20px;
+    font-size: 16px;
     font-family: poppins;
     font-weight: lighter;
 }
@@ -150,9 +150,9 @@
 
 }
 .gMap{
-    width: 200px;
+    width: 150px;
     overflow: hidden;
-    height: 200px;
+    height: 150px;
     border-radius: 15px;
     padding-bottom: 10px;
     position: relative;
@@ -174,7 +174,7 @@
     justify-content: center;
     align-items: center;
     color: #fcfcfc;
-    font-size: 14px;
+    font-size: 0.5rem;
     font-family: poppins;
     font-weight: lighter;
 }
