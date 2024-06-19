@@ -275,6 +275,26 @@ const SUSESinglePage = () => {
               </button>
             </div>
           </div>
+
+          <div className={suse.certificateDiv}>
+            <h1>SUSE NeuVector 5.x Operations</h1>
+
+            <div className={suse.certificateBtn}>
+              <button onClick={() => navigate("/contact-us")}>
+                Get Course
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1dRErdM5i472UquN97QjvxglL8ci4W-J-/view",
+                    "_blank"
+                  )
+                }
+              >
+                Course Details
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
