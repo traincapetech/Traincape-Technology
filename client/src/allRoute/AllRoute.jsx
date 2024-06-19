@@ -54,6 +54,7 @@ const AllRoute = () => {
       <Route path="/ISACA-single-page" element={<ISACAsinglePage />} />
       <Route path="/EcCouncil-single-page" element={<EcCouncilSinglePage />} />
       <Route path="/Axelos-single-page" element={<AxelosSinglePage />} />
+      <Route path="/Suse-single-page" element={<AxelosSinglePage />} />
       <Route
         path="/Cloud-security-alliance-single-page"
         element={<CloudSecurityAllianceSinglePage />}

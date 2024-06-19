@@ -119,7 +119,7 @@ const AboutUS = () => {
             <h1>Inspiring Tech Needs For Business</h1>
           </div>
           <div className={aboutus.vdobtn}>
-            <button className={aboutus.btn1}>WATCH VIDEO</button>
+            {/* <button className={aboutus.btn1}>WATCH VIDEO</button> */}
           </div>
         </div>
         <div className={aboutus.ReviewPersonDiv}>
