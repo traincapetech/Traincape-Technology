@@ -171,11 +171,19 @@ const Navbar = () => {
                       showDropdown ? nav.showDropdownSection : ""
                     }`}
                   >
-                    <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
+                    <Link
+                      className={nav.links}
+                      to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB"
+                    >
                       Pay Pal
                     </Link>
-                    <Link to="#">Credit / Debit Card</Link>
-                    <Link onClick={() => alert(alertMessage)}>
+                    <Link className={nav.links} to="#">
+                      Credit / Debit Card
+                    </Link>
+                    <Link
+                      className={nav.links}
+                      onClick={() => alert(alertMessage)}
+                    >
                       Bank Transfer
                     </Link>
                   </div>
@@ -205,11 +213,11 @@ const Navbar = () => {
                 showDropdown ? nav.showDropdownSection : ""
               }`}
             >
-              <Link to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
+              <Link className={nav.links} to="https://paypal.me/ParichayP?country.x=IN&locale.x=en_GB">
                 Pay Pal
               </Link>
-              <Link to="#">Credit / Debit Card</Link>
-              <Link onClick={() => alert(alertMessage)}>Bank Transfer</Link>
+              <Link className={nav.links} to="#">Credit / Debit Card</Link>
+              <Link className={nav.links} onClick={() => alert(alertMessage)}>Bank Transfer</Link>
             </div>
           </div>
 

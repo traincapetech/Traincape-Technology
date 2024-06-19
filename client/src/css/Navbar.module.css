@@ -174,10 +174,10 @@
   top: 0;
   /* right: -20px; */
   width: 200px;
-  height: 20vh;
+  height: auto;
   background-color: rgb(244, 244, 244);
 
-  transition: right 0.7s ease-out;
+  transition: right 5.7s ease-out;
 }
 
 .showHamburgerSection {
@@ -200,10 +200,9 @@
 .dropdownSection {
   position: absolute;
   top: 40px;
-  left: 0;
+  left: -50%;
   background-color: white;
-  z-index: 10;
-  /* padding: 20px; */
+  z-index: 101;
   border-radius: 5px;
   width: 100px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -217,8 +216,6 @@
   display: block;
   margin-bottom: 20px;
   text-decoration: none;
-  font-size: 20px;
-  color: #070707;
 }
 
 .showDropdownSection {
@@ -275,27 +272,18 @@
     width: 50px;
     font-size: 0.5rem;
     height: 30px;
-    background:  #80669d;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
   }
   
   .loginbtn {
     width: 50px;
     font-size: 0.5rem;
     height: 30px;
-    background:  #80669d;
-    color: white;
-  
+  }
+  .showDropdownSection .links{
+    font-size: 0.6rem;
     font-weight: bold;
-  
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 0;
+    color: #0f1013;
+    margin-top: 10px;
   }
 }
 
