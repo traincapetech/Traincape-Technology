@@ -226,7 +226,10 @@ const Courses = () => {
           </div>
           <div className={courses.CourseText}>
             <h1>SUSE</h1>
-            <button className={courses.courseBtn} onClick={handleAlert}>
+            <button
+              className={courses.courseBtn}
+              onClick={() => navigate("/SUSE-single-page")}
+            >
               Know More
             </button>
           </div>
