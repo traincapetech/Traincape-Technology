@@ -512,13 +512,13 @@
         
     }
     .bannerText h1{
-        font-size: 25px;
+        font-size: 0.9rem;
         font-family: poppins;
         color: rgb(245, 245, 243);
         font-weight: bold;
     }
     .bannerText p{
-        font-size: 19px;
+        font-size: 0.7rem;
         font-family: poppins;
         color: rgb(245, 245, 243);
         font-weight: lighter;
@@ -642,7 +642,11 @@
 } 
 
 @media screen and (min-width: 300px) and (max-width: 400px) {
-    
+    .bannerText{
+        top: 30%;
+        left: 10%;
+        
+    }
     .service{
         position: relative;
         padding-bottom:50px ;
@@ -666,7 +670,7 @@
 @media screen and (min-width: 401px) and (max-width: 800px){
     .bannerText{
         /* position: absolute; */
-        top: 20%;
+        top: 40%;
         left: 10%;
         
     }
@@ -702,7 +706,26 @@
 }
 
 @media screen and (min-width: 801px) and (max-width: 1300px){
-    
+    .bannerText{
+        max-width: 50%;
+        position: absolute;
+        top: 38%;
+        left: 10%;
+        color: rgb(245, 245, 243);
+        
+    }
+    .bannerText h1{
+        font-size: 0.9rem;
+        font-family: poppins;
+        color: rgb(245, 245, 243);
+        font-weight: bold;
+    }
+    .bannerText p{
+        font-size: 0.8rem;
+        font-family: poppins;
+        color: rgb(245, 245, 243);
+        font-weight: lighter;
+    }
     .service{
         position: relative;
         padding-bottom:60px ;
