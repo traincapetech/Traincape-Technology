@@ -1,12 +1,64 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import career from "./Career.module.css";
 import banner from "../../assets/CareerBannerIMG.svg";
 import { AiOutlineTeam } from "react-icons/ai";
 import { SiFsecure } from "react-icons/si";
 import { GiSkills } from "react-icons/gi";
 import { GiUpgrade } from "react-icons/gi";
+import emailjs from "@emailjs/browser";
+import careerImg from "../../assets/CareerPageIMG.svg";
 
 const Career = () => {
+  const [payoload, setPayoload] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    phoneNumber: "",
+    resumeLink: "",
+  });
+
+  const handleSubmit = (e) => {
+    // Your EmailJS serviceIdD and templateId and Public Key
+    const serviceId = "service_hnvyuqi";
+    const templateId = "template_05ne2xd";
+    const publicId = "twoxce8jrCeAuV38b";
+
+    // Create a new object that contains dynamic template params
+    const [name, email, subject, message, phoneNumber, resumeLink] =
+      Object.values(payoload);
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_subject: subject,
+      to_name: "Parichay singh Rana",
+      message: `Name - ${name}\nEmail - ${email}\nWhatsapp-Number - ${phoneNumber}\Select Roll - ${subject}\nMessage - ${message} \nResume Link - ${resumeLink}`,
+    };
+    e.preventDefault();
+
+    //send the Email using EmailJS
+
+    emailjs.send(serviceId, templateId, templateParams, publicId).then(
+      (res) => {
+        alert("Email sent successfully!", res);
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
+    setPayoload({
+      name: "",
+      email: "",
+      phoneNumber: "",
+      subject: "",
+      message: "",
+      resumeLink: "",
+    });
+  };
+
+  const handleChange = (e) => {
+    setPayoload({ ...payoload, [e.target.name]: e.target.value });
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -87,6 +139,80 @@ const Career = () => {
               employability.
             </p>
           </div>
+        </div>
+      </div>
+      <div className={career.contact}>
+        <div className={career.officeMail}>
+          <h1>Want To Join US</h1>
+          <p>We're Ready To Connect You!</p>
+          <div className={career.NameAndEmail}>
+            <br />
+            <input
+              type="text"
+              name="name"
+              value={payoload.name}
+              className={career.inputbox}
+              placeholder="Your Name"
+              required
+              onChange={handleChange}
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              value={payoload.email}
+              className={career.inputbox}
+              placeholder="Your Email"
+              required
+              onChange={handleChange}
+            />
+            <br />
+          </div>
+          <input
+            type="number"
+            name="phoneNumber"
+            value={payoload.phoneNumber}
+            className={career.inputbox}
+            placeholder="Phone Number"
+            required
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="resumeLink"
+            value={payoload.resumeLink}
+            className={career.inputbox}
+            placeholder="Paste Your Google Drive Resume Link"
+            required
+            onChange={handleChange}
+          />
+          <select
+            name="subject"
+            id={career.select}
+            required
+            onChange={handleChange}
+          >
+            <option value="">Select Role</option>
+            <option value="lead-person">Lead Person</option>
+            <option value="sale-person">Sale Person</option>
+            {/* <option value="Project Management">Project Management</option> */}
+          </select>
+          <br />
+          <br />
+          <textarea
+            name="message"
+            className={career.textarea}
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            onChange={handleChange}
+          ></textarea>
+          <button className={career.contactBtn} onClick={handleSubmit}>
+            Send Message
+          </button>
+        </div>
+        <div className={career.contactImg}>
+          <img src={careerImg} alt="" />
         </div>
       </div>
     </div>
