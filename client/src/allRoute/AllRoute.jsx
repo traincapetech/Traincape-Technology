@@ -29,6 +29,7 @@ import OffSecTrainingSinglePage from "../SinglePage/OffSecTraining/OffSecTrainin
 import APMGsinglePage from "../SinglePage/APMG/APMGsinglePage";
 import CloudSecurityAllianceSinglePage from "../SinglePage/CloudSecurityAlliance/CloudSecurityAllianceSinglePage";
 import SUSESinglePage from "../SinglePage/Suse/SUSESinglePage";
+import ISTQBsinglePage from "../SinglePage/ISTQB/ISTQBsinglePage";
 const AllRoute = () => {
   return (
     <Routes>
@@ -56,6 +57,7 @@ const AllRoute = () => {
       <Route path="/EcCouncil-single-page" element={<EcCouncilSinglePage />} />
       <Route path="/Axelos-single-page" element={<AxelosSinglePage />} />
       <Route path="/Suse-single-page" element={<SUSESinglePage />} />
+      <Route path="/ISTQB-single-page" element={<ISTQBsinglePage />} />
       <Route
         path="/Cloud-security-alliance-single-page"
         element={<CloudSecurityAllianceSinglePage />}
