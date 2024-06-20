@@ -89,7 +89,10 @@
     color: rgb(138, 133, 133);
     font-weight: lighter;
 }
-
+.link{
+    text-decoration: none;
+    text-align: center;
+}
 .childdiv{
     display: flex;
     justify-content: space-around;

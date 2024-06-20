@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import jasveer from "../assets/jasveergill.png";
 import traincapeInfo from "../assets/Traincape-info.jpg";
 import review from "../assets/Feedback Gif.gif";
+import { Link } from "react-router-dom";
 
 const AboutUS = () => {
   const navigate = useNavigate();
@@ -70,9 +71,15 @@ const AboutUS = () => {
               <div className={aboutus.icondiv}>
                 <MdCall className={aboutus.icon} />
               </div>
-              <div>
+              <div style={{ textAlign: "center" }}>
                 <h2>Call To Ask Any Query</h2>
-                <h1>+91 6280281505</h1>
+                <Link
+                  className={aboutus.link}
+                  to="tel:+91 6280281505"
+                  target="_blank"
+                >
+                  +91 6280281505
+                </Link>
               </div>
             </div>
             <div className={aboutus.border}></div>

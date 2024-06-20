@@ -3,6 +3,7 @@ import contactus from "../css/ContactUs.module.css";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { GrLocation } from "react-icons/gr";
 import { RiTeamLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import banner from "../assets/Contact-us.jpg";
 import { IoMailOutline } from "react-icons/io5";
 import emailjs from "@emailjs/browser";
@@ -17,9 +18,9 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     // Your EmailJS serviceIdD and templateId and Public Key
-    const serviceId = "service_hnvyuqi";
-    const templateId = "template_05ne2xd";
-    const publicId = "twoxce8jrCeAuV38b";
+    const serviceId = "service_pjwgjas";
+    const templateId = "template_eueffas";
+    const publicId = "GmJ24jEVf6swWXgb0";
 
     // Create a new object that contains dynamic template params
     const [name, email, subject, message, phoneNumber] =
@@ -72,15 +73,19 @@ const ContactUs = () => {
             Khandolia Plaza, 118\C, Dabri - Palam Rd, Vaishali Colony, Dashrath
             Puri, New Delhi, Delhi, 110045
           </p>
-          <div className={contactus.addressdiv}>
-            <div className={contactus.iconDiv}>
+          <h2>Phone Number & Email</h2>
+          <div className={contactus.addressdiv1}>
+            <div className={contactus.iconDiv1}>
               <HiDevicePhoneMobile className={contactus.icon} />
-              <IoMailOutline className={contactus.icon} />
+              <Link className={contactus.link} to="tel:+91 6280281505" target="_blank">
+                +91 6280281505
+              </Link>
             </div>
-            <div className={contactus.textdiv}>
-              <h2>Phone Number & Email</h2>
-              <p>+91 6280281505</p>
-              <p>sales@traincapetech.info</p>
+            <div className={contactus.textdiv1}>
+              <IoMailOutline className={contactus.icon} />
+              <Link className={contactus.link} to="mailto:sales@traincapetech.info" target="_blank">
+                sales@traincapetech.info
+              </Link>
             </div>
           </div>
           <div className={contactus.underlinediv}></div>

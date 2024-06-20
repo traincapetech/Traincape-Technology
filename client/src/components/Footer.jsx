@@ -89,12 +89,15 @@ const Footer = () => {
             >
               FAQ
             </Link>
-            <Link
+            <Link to="/contact-us" className={footersection.linksfooter}>
+              Contact Us
+            </Link>
+            {/* <Link
               to="/terms-and-conditions"
               className={footersection.linksfooter}
             >
               Terms & Conditions
-            </Link>
+            </Link> */}
             <Link to="/Our-Policies" className={footersection.linksfooter}>
               Policy
             </Link>
@@ -112,9 +115,6 @@ const Footer = () => {
             </Link>
             <Link to="/Our-Blogs" className={footersection.linksfooter}>
               Latest Posts
-            </Link>
-            <Link to="/contact-us" className={footersection.linksfooter}>
-              Contact Us
             </Link>
           </div>
           <div className={footersection.footerdiv}>

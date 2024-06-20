@@ -190,7 +190,7 @@
         flex-direction: column-reverse;
     }
     .officeMail{
-        width: 100%;
+        width: 90%;
     }
     .contactImg{
         width: 100%;
@@ -213,10 +213,16 @@
         flex-direction: column-reverse;
     }
     .officeMail{
-        width: 100%;
+        width: 90%;
     }
     .contactImg{
         width: 100%;
+    }
+    .inputbox::placeholder{
+        font-size: 10px;
+    }
+    #select{
+        font-size: 10px;
     }
 }
 

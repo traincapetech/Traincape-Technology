@@ -20,9 +20,9 @@ const Career = () => {
 
   const handleSubmit = (e) => {
     // Your EmailJS serviceIdD and templateId and Public Key
-    const serviceId = "service_hnvyuqi";
-    const templateId = "template_05ne2xd";
-    const publicId = "twoxce8jrCeAuV38b";
+    const serviceId = "service_pjwgjas";
+    const templateId = "template_oihg6cs";
+    const publicId = "GmJ24jEVf6swWXgb0";
 
     // Create a new object that contains dynamic template params
     const [name, email, subject, message, phoneNumber, resumeLink] =
@@ -32,7 +32,7 @@ const Career = () => {
       from_email: email,
       from_subject: subject,
       to_name: "Parichay singh Rana",
-      message: `Name - ${name}\nEmail - ${email}\nWhatsapp-Number - ${phoneNumber}\Select Roll - ${subject}\nMessage - ${message} \nResume Link - ${resumeLink}`,
+      message: `Name - ${name}\nEmail - ${email}\nWhatsapp-Number - ${phoneNumber}\nSelect Roll - ${subject}\nMessage - ${message} \nResume Link - ${resumeLink}`,
     };
     e.preventDefault();
 

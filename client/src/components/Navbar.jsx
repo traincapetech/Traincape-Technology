@@ -188,9 +188,9 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </div>
-                <Link className={nav.links} onClick={() => navigate("/signup")}>
+                {/* <Link className={nav.links} onClick={() => navigate("/signup")}>
                   Login
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@ const Navbar = () => {
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
-            <button className={nav.btn} onClick>
+            <button className={nav.btn}>
               Pay Now
             </button>
             <div
@@ -225,9 +225,9 @@ const Navbar = () => {
             </div>
           </div>
 
-          <button className={nav.loginbtn} onClick={() => navigate("/signup")}>
+          {/* <button className={nav.loginbtn} onClick={() => navigate("/signup")}>
             Login
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>
