@@ -14,7 +14,7 @@
 }
 .bannerText{
     position: absolute;
-    top: 14%;
+    top: 20%;
     right: 50%;
     max-width: 30%;
     color: aliceblue;
@@ -29,7 +29,7 @@
 }
 .bannerText p{
     color: aliceblue;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-family: poppins;
     font-weight: bold;
 }
@@ -199,7 +199,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
     .bannerText{
-        top: 7%;
+        top: 11%;
         right: 10%;
         max-width: 100%;
     }

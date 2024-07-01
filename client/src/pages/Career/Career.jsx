@@ -212,7 +212,7 @@ const Career = () => {
           </button>
         </div>
         <div className={career.contactImg}>
-          <img src={careerImg} alt="" />
+          <img src={careerImg} alt="Carrer" />
         </div>
       </div>
     </div>

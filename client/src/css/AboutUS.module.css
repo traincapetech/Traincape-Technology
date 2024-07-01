@@ -40,17 +40,17 @@
 }
 .textpdf{
     max-width: 100%;
-    margin-left: -30px;
+    margin-left: -20px;
     background: rgb(240, 252, 254);
     padding: 5%;
-    margin-top: 40px;
+    margin-top: 10px;
     border-radius: 20%;
 }
 .textpdf h1{
-    font-size: 25px;
+    font-size: 19px;
     font-family: poppins;
-    color: rgb(138, 133, 133);
-    font-weight: lighter;
+    color: rgb(77, 76, 76);
+    font-weight: bold;
 }
 .pdfDownloadBtn{
     width: 300px;
@@ -75,16 +75,16 @@
     margin-right: 20px;
 }
 .child1 h1{
-    font-size: 30px;
+    font-size: 25px;
 }
 .child1 h4{
     color: blue;
-    font-size: 23px;
+    font-size: 19px;
     font-family: poppins;
     font-weight: bold;
 }
 .child1 p{
-    font-size: 25px;
+    font-size: 19px;
     font-family: poppins;
     color: rgb(138, 133, 133);
     font-weight: lighter;
@@ -149,7 +149,7 @@ margin-top:-10px;
     margin-top: -30px;
 }
 .child2 img{
-    width: 800px;
+    width: 600px;
 }
 .ExpertTeam{
     display: flex;
@@ -467,7 +467,7 @@ margin-top:-10px;
 }
 .reviewGif img{
     width: 100%;
-    min-height: 400px;
+    min-height: 250px;
 }
 .consult .img{
     position: absolute;

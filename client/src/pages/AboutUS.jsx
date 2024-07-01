@@ -11,7 +11,7 @@ import RokeySir from "../assets/RokeySir.jpeg";
 import Consult from "../assets/smallImg.jpeg";
 import { useNavigate } from "react-router-dom";
 import jasveer from "../assets/jasveergill.png";
-import traincapeInfo from "../assets/Traincape-info.jpg";
+import traincapeInfo from "../assets/certificate-details.png";
 import review from "../assets/Feedback Gif.gif";
 import { Link } from "react-router-dom";
 
@@ -134,7 +134,7 @@ const AboutUS = () => {
             <div className={aboutus.ReviewPerson}>
               <img
                 src="https://lh3.googleusercontent.com/a/ACg8ocI9VN6rcL2ZiH4q_UjppPI_CwuPobfiO3NOzKzXTVx0GDydug=w75-h75-p-rp-mo-br100"
-                alt="IMage"
+                alt="review data"
               />
               <p>
                 These guys are awesome 🤩. Whatever you wanna do just tell them.
@@ -147,7 +147,7 @@ const AboutUS = () => {
           </div>
           <div className={aboutus.Reviewdiv1}>
             <div className={aboutus.ReviewPerson}>
-              <img src={jasveer} alt="IMage" />
+              <img src={jasveer} alt="review 1" />
               <p>
                 I did my azure training and certification from Traincape
                 technology is just smooth experience. Going work on more goals

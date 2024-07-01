@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import home from "../css/Home.module.css";
 import BannerImage from "../assets/hero-1-2.jpg.svg";
 import develop from "../assets/Development-Service.svg";
@@ -20,6 +20,7 @@ import memberImg from "../assets/workingboy.jpg";
 import RokeySir from "../assets/RokeySir.jpeg";
 import lady from "../assets/Lady-Conversation.svg";
 import QuestionCard from "../components/QuestionCard";
+import emailjs from "@emailjs/browser";
 import connectingImg from "../assets/connecting people.svg";
 
 const questionsAndAnswers = [
@@ -44,6 +45,56 @@ const questionsAndAnswers = [
 ];
 
 const Home = () => {
+  const [payoload, setPayoload] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    phoneNumber: "",
+    location: "",
+  });
+
+  const handleSubmit = (e) => {
+    // Your EmailJS serviceIdD and templateId and Public Key
+    const serviceId = "service_pjwgjas";
+    const templateId = "template_eueffas";
+    const publicId = "GmJ24jEVf6swWXgb0";
+
+    // Create a new object that contains dynamic template params
+    const [name, email, subject, message, phoneNumber, location] =
+      Object.values(payoload);
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_subject: subject,
+      to_name: "Parichay singh Rana",
+      message: `Name - ${name}\nEmail - ${email}\nCountry Name - ${location}\nWhatsapp-Number - ${phoneNumber}\nService Required - ${subject}\nMessage - ${message}`,
+    };
+    e.preventDefault();
+
+    //send the Email using EmailJS
+
+    emailjs.send(serviceId, templateId, templateParams, publicId).then(
+      (res) => {
+        alert("Email sent successfully!", res);
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
+    setPayoload({
+      name: "",
+      email: "",
+      phoneNumber: "",
+      subject: "",
+      message: "",
+      location: "",
+    });
+  };
+
+  const handleChange = (e) => {
+    setPayoload({ ...payoload, [e.target.name]: e.target.value });
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -53,6 +104,81 @@ const Home = () => {
       <div className={home.banner}>
         <div className={home.bannerImg}>
           <img src={BannerImage} alt="Banner" />
+        </div>
+        <div>
+          <form action="submit">
+            <div className={home.officeMail}>
+              <h1>Contact Form</h1>
+              <p>We're Ready To Connect You</p>
+              <div className={home.NameAndEmail}>
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  value={payoload.name}
+                  className={home.inputbox}
+                  placeholder="Your Name"
+                  required
+                  onChange={handleChange}
+                />
+                <br />
+                <input
+                  type="email"
+                  name="email"
+                  value={payoload.email}
+                  className={home.inputbox}
+                  placeholder="Your Email"
+                  required
+                  onChange={handleChange}
+                />
+                <br />
+              </div>
+              <input
+                type="text"
+                name="location"
+                value={payoload.location}
+                className={home.inputbox}
+                placeholder="Country Name"
+                required
+                onChange={handleChange}
+              />
+              <input
+                type="number"
+                name="phoneNumber"
+                value={payoload.phoneNumber}
+                className={home.inputbox}
+                placeholder="Whatsapp Number"
+                required
+                onChange={handleChange}
+              />
+              <select
+                name="subject"
+                id={home.select}
+                required
+                onChange={handleChange}
+              >
+                <option value="select course">Select Service</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Project Management">Project Management</option>
+              </select>
+              <br />
+              <br />
+              <div className={home.textareadiv}>
+                <textarea
+                  name="message"
+                  className={home.textarea}
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message"
+                  onChange={handleChange}
+                ></textarea>
+                <button className={home.contactBtn} onClick={handleSubmit}>
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
         <div className={home.bannerText}>
           <h1>TOP IT</h1>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import nav from "../css/Navbar.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../assets/New-Logo-removebg-preview.png";
+import logo from "../assets/WhatsApp_Image_2024-06-22_at_10.01.48-removebg-preview.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
@@ -177,8 +177,11 @@ const Navbar = () => {
                     >
                       Pay Pal
                     </Link>
-                    <Link className={nav.links} to="#">
-                      Credit / Debit Card
+                    <Link
+                      className={nav.links}
+                      to="https://buy.stripe.com/8wM2az10TaYQgww29d"
+                    >
+                      Stripe
                     </Link>
                     <Link
                       className={nav.links}
@@ -202,9 +205,7 @@ const Navbar = () => {
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
-            <button className={nav.btn}>
-              Pay Now
-            </button>
+            <button className={nav.btn}>Pay Now</button>
             <div
               className={`${nav.dropdownSection} ${
                 showDropdown ? nav.showDropdownSection : ""

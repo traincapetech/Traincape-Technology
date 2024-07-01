@@ -26,7 +26,7 @@ const ISTQBsinglePage = () => {
           </h1>
         </div>
         <div className={istqb.ImgContainer}>
-          <img src={istqbIMG} alt="AWS-Image" />
+          <img src={istqbIMG} alt="istqb" />
         </div>
       </div>
       <div className={istqb.courseContainer}>

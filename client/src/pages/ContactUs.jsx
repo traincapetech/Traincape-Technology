@@ -14,6 +14,7 @@ const ContactUs = () => {
     subject: "",
     message: "",
     phoneNumber: "",
+    location: "",
   });
 
   const handleSubmit = (e) => {
@@ -23,14 +24,14 @@ const ContactUs = () => {
     const publicId = "GmJ24jEVf6swWXgb0";
 
     // Create a new object that contains dynamic template params
-    const [name, email, subject, message, phoneNumber] =
+    const [name, email, subject, message, phoneNumber, location] =
       Object.values(payoload);
     const templateParams = {
       from_name: name,
       from_email: email,
       from_subject: subject,
       to_name: "Parichay singh Rana",
-      message: `Name - ${name}\nEmail - ${email}\nWhatsapp-Number - ${phoneNumber}\nService Required - ${subject}\nMessage - ${message}`,
+      message: `Name - ${name}\nEmail - ${email}\nCountry Name - ${location}\nWhatsapp-Number - ${phoneNumber}\nService Required - ${subject}\nMessage - ${message}`,
     };
     e.preventDefault();
 
@@ -50,6 +51,7 @@ const ContactUs = () => {
       phoneNumber: "",
       subject: "",
       message: "",
+      location: "",
     });
   };
 
@@ -77,13 +79,21 @@ const ContactUs = () => {
           <div className={contactus.addressdiv1}>
             <div className={contactus.iconDiv1}>
               <HiDevicePhoneMobile className={contactus.icon} />
-              <Link className={contactus.link} to="tel:+91 6280281505" target="_blank">
+              <Link
+                className={contactus.link}
+                to="tel:+91 6280281505"
+                target="_blank"
+              >
                 +91 6280281505
               </Link>
             </div>
             <div className={contactus.textdiv1}>
               <IoMailOutline className={contactus.icon} />
-              <Link className={contactus.link} to="mailto:sales@traincapetech.info" target="_blank">
+              <Link
+                className={contactus.link}
+                to="mailto:sales@traincapetech.info"
+                target="_blank"
+              >
                 sales@traincapetech.info
               </Link>
             </div>
@@ -110,8 +120,8 @@ const ContactUs = () => {
           </div>
         </div>
         <div className={contactus.officeMail}>
-          <h1>Leave A Message</h1>
-          <p>We're Ready To Help You</p>
+          <h1>Contact Form </h1>
+          <p>We're Ready To Connect You</p>
           <div className={contactus.NameAndEmail}>
             <br />
             <input
@@ -135,6 +145,15 @@ const ContactUs = () => {
             />
             <br />
           </div>
+          <input
+            type="text"
+            name="location"
+            value={payoload.location}
+            className={contactus.inputbox}
+            placeholder="Country Name"
+            required
+            onChange={handleChange}
+          />
           <input
             type="number"
             name="phoneNumber"
