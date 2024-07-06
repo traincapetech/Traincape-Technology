@@ -181,7 +181,7 @@ const Navbar = () => {
                       className={nav.links}
                       to="https://buy.stripe.com/8wM2az10TaYQgww29d"
                     >
-                      Stripe
+                      Credit / Debit Card
                     </Link>
                     <Link
                       className={nav.links}
@@ -217,7 +217,10 @@ const Navbar = () => {
               >
                 Pay Pal
               </Link>
-              <Link className={nav.links} to="#">
+              <Link
+                className={nav.links}
+                to="https://buy.stripe.com/8wM2az10TaYQgww29d"
+              >
                 Credit / Debit Card
               </Link>
               <Link className={nav.links} onClick={() => alert(alertMessage)}>

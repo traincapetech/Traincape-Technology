@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import contactus from "../css/ContactUs.module.css";
-import { HiDevicePhoneMobile } from "react-icons/hi2";
+import { FaWhatsapp } from "react-icons/fa6";
 import { GrLocation } from "react-icons/gr";
 import { RiTeamLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -78,13 +78,13 @@ const ContactUs = () => {
           <h2>Phone Number & Email</h2>
           <div className={contactus.addressdiv1}>
             <div className={contactus.iconDiv1}>
-              <HiDevicePhoneMobile className={contactus.icon} />
+              <FaWhatsapp className={contactus.icon} />
               <Link
                 className={contactus.link}
-                to="tel:+91 6280281505"
+                to="https://wa.me/+441253928501"
                 target="_blank"
               >
-                +91 6280281505
+                +44 1253928501
               </Link>
             </div>
             <div className={contactus.textdiv1}>

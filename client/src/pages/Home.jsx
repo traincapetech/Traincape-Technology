@@ -6,9 +6,7 @@ import market from "../assets/Marketing-services.svg";
 import consult from "../assets/Consulting-service.svg";
 import { useNavigate } from "react-router-dom";
 import hero from "../assets/Heroimg.svg";
-import call from "../assets/Call-small.svg";
-import heroDown from "../assets/HeroDownBG.png";
-import Services from "./Services";
+
 import cloud from "../assets/Cloud-services.svg";
 import UI from "../assets/UI-development.svg";
 import Digital from "../assets/Digital marketing.svg";
@@ -16,12 +14,11 @@ import Web from "../assets/Web development.svg";
 import Software from "../assets/software-services.svg";
 import softwareDevelopment from "../assets/Software-development-Learnings.svg";
 import Consult from "../assets/smallImg.jpeg";
-import memberImg from "../assets/workingboy.jpg";
-import RokeySir from "../assets/RokeySir.jpeg";
 import lady from "../assets/Lady-Conversation.svg";
 import QuestionCard from "../components/QuestionCard";
 import emailjs from "@emailjs/browser";
 import connectingImg from "../assets/connecting people.svg";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 
 const questionsAndAnswers = [
   {
@@ -108,7 +105,15 @@ const Home = () => {
         <div>
           <form action="submit">
             <div className={home.officeMail}>
-              <h1>Contact Form</h1>
+              <div className={home.whatsapp}>
+                <h1>Contact Form</h1>
+                <FaSquareWhatsapp
+                  className={home.whatappicon}
+                  onClick={() =>
+                    (window.location.href = "https://wa.me/+441253928501")
+                  }
+                />
+              </div>
               <p>We're Ready To Connect You</p>
               <div className={home.NameAndEmail}>
                 <br />
@@ -260,10 +265,16 @@ const Home = () => {
             e-tailers. Intrinsicly enhance 24/7 users and supply process
           </p>
           <div className={home.call}>
-            <img src={call} alt="Calling Image" />
+            <FaSquareWhatsapp className={home.whatappicon} />
             <div>
               <p>24 HOURS SERVICE AVAILABLE</p>
-              <h4>Call Us: +(91) 6280281505</h4>
+              <h4
+                onClick={() =>
+                  (window.location.href = "https://wa.me/+441253928501")
+                }
+              >
+                Chat With Us: +44 1253 928501
+              </h4>
             </div>
           </div>
           <div className={home.btnDiv}>
@@ -435,31 +446,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className={home.ExpertContainer}>
-        <div className={home.ExpertTeam}>
-          <div className={home.ExpertText}>
-            <p> GREAT TEAM MEMBERS</p>
-            <h1>We Have Expert Team</h1>
-          </div>
-          <div className={home.ExpertMembers}>
-            <div className={home.member}>
-              <img src={memberImg} alt="Member Images" />
-              <h1>Parichay Singh Rana</h1>
-              <p>CEO</p>
-            </div>
-            <div className={home.member}>
-              <img src={RokeySir} alt="Member Images" />
-              <h1>Shivam Singh</h1>
-              <p>Manager</p>
-            </div>
-            <div className={home.member}>
-              <img src={memberImg} alt="Member Images" />
-              <h1>Parichay Singh Rana</h1>
-              <p>CEO</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className={home.help}>
         <div className={home.ladyIMG}>
           <img src={lady} alt="Image of lady conversation" />
@@ -488,33 +474,6 @@ const Home = () => {
             interactive customer service before fully tested relationship
             parallel task high standards...
           </p>
-          {/* <div className={home.lineDiv}>
-            <div className={home.line}>
-              <h3>BUSINESS SECURITY</h3>
-              <h4>65%</h4>
-            </div>
-            <div className={home.divline}>
-              <div className={home.sweetline}></div>
-            </div>
-          </div>
-          <div className={home.lineDiv}>
-            <div className={home.line}>
-              <h3>BUSINESS SECURITY</h3>
-              <h4>65%</h4>
-            </div>
-            <div className={home.divline}>
-              <div className={home.sweetline}></div>
-            </div>
-          </div>
-          <div className={home.lineDiv}>
-            <div className={home.line}>
-              <h3>BUSINESS SECURITY</h3>
-              <h4>65%</h4>
-            </div>
-            <div className={home.divline}>
-              <div className={home.sweetline}></div>
-            </div>
-          </div> */}
         </div>
         <div className={home.connectingImg}>
           <img src={connectingImg} alt="Connecting Image" />

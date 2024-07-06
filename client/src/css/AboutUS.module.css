@@ -108,18 +108,19 @@
     display: flex;
 }
 .icondiv{
-    position: relative;
-    width: 20px;
-    height: 20px;
+    /* position: relative; */
+    width: 30px;
+    height: 30px;
     padding: 15px;
     background: white;
-    border-radius: 50%;
+    border-radius: 40%;
     margin-top: 5px;
 
 }
 .icon{
-    position: absolute;
-    color: blue;
+    /* position: absolute; */
+    color: rgb(30, 255, 0);
+    font-size: 30px;
     
     
 }

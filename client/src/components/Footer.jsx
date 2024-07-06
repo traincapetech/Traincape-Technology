@@ -2,7 +2,7 @@ import React from "react";
 import footersection from "../css/Footer.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { FaMapLocationDot } from "react-icons/fa6";
-import { LuTimerReset } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa6";
 import { TbPhoneCall } from "react-icons/tb";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -36,12 +36,18 @@ const Footer = () => {
           </div>{" "} */}
           <div className={footersection.address}>
             <div className={footersection.iconDiv}>
-              <TbPhoneCall className={footersection.icon} />
+              <FaWhatsapp className={footersection.icon} />
             </div>
             <div className={footersection.addressText}>
               <h1>CONTACT - US</h1>
               <p>sales@traincaapetech.info</p>
-              <p>+91 6280281505</p>
+              <p
+                onClick={() =>
+                  (window.location.href = "https://wa.me/+441253928501")
+                }
+              >
+                +44 1253 928501
+              </p>
             </div>
           </div>
         </div>

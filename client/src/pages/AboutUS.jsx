@@ -4,7 +4,7 @@ import banner from "../assets/about-us-new.jpeg";
 import { SiAmazonsimpleemailservice } from "react-icons/si";
 import { SiEsotericsoftware } from "react-icons/si";
 import { MdCall } from "react-icons/md";
-import { GrServices } from "react-icons/gr";
+import { FaWhatsapp } from "react-icons/fa6";
 import childimg from "../assets/disccuss.jpg";
 import memberImg from "../assets/workingboy.jpg";
 import RokeySir from "../assets/RokeySir.jpeg";
@@ -69,23 +69,23 @@ const AboutUS = () => {
           <div className={aboutus.childdiv}>
             <div className={aboutus.call}>
               <div className={aboutus.icondiv}>
-                <MdCall className={aboutus.icon} />
+                <FaWhatsapp className={aboutus.icon} />
               </div>
               <div style={{ textAlign: "center" }}>
-                <h2>Call To Ask Any Query</h2>
+                <h2>WhatsApp To Ask Any Query</h2>
                 <Link
                   className={aboutus.link}
-                  to="tel:+91 6280281505"
+                  to="https://wa.me/+441253928501"
                   target="_blank"
                 >
-                  +91 6280281505
+                  +44 1253 928501
                 </Link>
               </div>
             </div>
             <div className={aboutus.border}></div>
             <div className={aboutus.founder}>
               <p>Founder & CEO</p>
-              <h3>Parichay Singh Rana</h3>
+              <h3>Parichay</h3>
             </div>
           </div>
         </div>

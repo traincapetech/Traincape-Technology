@@ -56,6 +56,17 @@
     transition: background-color 1.9s ease;
     color: white;
 }
+.whatsapp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.whatappicon{
+    width: 50px;
+    height: 50px;
+    color: green;
+    cursor: pointer;
+}
 .officeMail{
     width: 95%;
     background:#EFF1F5;
@@ -239,6 +250,9 @@
 .call {
     display: flex;
     background: white;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .call p{
@@ -415,64 +429,6 @@
     color: white;
     transition: background-color 1.9s ease;
 
-}
-
-
-
-.ExpertTeam{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.ExpertMembers{
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-}
-.ExpertText {
-    text-align: center;
-}
-.ExpertText p{
-    font-size: 15px;
-    font-family: poppins;
-    color: rgb(18, 7, 232);
-    font-weight: lighter;
-}
-
-.ExpertText h1{
-    font-size: 30px;
-    font-family: poppins;
-    color: rgb(65, 67, 67);
-    font-weight: bold;
-}
-
-.member{
-    padding: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    text-align: center;
-    background: rgb(242, 242, 246);
-}
-.member img{
-    width: 100%;
-    height: 200px;
-}
-
-.member h1{
-    font-size: 19px;
-    font-family: poppins;
-    color: rgb(65, 67, 67);
-    font-weight: bold;
-    text-align: center;
-}
-
-.member p{
-    font-size: 15px;
-    font-family: poppins;
-    color: rgb(17, 29, 200);
-    font-weight: lighter;
-    text-align: center;
 }
 .help{
     margin-top: 10%;
@@ -707,11 +663,7 @@
         align-items: center;
         text-align: center;
     }
-.ExpertMembers{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
+
 .help{
     display: none;
 }
