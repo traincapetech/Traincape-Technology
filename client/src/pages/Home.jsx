@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import home from "../css/Home.module.css";
-import BannerImage from "../assets/hero-1-2.jpg.svg";
+// import BannerImage from "../assets/hero-1-2.jpg.svg";
+import BannerImage from "../assets/Best Creative Business Banner Flyer - Made with PosterMyWall.jpg";
 import develop from "../assets/Development-Service.svg";
 import market from "../assets/Marketing-services.svg";
 import consult from "../assets/Consulting-service.svg";
@@ -19,25 +20,27 @@ import QuestionCard from "../components/QuestionCard";
 import emailjs from "@emailjs/browser";
 import connectingImg from "../assets/connecting people.svg";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+import Typewriter from "typewriter-effect";
 
 const questionsAndAnswers = [
   {
     id: 1,
-    question: "What is React?",
-    answer: "React is a JavaScript library for building user interfaces.",
+    question: "What is aws certification?",
+    answer:
+      "AWS certification is a level of Amazon Web Services cloud expertise that an IT professional obtains after passing one or more exams the public cloud provider offers",
   },
   {
     id: 2,
 
-    question: "What is a component in React?",
+    question: "What is microsoft certification?",
     answer:
-      "A component in React is a reusable piece of code that represents a part of the user interface.",
+      "Microsoft Certification is a program provided by Microsoft to validate an individual's expertise in various Microsoft technologies and products. These certifications are designed for IT professionals, developers, and business users to demonstrate their skills and knowledge in specific areas.",
   },
   {
     id: 3,
-    question: "What is JSX?",
+    question: "What is CompTia certification?",
     answer:
-      "JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is used with React to describe what the UI should look like.JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is used with React to describe what the UI should look like.JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is used with React to describe what the UI should look like.",
+      "CompTIA (Computing Technology Industry Association) Certification is a series of professional certifications for IT professionals offered by CompTIA. These certifications validate an individual's skills and knowledge in various IT domains, ranging from foundational IT skills to advanced cybersecurity and infrastructure roles. CompTIA certifications are widely recognized and respected in the IT industry, providing a benchmark for assessing and verifying technical skills.",
   },
 ];
 
@@ -101,8 +104,9 @@ const Home = () => {
       <div className={home.banner}>
         <div className={home.bannerImg}>
           <img src={BannerImage} alt="Banner" />
+          {/* <video className={home.vdo} src={vdo} autoPlay loop controls /> */}
         </div>
-        <div>
+        {/* <div>
           <form action="submit">
             <div className={home.officeMail}>
               <div className={home.whatsapp}>
@@ -184,20 +188,38 @@ const Home = () => {
               </div>
             </div>
           </form>
-        </div>
-        <div className={home.bannerText}>
+        </div> */}
+        <div
+          className={home.bannerText}
+          data-aos="zoom-in-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+        >
           <h1>TOP IT</h1>
           <h1>SUPPORT & MANAGEMENT</h1>
           <p>
-            Discover top-tier IT support and management services designed to
-            streamline your technology operations. our expert team is dedicated
-            to providing efficient and effective solutions for your IT needs.
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                strings: [
+                  " Discover top-tier IT support and management services designed to streamline your technology operations. our expert team is dedicated to providing efficient and effective solutions for your IT needs. ",
+                ],
+              }}
+            />
           </p>
           <button onClick={() => navigate("/about-us")}>ABOUT US</button>
         </div>
       </div>
-      <div className={home.bannerImageDown}>
-        <div className={home.servicediv}>
+      <div className={home.bannerImageDown} data-aos="fade-in">
+        <div
+          className={home.servicediv}
+          data-aos="zoom-in-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           <div className={home.imagediv}>
             <img src={develop} alt="Development Services" />
           </div>
@@ -215,7 +237,13 @@ const Home = () => {
             Read More
           </button>
         </div>
-        <div className={home.servicediv}>
+        <div
+          className={home.servicediv}
+          data-aos="zoom-in-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           <div className={home.imagediv}>
             <img src={market} alt="Marketing Services" />
           </div>
@@ -232,7 +260,13 @@ const Home = () => {
             Read More
           </button>
         </div>
-        <div className={home.servicediv}>
+        <div
+          className={home.servicediv}
+          data-aos="zoom-in-up"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        >
           <div className={home.imagediv}>
             <img src={consult} alt="Consulting Services" />
           </div>
@@ -251,13 +285,35 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className={home.hero}>
+      <div
+        className={home.hero}
+        data-aos="zoom-in-up"
+        data-aos-offset="200"
+        data-aos-duration="2000"
+      >
         <div className={home.heroImg}>
-          <img src={hero} alt="Hero Image" />
+          {/* <img src={hero} alt="Hero Image" /> */}
+          <iframe
+            className={home.vdo}
+            src="https://www.youtube.com/embed/cZjkxmzo1Xg?autoplay=1&loop=1&playlist=cZjkxmzo1Xg&controls=1"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            
+            frameBorder="0"
+          ></iframe>
         </div>
         <div className={home.heroText}>
           <h3>GET BEST IT SOLUTIONS 2022</h3>
-          <h1>TRUST OUR BEST IT SOLUTIONS FOR YOUR BUSINESS</h1>
+          <h1>
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                strings: ["TRUST OUR BEST IT SOLUTIONS FOR YOUR BUSINESS"],
+              }}
+            />
+          </h1>
           <p>
             Compellingly mesh cross-platform portals through functional human
             capital world-class architectures for orthogonal initiatives.
@@ -294,7 +350,12 @@ const Home = () => {
         </h1>
         <div className={home.services}>
           <div className={home.subSerices}>
-            <div className={home.service}>
+            <div
+              className={home.service}
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="2000"
+            >
               <img src={cloud} alt="Cloud services" />
               <h2>Cloud Services</h2>
               <p>
@@ -312,7 +373,12 @@ const Home = () => {
                 Read More{" "}
               </button>
             </div>
-            <div className={home.service}>
+            <div
+              className={home.service}
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="2000"
+            >
               <img src={UI} alt="UI development" />
               <h2>UI Development</h2>
               <p>
@@ -330,7 +396,12 @@ const Home = () => {
                 Read More{" "}
               </button>
             </div>
-            <div className={home.service}>
+            <div
+              className={home.service}
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="2000"
+            >
               <img src={Digital} alt="Digital Marketing" />
               <h2>Digital Marketing</h2>
               <p>
@@ -348,7 +419,12 @@ const Home = () => {
                 Read More{" "}
               </button>
             </div>
-            <div className={home.service}>
+            <div
+              className={home.service}
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="2000"
+            >
               <img src={Web} alt="Web Development" />
               <h2>Web Development</h2>
               <p>
@@ -367,7 +443,12 @@ const Home = () => {
                 Read More{" "}
               </button>
             </div>
-            <div className={home.service}>
+            <div
+              className={home.service}
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="2000"
+            >
               <img src={Software} alt="Software services" />
               <h2>Software Services</h2>
               <p>
@@ -384,7 +465,12 @@ const Home = () => {
                 Read More{" "}
               </button>
             </div>
-            <div className={home.service}>
+            <div
+              className={home.service}
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="2000"
+            >
               <img
                 src={softwareDevelopment}
                 alt="Software Development Learnings"
@@ -407,7 +493,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={home.consult}>
+          <div
+            className={home.consult}
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="2000"
+          >
             <img src={Consult} className={home.img} alt="Consult Image" />
             <div className={home.consultdiv}>
               <div className={home.consultText}>
@@ -446,7 +537,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={home.help}>
+      <div
+        className={home.help}
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-duration="2000"
+      >
         <div className={home.ladyIMG}>
           <img src={lady} alt="Image of lady conversation" />
         </div>
@@ -464,7 +560,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={home.connecting}>
+      <div
+        className={home.connecting}
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-duration="2000"
+      >
         <div className={home.ConnectingText}>
           <h2>THE GREAT COMPANY SKILL</h2>
           <h1>CONNECTING PEOPLE AND BUILD TECHNOLOGY</h1>

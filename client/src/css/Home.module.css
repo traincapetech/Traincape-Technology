@@ -3,7 +3,7 @@
 }
 .banner{
     width: 100%;
-    display: flex;
+    /* display: flex; */
     position: relative;
     gap: 10px;
     /* border: 10px dashed red; */
@@ -12,16 +12,21 @@
     width: 100%;
     height: 450px;
     object-fit: cover;
-    position:relative;
-    color: black; 
+    /* position:relative; */
+    /* color: black;  */
 }
-
+.vdo{
+    /* width: 900px; */
+    height: 400px;
+    object-fit: cover;
+    /* display: block; */
+}
 .bannerText{
     max-width: 40%;
     position: absolute;
     top: 30%;
     left: 1%;
-    color: rgb(245, 245, 243);
+    color: rgb(0, 0, 0);
     
 }
 .bannerText h1{
@@ -31,16 +36,16 @@
 }
 
 .bannerText p{
-    font-size: 16px;
+    font-size: 20px;
     font-family: poppins;
     font-weight: bold;
     margin-top: 10px;   
-    color: rgb(227, 241, 255);
+    color: rgb(0, 0, 0);
 }
 
 .bannerText button{
     height: 40px;
-    background: rgba(89, 101, 108, 0.079);
+    background: rgb(0, 0, 0);
     color: aliceblue;
     font-weight: bold;
     border: none;
@@ -142,14 +147,17 @@
     font-weight: lighter;
     font-family:serif;
     padding: 5px;
-    background: rgb(255, 0, 166);
+    background: #80669d;
+    cursor: pointer;
 }
+
 .bannerImageDown{
     display: flex;
     max-width: 80%;
     align-items: stretch;
     justify-content: start;
     /* border: 2px dashed red; */
+    transition: bannerImageDown ease;
     margin:0 auto;
     gap: 20px;
 }
@@ -167,19 +175,18 @@
     /* min-width: 400px; */
     position: relative;
    /* margin-top:-5% ; */
-   background: white;
    border-radius: 10px;
    padding: 50px;
    padding-bottom: 60px;
    border: 3px solid rgb(242, 238, 238);
-}
 
+} 
 .servicediv p{
     font-size: 15px;
     font-family: poppins;
-    font-weight: lighter;
+    font-weight: bold;
     margin-top: 10px;
-    color: rgb(182, 180, 180);
+    color: rgba(0, 0, 0, 0.734);
 }
 
 .readbtn{
@@ -243,7 +250,7 @@
     font-size: 16px;
     font-family: poppins;
     font-weight: lighter;
-    color: #c1bfbf; 
+    color: #555556; 
     margin-top: 10px;
 }
 
@@ -559,15 +566,9 @@
     }
     .bannerText h1{
         font-size: 0.9rem;
-        font-family: poppins;
-        color: rgb(245, 245, 243);
-        font-weight: bold;
     }
     .bannerText p{
         font-size: 0.7rem;
-        font-family: poppins;
-        color: rgb(245, 245, 243);
-        font-weight: lighter;
     }
     .bannerImageDown{
         display: flex;
@@ -588,14 +589,6 @@
        padding: 50px;
        padding-bottom: 50px;
     }
-
-    .servicediv p{
-        font-size: 15px;
-        font-family: poppins;
-        font-weight: lighter;
-        margin-top: 10px;
-        color: rgb(182, 180, 180);
-    }   
 
     .readbtn{
         border: none;   
@@ -689,6 +682,14 @@
         left: 10%;
         
     }
+    .banner img{
+        object-fit:fill;
+    }
+    .bannerText p{
+        font-size: 0.8rem;
+        font-family: poppins;
+        font-weight: lighter;
+    }
     .service{
         position: relative;
         padding-bottom:50px ;
@@ -715,6 +716,12 @@
         top: 5%;
         left: 10%;
         
+    }
+    .banner img{
+        object-fit:fill;
+    }
+    .bannerText p{
+        font-size: 0.8rem;
     }
     .service{
         position: relative;
@@ -753,20 +760,14 @@
         position: absolute;
         top: 38%;
         left: 10%;
-        color: rgb(245, 245, 243);
         
     }
     .bannerText h1{
         font-size: 0.9rem;
-        font-family: poppins;
-        color: rgb(245, 245, 243);
         font-weight: bold;
     }
     .bannerText p{
         font-size: 0.8rem;
-        font-family: poppins;
-        color: rgb(245, 245, 243);
-        font-weight: lighter;
     }
     .service{
         position: relative;

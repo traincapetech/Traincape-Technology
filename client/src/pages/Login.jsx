@@ -3,13 +3,18 @@ import loginpage from "../css/Login.module.css";
 import { FaCircleUser } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+import { loginUser } from "../slices/userSlice";
 
 const Login = () => {
   const navigate = useNavigate();
+
+  const { user, loading, error } = useSelector((state) => state.user);
+  const dispatch = useDispatch();
   const [payload, setPayload] = useState({
-    email: "",
-    password: "",
+    email: "raja@gmail.com",
+    password: "raja",
   });
 
   const handleChange = (e) => {
@@ -18,15 +23,11 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:4001/user/login", payload).then((res) => {
-      // console.log(res);
+    console.log({ email: payload.email, password: payload.password });
 
-      localStorage.setItem("email", res.data.user.email);
-      localStorage.setItem("fullname", res.data.user.fullname);
-
-      navigate("/");
-    });
+    dispatch(loginUser(payload));
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -38,7 +39,7 @@ const Login = () => {
           <div className={loginpage.inputBox}>
             <input
               type="text"
-              placeholder="Username"
+              placeholder="email"
               name="email"
               required
               onChange={handleChange}

@@ -4,6 +4,7 @@ const { connection } = require("./db");
 
 const { userRouter } = require("./routes/user.routes");
 const { reviewRouter } = require("./routes/review.routes");
+const { bookRouter } = require("./routes/book.routes");
 require("dotenv").config();
 
 const app = express();
@@ -13,6 +14,7 @@ app.use(cors());
 
 app.use("/users", userRouter);
 app.use("/review", reviewRouter);
+app.use("/books", bookRouter);
 app.get("/", (req, res) => {
   res.status(200).send({
     message: "This is our Homepage",

@@ -70,11 +70,8 @@ const ContactUs = () => {
       </div>
       <div className={contactus.OfficeAdress}>
         <div className={contactus.OfficeDetails}>
-          <h1>Delhi Office Address</h1>
-          <p>
-            Khandolia Plaza, 118\C, Dabri - Palam Rd, Vaishali Colony, Dashrath
-            Puri, New Delhi, Delhi, 110045
-          </p>
+          <h1>Office Address</h1>
+          <p>India, USA, Nigiria</p>
           <h2>Phone Number & Email</h2>
           <div className={contactus.addressdiv1}>
             <div className={contactus.iconDiv1}>

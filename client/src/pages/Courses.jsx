@@ -209,7 +209,7 @@ const Courses = () => {
             </button>
           </div>
         </div>
-        <div className={courses.course}>
+        {/* <div className={courses.course}>
           <div className={courses.CourseImg}>
             <img src={scrumStudy} alt="ScrumStudy" />
           </div>
@@ -222,7 +222,7 @@ const Courses = () => {
               Know More
             </button>
           </div>
-        </div>
+        </div> */}
         <div className={courses.course}>
           <div className={courses.CourseImg}>
             <img src={suse} alt="SUse" />

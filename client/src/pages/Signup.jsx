@@ -20,11 +20,13 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(payload);
-    axios.post("http://localhost:4001/user/signup", payload).then((res) => {
-      console.log(res.data);
+    axios
+      .post("https://traincape-backend-1.onrender.com/users/register", payload)
+      .then((res) => {
+        console.log(res.data);
 
-      navigate("/login");
-    });
+        navigate("/login");
+      });
     setPayload({ fullname: "", email: "", password: "" });
   };
   useEffect(() => {

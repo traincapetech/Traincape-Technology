@@ -30,10 +30,15 @@ import APMGsinglePage from "../SinglePage/APMG/APMGsinglePage";
 import CloudSecurityAllianceSinglePage from "../SinglePage/CloudSecurityAlliance/CloudSecurityAllianceSinglePage";
 import SUSESinglePage from "../SinglePage/Suse/SUSESinglePage";
 import ISTQBsinglePage from "../SinglePage/ISTQB/ISTQBsinglePage";
+import ReviewPage from "../pages/review/ReviewPage";
+import BookPage from "../pages/ebook/BookPage";
+import LandingPage from "../pages/landingPage/LandingPage";
 const AllRoute = () => {
   return (
     <Routes>
+      <Route path="/review-page" element={<ReviewPage />} />
       <Route path="/" element={<Home />} />
+      <Route path="/ebook-page" element={<BookPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/about-us" element={<AboutUS />} />
@@ -75,6 +80,7 @@ const AllRoute = () => {
         path="/ScrumStudy-single-page"
         element={<ScrumStudySinglePage />}
       />
+      <Route path="/home" element={<LandingPage />} />
     </Routes>
   );
 };

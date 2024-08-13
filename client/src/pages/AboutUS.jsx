@@ -11,9 +11,11 @@ import RokeySir from "../assets/RokeySir.jpeg";
 import Consult from "../assets/smallImg.jpeg";
 import { useNavigate } from "react-router-dom";
 import jasveer from "../assets/jasveergill.png";
-import traincapeInfo from "../assets/certificate-details.png";
+import traincapeInfo from "../assets/T-certificate-details.png";
 import review from "../assets/Feedback Gif.gif";
 import { Link } from "react-router-dom";
+import { Slide } from "react-slideshow-image";
+import Slider from "../components/slider/Slider";
 
 const AboutUS = () => {
   const navigate = useNavigate();
@@ -93,40 +95,14 @@ const AboutUS = () => {
           <img src={childimg} alt="Child Image" />
         </div>
       </div>
-      {/* <div className={aboutus.ExpertContainer}>
-        <div className={aboutus.ExpertTeam}>
-          <div className={aboutus.ExpertText}>
-            <p> GREAT TEAM MEMBERS</p>
-            <h1>We Have Expert Team</h1>
-          </div>
-          <div className={aboutus.ExpertMembers}>
-            <div className={aboutus.member}>
-              <img src={memberImg} alt="Member Images" />
-              <h1>Parichay Singh Rana</h1>
-              <p>CEO</p>
-            </div>
-            <div className={aboutus.member}>
-              <img src={RokeySir} alt="Member Images" />
-              <h1>Shivam Singh</h1>
-              <p>Manager</p>
-            </div>
-            <div className={aboutus.member}>
-              <img src={memberImg} alt="Member Images" />
-              <h1>Parichay Singh Rana</h1>
-              <p>CEO</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
-      <div className={aboutus.Review}>
+      {/* <div className={aboutus.Review}>
         <div className={aboutus.ReviewDiv}>
           <div className={aboutus.Quote}>
             <p>OUR BEST REVIEWS</p>
             <h1>Inspiring Tech Needs For Business</h1>
           </div>
           <div className={aboutus.vdobtn}>
-            {/* <button className={aboutus.btn1}>WATCH VIDEO</button> */}
           </div>
         </div>
         <div className={aboutus.ReviewPersonDiv}>
@@ -158,7 +134,9 @@ const AboutUS = () => {
             <h2>Azure Training</h2>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Slider height="300px" />
+
       <div className={aboutus.Postreview}>
         <div className={aboutus.PostReviewText}>
           <h1>

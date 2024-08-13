@@ -7,6 +7,7 @@ import { TbPhoneCall } from "react-icons/tb";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
+import WebsiteCounter from "./WebsiteCounter";
 const Footer = () => {
   const navigate = useNavigate();
   return (
@@ -142,6 +143,7 @@ const Footer = () => {
       <div className={footersection.copyRight}>
         <h1>Copyright © 2021 Traincape Technology. All Rights Reserved.</h1>
       </div>
+      {/* <WebsiteCounter /> */}
     </div>
   );
 };

@@ -57,6 +57,16 @@ const Navbar = () => {
           {isMenuOpen ? <ImCross /> : <GiHamburgerMenu />}
         </div>
         <div className={`${nav.navlinks}`}>
+          {/* <Link className={nav.links} to="/home" onClick={handleLinkClick}>
+            Home
+          </Link> */}
+          <Link
+            className={nav.links}
+            to="/ebook-page"
+            onClick={handleLinkClick}
+          >
+            E-Book
+          </Link>
           <Link className={nav.links} to="/about-us" onClick={handleLinkClick}>
             About
           </Link>
@@ -66,6 +76,13 @@ const Navbar = () => {
             onClick={handleLinkClick}
           >
             Services
+          </Link>
+          <Link
+            className={nav.links}
+            to="/review-page"
+            onClick={handleLinkClick}
+          >
+            Reviews
           </Link>
           {/* <Link className={nav.links} to="#" onClick={handleLinkClick}>
             Our Customers
@@ -118,6 +135,16 @@ const Navbar = () => {
               />
             </div>
             <div className={nav.hamburgerLinksActive}>
+              {/* <Link className={nav.links} to="/home" onClick={toggleMenu}>
+                Home
+              </Link> */}
+              <Link
+                className={nav.links}
+                to="/ebook-page"
+                onClick={handleLinkClick}
+              >
+                E-Book
+              </Link>
               <Link className={nav.links} to="/about-us" onClick={toggleMenu}>
                 About
               </Link>
@@ -128,13 +155,6 @@ const Navbar = () => {
               >
                 Services
               </Link>
-              {/* <Link
-              className={nav.links}
-              to="/about-us"
-              onClick={handleLinkClick}
-              >
-              Our Customers
-              </Link> */}
               <Link className={nav.links} to="/contact-us" onClick={toggleMenu}>
                 Contact
               </Link>
@@ -144,6 +164,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Courses
+              </Link>
+              <Link
+                className={nav.links}
+                to="/review-page"
+                onClick={handleLinkClick}
+              >
+                Reviews
               </Link>
               <Link to="/Career-details" className={nav.links}>
                 Career
@@ -191,9 +218,13 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </div>
-                {/* <Link className={nav.links} onClick={() => navigate("/signup")}>
+                <Link
+                  className={nav.links}
+                  to={"/login"}
+                  onClick={() => navigate("/signup")}
+                >
                   Login
-                </Link> */}
+                </Link>
               </div>
             </div>
           </div>
@@ -229,9 +260,9 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* <button className={nav.loginbtn} onClick={() => navigate("/signup")}>
+          <button className={nav.loginbtn} onClick={() => navigate("/signup")}>
             Login
-          </button> */}
+          </button>
         </div>
       </div>
     </nav>

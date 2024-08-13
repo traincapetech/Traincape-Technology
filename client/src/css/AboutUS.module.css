@@ -152,63 +152,6 @@ margin-top:-10px;
 .child2 img{
     width: 600px;
 }
-.ExpertTeam{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-}
-
-.ExpertMembers{
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-}
-.ExpertText {
-    text-align: center;
-}
-.ExpertText p{
-    font-size: 23px;
-    font-family: poppins;
-    color: rgb(18, 7, 232);
-    font-weight: lighter;
-}
-
-.ExpertText h1{
-    font-size: 50px;
-    font-family: poppins;
-    color: rgb(65, 67, 67);
-    font-weight: bold;
-}
-
-.member{
-    padding: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    text-align: center;
-    background: rgb(242, 242, 246);
-}
-.member img{
-    width: 300px;
-    height: 300px;
-}
-
-.member h1{
-    font-size: 30px;
-    font-family: poppins;
-    color: rgb(65, 67, 67);
-    font-weight: bold;
-    text-align: center;
-}
-
-.member p{
-    font-size: 23px;
-    font-family: poppins;
-    color: rgb(17, 29, 200);
-    font-weight: lighter;
-    text-align: center;
-}
 
 .Review{
     background: rgb(202, 201, 201);
@@ -427,11 +370,6 @@ margin-top:-10px;
         width: 100%;
         object-fit: contain;
     }
-    
-.ExpertMembers{
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 10px;
-}
 
 .ReviewPersonDiv {
     flex-direction: column;
