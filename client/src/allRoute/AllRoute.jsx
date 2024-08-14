@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import AboutUS from "../pages/AboutUS";
@@ -35,12 +35,13 @@ import BookPage from "../pages/ebook/BookPage";
 import LandingPage from "../pages/landingPage/LandingPage";
 const AllRoute = () => {
   const token = localStorage.getItem("token")
+  console.log(token)
   return (
     <Routes>
       <Route path="/review-page" element={<ReviewPage />} />
       <Route path="/" element={<Home />} />
      
-      <Route path="/ebook-page" element={<BookPage />} /> 
+      <Route path="/ebook-page" element={token ? <BookPage /> : <Navigate to="/login" replace />} /> 
      
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
@@ -50,7 +51,9 @@ const AllRoute = () => {
       <Route path="/our-services" element={<Services />} />
       <Route path="/Terms-and-Conditions" element={<TermsAndCondition />} />
      
-     <Route path="/Courses-details" element={<Courses />} />
+     <Route path="/Courses-details" element={token ? <Courses />  : <Navigate to="/login" replace />} />
+     
+     
       <Route path="/Career-details" element={<Career />} />
       <Route path="/Our-Policies" element={<Policy />} />
       <Route path="/Our-Blogs" element={<Blogs />} />
