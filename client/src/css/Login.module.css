@@ -1,7 +1,7 @@
 
 .wrapper {
-    min-width: 100%;
-    min-height: 800px;
+    width: 100%;
+    height: 800px;
     margin-top: 0px;
     padding: 0.5px;
     color: #fff;
@@ -15,7 +15,7 @@
 
 
 .LoginForm{
-    min-width: 600px;
+    /* width: 600px; */
     border-radius: 5px;
     color: #040000;
     background-color: white;
@@ -161,4 +161,17 @@ margin-left: -120px;
 
 .registerLink p a:hover {
     text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width:600) {
+
+    .wrapper{
+        width: 50%;
+        height: 100vh;
+    
+    }
+.LoginForm{
+    width: 50%;
+}
 }

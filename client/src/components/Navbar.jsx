@@ -229,14 +229,14 @@ const dispatch = useDispatch()
                     </Link>
                   </div>
                 </div>
-                {
+                {/* {
                 token ? <button className={nav.loginbtn} onClick={handleLogout}>
                 Logout
               </button> :
               <button className={nav.loginbtn} onClick={() => navigate("/login")}>
               login
             </button>
-              }
+              } */}
               </div>
             </div>
           </div>
@@ -271,14 +271,14 @@ const dispatch = useDispatch()
               </Link>
             </div>
           </div>
-              {
+              {/* {
                 token ? <button className={nav.loginbtn} onClick={handleLogout}>
                 Logout
               </button> :
               <button className={nav.loginbtn} onClick={() => navigate("/login")}>
               login
             </button>
-              }
+              } */}
           
         </div>
       </div>
