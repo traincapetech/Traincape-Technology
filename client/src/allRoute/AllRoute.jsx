@@ -34,11 +34,14 @@ import ReviewPage from "../pages/review/ReviewPage";
 import BookPage from "../pages/ebook/BookPage";
 import LandingPage from "../pages/landingPage/LandingPage";
 const AllRoute = () => {
+  const token = localStorage.getItem("token")
   return (
     <Routes>
       <Route path="/review-page" element={<ReviewPage />} />
       <Route path="/" element={<Home />} />
-      <Route path="/ebook-page" element={<BookPage />} />
+     
+      <Route path="/ebook-page" element={<BookPage />} /> 
+     
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/about-us" element={<AboutUS />} />
@@ -46,7 +49,8 @@ const AllRoute = () => {
       <Route path="/frequently-asked-questions" element={<FAQ />} />
       <Route path="/our-services" element={<Services />} />
       <Route path="/Terms-and-Conditions" element={<TermsAndCondition />} />
-      <Route path="/Courses-details" element={<Courses />} />
+     
+     <Route path="/Courses-details" element={<Courses />} />
       <Route path="/Career-details" element={<Career />} />
       <Route path="/Our-Policies" element={<Policy />} />
       <Route path="/Our-Blogs" element={<Blogs />} />
