@@ -43,6 +43,7 @@ const dispatch = useDispatch()
   }, []);
   const handleLogout = ()=>{
     dispatch(logoutUser())
+    window.location.href("/login")
     navigate('/login')
   }
   // console.log(token,user)
