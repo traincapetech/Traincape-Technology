@@ -4,12 +4,16 @@ import { FaCircleUser } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { signupUser } from "../slices/userSlice";
 
 const Signup = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const {user,loading,error} = useSelector((state)=> state.user)
   const [payload, setPayload] = useState({
-    fullname: "",
+    username: "",
     email: "",
     password: "",
   });
@@ -19,15 +23,14 @@ const Signup = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(payload);
-    axios
-      .post("https://traincape-backend-1.onrender.com/users/register", payload)
-      .then((res) => {
-        console.log(res.data);
-
-        navigate("/login");
-      });
-    setPayload({ fullname: "", email: "", password: "" });
+    dispatch(signupUser({
+      username: payload.username,
+      email: payload.email,
+      password: payload.password
+    })).then(()=>{
+      navigate('/login')
+    })
+    setPayload({ username: "", email: "", password: "" });
   };
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,7 +44,7 @@ const Signup = () => {
             <input
               type="text"
               placeholder="Username"
-              name="fullname"
+              name="username"
               required
               onChange={handleChange}
             />

@@ -13,20 +13,34 @@ const Login = () => {
   const { user, loading, error } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const [payload, setPayload] = useState({
-    email: "raja@gmail.com",
-    password: "raja",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
     setPayload({ ...payload, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({ email: payload.email, password: payload.password });
-
-    dispatch(loginUser(payload));
+  
+    try {
+      // Dispatch the login action and wait for it to complete
+      const result = await dispatch(loginUser({ email: payload.email, password: payload.password }));
+      console.log({loginResult:result});
+      
+      if (loginUser.fulfilled.match(result)) {
+        // Login successful, navigate to the home page
+        navigate('/');
+      } else if(loginUser.rejected.match(result)) {
+        // Login failed, handle the error
+        console.error('Login failed:', result);
+         }
+    } catch (error) {
+      console.error('An error occurred:', error);
+      }
   };
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,6 +50,9 @@ const Login = () => {
       <div className={loginpage.formBoxLogin}>
         <form onSubmit={handleSubmit} className={loginpage.LoginForm}>
           <h1>Login</h1>
+          {error && 
+          <p style={{color:"red",fontSize:"1rem"}}>{error}</p>
+          }
           <div className={loginpage.inputBox}>
             <input
               type="text"

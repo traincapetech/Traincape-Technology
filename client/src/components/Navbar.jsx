@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/WhatsApp_Image_2024-06-22_at_10.01.48-removebg-preview.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from "../slices/userSlice";
 
 const Navbar = () => {
   // Define the account details
@@ -18,10 +20,13 @@ const Navbar = () => {
   const alertMessage = `Account Details :\nAccount Number: ${accountNumber}\nBank Name: ${bankName}\nBranch Name: ${branchName}\nAccount Holder Name: ${accountHolderName}\nIFSC Code: ${ifscCode}\nEMAIL : ${Email}\n`;
 
   // Use the alert function to display the message
-
+const dispatch = useDispatch()
   const navigate = useNavigate();
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+
+  // const {user,token} = useSelector((state)=>state.user)
+  const token = localStorage.getItem("token")
 
   useEffect(() => {
     const handleResize = () => {
@@ -36,6 +41,11 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  const handleLogout = ()=>{
+    dispatch(logoutUser())
+    navigate('/login')
+  }
+  // console.log(token,user)
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -218,13 +228,14 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </div>
-                <Link
-                  className={nav.links}
-                  to={"/login"}
-                  onClick={() => navigate("/signup")}
-                >
-                  Login
-                </Link>
+                {
+                token ? <button className={nav.loginbtn} onClick={handleLogout}>
+                Logout
+              </button> :
+              <button className={nav.loginbtn} onClick={() => navigate("/login")}>
+              login
+            </button>
+              }
               </div>
             </div>
           </div>
@@ -259,10 +270,15 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-
-          <button className={nav.loginbtn} onClick={() => navigate("/signup")}>
-            Login
-          </button>
+              {
+                token ? <button className={nav.loginbtn} onClick={handleLogout}>
+                Logout
+              </button> :
+              <button className={nav.loginbtn} onClick={() => navigate("/login")}>
+              login
+            </button>
+              }
+          
         </div>
       </div>
     </nav>

@@ -6,6 +6,8 @@ const initialState = {
   user: null,
   token: null,
   loading: false,
+  role: null,
+  username: null,
   error: null,
 };
 
@@ -13,19 +15,14 @@ const initialState = {
 export const loginUser = createAsyncThunk(
   "user/loginUser",
   async ({ email, password }, { rejectWithValue }) => {
-    console.log(email, password);
     try {
       const response = await axios.post(
         "https://traincape-backend-1.onrender.com/users/login",
-        {
-          email,
-          password,
-        }
+        { email, password }
       );
-      console.log(response.data);
-      //   return {response.data};
+      return response.data;
     } catch (error) {
-      return rejectWithValue(error.response.data);
+      return rejectWithValue(error.response?.data || { msg: "Login failed" });
     }
   }
 );
@@ -37,15 +34,11 @@ export const signupUser = createAsyncThunk(
     try {
       const response = await axios.post(
         "https://traincape-backend-1.onrender.com/users/register",
-        {
-          email,
-          password,
-          username,
-        }
+        { email, password, username }
       );
       return response.data;
     } catch (error) {
-      return rejectWithValue(error.response.data);
+      return rejectWithValue(error.response?.data || { msg: "Signup failed" });
     }
   }
 );
@@ -56,9 +49,23 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     logoutUser: (state) => {
+      // Clear state and local storage
       state.user = null;
       state.token = null;
+      state.role = null;
+      state.username = null;
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      localStorage.removeItem('username');
+      localStorage.removeItem('role');
     },
+    setUserFromLocalStorage: (state) => {
+      // Initialize state from local storage
+      state.token = localStorage.getItem('token');
+      state.username = localStorage.getItem('username');
+      state.role = localStorage.getItem('role');
+      state.user = JSON.parse(localStorage.getItem('user')); // Parse the user object
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -68,11 +75,20 @@ const userSlice = createSlice({
         state.error = null;
       })
       .addCase(loginUser.fulfilled, (state, action) => {
-        state.loading = false;
-        state.user = action.payload.user;
+        const { token, user } = action.payload;
 
-        state.token = action.payload.token;
-        console.log(state);
+        // Store values in local storage
+        localStorage.setItem("token", token);
+        localStorage.setItem("username", user.username);
+        localStorage.setItem("role", user.role);
+        localStorage.setItem("user", JSON.stringify(user)); // Store user object as JSON
+
+        // Update state
+        state.loading = false;
+        state.token = token;
+        state.username = user.username;
+        state.role = user.role;
+        state.user = user;
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;
@@ -84,9 +100,12 @@ const userSlice = createSlice({
         state.error = null;
       })
       .addCase(signupUser.fulfilled, (state, action) => {
+        const { token, user } = action.payload;
+
+    // Store user object as JSON
+
+        // Update state
         state.loading = false;
-        state.user = action.payload.user;
-        state.token = action.payload.token;
       })
       .addCase(signupUser.rejected, (state, action) => {
         state.loading = false;
@@ -95,6 +114,6 @@ const userSlice = createSlice({
   },
 });
 
-export const { logoutUser } = userSlice.actions;
+export const { logoutUser, setUserFromLocalStorage } = userSlice.actions;
 
 export default userSlice.reducer;
