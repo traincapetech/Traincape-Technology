@@ -189,7 +189,7 @@ const dispatch = useDispatch()
                 FAQ
               </Link>
               <div className={nav.hamburgerMenuButtons}>
-                <div
+              { token &&<div
                   className={nav.dropdownLinkSection}
                   onMouseEnter={() => setShowDropdown(true)}
                   onMouseLeave={() => setShowDropdown(false)}
@@ -225,6 +225,7 @@ const dispatch = useDispatch()
                     </Link>
                   </div>
                 </div>
+              }
                  {
                 token ? <button className={nav.loginbtn} onClick={handleLogout}>
                 Logout
@@ -239,12 +240,13 @@ const dispatch = useDispatch()
         </div>
 
         <div className={nav.buttons}>
-          <div
+           <div
             className={nav.dropdownLinkSection}
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
-            <button className={nav.btn}>Pay Now</button>
+           {token && <button className={nav.btn}>Pay Now</button>
+          }
             <div
               className={`${nav.dropdownSection} ${
                 showDropdown ? nav.showDropdownSection : ""
