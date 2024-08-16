@@ -28,22 +28,18 @@ const dispatch = useDispatch()
   // const {user,token} = useSelector((state)=>state.user)
   const token = localStorage.getItem("token")
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setMenuOpen(false);
-      }
-    };
+  
 
-    window.addEventListener("resize", handleResize);
+  const handleLogin = ()=>{
+    navigate("/login")
+    setMenuOpen(!isMenuOpen);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  }
   const handleLogout = ()=>{
     dispatch(logoutUser())
-    window.location.href("/login")
+    
+    window.location.href = "/login";
+
     navigate('/login')
   }
   // console.log(token,user)
@@ -183,13 +179,13 @@ const dispatch = useDispatch()
               >
                 Reviews
               </Link>
-              <Link to="/Career-details" className={nav.links}>
+              <Link to="/Career-details" className={nav.links} onClick={toggleMenu}>
                 Career
               </Link>
-              <Link to="/Our-Blogs" className={nav.links}>
+              <Link to="/Our-Blogs" className={nav.links} onClick={toggleMenu}>
                 Blogs
               </Link>
-              <Link to="/frequently-asked-questions" className={nav.links}>
+              <Link to="/frequently-asked-questions" className={nav.links} onClick={toggleMenu}>
                 FAQ
               </Link>
               <div className={nav.hamburgerMenuButtons}>
@@ -229,14 +225,14 @@ const dispatch = useDispatch()
                     </Link>
                   </div>
                 </div>
-                {/* {
+                 {
                 token ? <button className={nav.loginbtn} onClick={handleLogout}>
                 Logout
               </button> :
-              <button className={nav.loginbtn} onClick={() => navigate("/login")}>
+              <button className={nav.loginbtn} onClick={handleLogin}>
               login
             </button>
-              } */}
+              } 
               </div>
             </div>
           </div>
@@ -271,14 +267,14 @@ const dispatch = useDispatch()
               </Link>
             </div>
           </div>
-              {/* {
+               {
                 token ? <button className={nav.loginbtn} onClick={handleLogout}>
                 Logout
               </button> :
-              <button className={nav.loginbtn} onClick={() => navigate("/login")}>
+              <button className={nav.loginbtn} onClick={()=> navigate("/login")}>
               login
             </button>
-              } */}
+              } 
           
         </div>
       </div>

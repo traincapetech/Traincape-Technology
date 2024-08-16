@@ -31,7 +31,9 @@ const Login = () => {
       
       if (loginUser.fulfilled.match(result)) {
         // Login successful, navigate to the home page
-        navigate('/');
+        // navigate('/');
+        window.location.href = "/";
+
       } else if(loginUser.rejected.match(result)) {
         // Login failed, handle the error
         console.error('Login failed:', result);
@@ -56,7 +58,7 @@ const Login = () => {
           <div className={loginpage.inputBox}>
             <input
               type="text"
-              placeholder="email"
+              placeholder="Email"
               name="email"
               required
               onChange={handleChange}
@@ -78,9 +80,9 @@ const Login = () => {
               <input type="checkbox" required />
               <span className={loginpage.spanbox}>Remember password</span>
             </div>
-            <div className={loginpage.RememberPasswordText}>
+            {/* <div className={loginpage.RememberPasswordText}>
               <a href="#">Forget Password</a>
-            </div>
+            </div> */}
           </div>
           <button type="submit">Login</button>
 
