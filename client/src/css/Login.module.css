@@ -53,7 +53,20 @@
     margin: 10px 0;
 }
 
-.inputBox input {
+
+
+
+   /* New code improved by Saurav Kumar */
+   .inputBox .icon {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    font-size: 36px;
+    color: #6b6969;
+    cursor: pointer; /* Make the icon clickable */
+  }
+  
+  .inputBox input {
     width: 90%;
     height: 100%;
     border: none;
@@ -65,24 +78,14 @@
     font-size: 20px;
     font-weight: bold;
     font-family: "Poppins";
-}
-
-.inputBox input::placeholder {
+  }
+  
+  .inputBox input::placeholder {
     color: #1a1818;
     position: absolute;
-    /* top: -5%; */
-    /* left: 4%; */
     top: 35%;
   }
   
-  .inputBox .icon {
-    position: absolute;
-    right: 10px;
-    top: 25%;
-    /* transform: translateY(-40%); */
-    font-size: 36px;
-    color: #6b6969;
-  }
 
 .RememberPassword  {
     width: 100%;

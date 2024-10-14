@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import loginpage from "../css/Login.module.css";
-import { FaCircleUser } from "react-icons/fa6";
-import { FaRegEyeSlash } from "react-icons/fa6";
+import { FaCircleUser, FaRegEyeSlash, FaEye } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { loginUser } from "../slices/userSlice";
+
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -16,34 +17,56 @@ const Login = () => {
     email: "",
     password: "",
   });
-
+// Define the state to toggle password visibility
+const [passwordVisible, setPasswordVisible] = useState(false);
+const togglePasswordVisibility = () => {
+  setPasswordVisible(!passwordVisible); // Toggle password visibility
+};
   const handleChange = (e) => {
     setPayload({ ...payload, [e.target.name]: e.target.value });
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //Original Code
+  //   try {
+  //     // Dispatch the login action and wait for it to complete
+  //     const result = await dispatch(loginUser({ email: payload.email, password: payload.password })); 
+  //     console.log({loginResult:result});
+      
+  //     if (loginUser.fulfilled.match(result)) {
+  //       // Login successful, navigate to the home page
+  //       // navigate('/');
+  //       window.location.href = "/";
+
+  //     } else if(loginUser.rejected.match(result)) {
+  //       // Login failed, handle the error
+  //       console.error('Login failed:', result);
+  //        }
+  //   } catch (error) {
+  //     console.error('An error occurred:', error);
+  //     }
+  // };
+  
+  //Improved code
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
     try {
-      // Dispatch the login action and wait for it to complete
       const result = await dispatch(loginUser({ email: payload.email, password: payload.password }));
-      console.log({loginResult:result});
-      
-      if (loginUser.fulfilled.match(result)) {
+  
+      if (result.type === 'user/loginUser/fulfilled') {
         // Login successful, navigate to the home page
-        // navigate('/');
         window.location.href = "/";
-
-      } else if(loginUser.rejected.match(result)) {
+      } else if (result.type === 'user/loginUser/rejected') {
         // Login failed, handle the error
-        console.error('Login failed:', result);
-         }
+        console.error('Login failed:', result.payload);
+      }
     } catch (error) {
       console.error('An error occurred:', error);
-      }
+    }
   };
   
-
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -63,21 +86,29 @@ const Login = () => {
               required
               onChange={handleChange}
             />
-            <FaCircleUser className={loginpage.icon} />
+            {/* <FaCircleUser className={loginpage.icon} /> */}
           </div>
+
+         
+          {/* Improved code by Saurav kumar*/}
           <div className={loginpage.inputBox}>
             <input
-              type="password"
+              type={passwordVisible ? "text" : "password"} // Toggle between text and password input types
               placeholder="Password"
               name="password"
               required
               onChange={handleChange}
             />
-            <FaRegEyeSlash className={loginpage.icon} />
+            {/* Toggle the icon based on password visibility */}
+            {passwordVisible ? (
+              <FaEye onClick={togglePasswordVisibility} className={loginpage.icon} />
+            ) : (
+              <FaRegEyeSlash onClick={togglePasswordVisibility} className={loginpage.icon} />
+            )}
           </div>
           <div className={loginpage.RememberPassword}>
             <div>
-              <input type="checkbox" required />
+              <input type="checkbox"  />
               <span className={loginpage.spanbox}>Remember password</span>
             </div>
             {/* <div className={loginpage.RememberPasswordText}>

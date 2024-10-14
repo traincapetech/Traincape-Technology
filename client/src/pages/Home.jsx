@@ -62,7 +62,7 @@ const Home = () => {
 
     // Create a new object that contains dynamic template params
     const [name, email, subject, message, phoneNumber, location] =
-      Object.values(payoload);
+      Object.values(payoload); 
     const templateParams = {
       from_name: name,
       from_email: email,

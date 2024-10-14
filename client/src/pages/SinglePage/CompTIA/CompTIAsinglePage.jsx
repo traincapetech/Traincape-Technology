@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import compTiaSingle from "./CompTIAsinglePage.module.css";
-import comptia from "../../assets/comptia-2.webp";
+import comptia from "../../../assets/comptia-2.webp";
 
 const CompTIAsinglePage = () => {
   useEffect(() => {
@@ -29,7 +29,7 @@ const CompTIAsinglePage = () => {
           </h1>
         </div>
         <div className={compTiaSingle.ImgContainer}>
-          <img src={comptia} alt="AWS-Image" />
+          <img src={comptia} alt="Comptia-security-Certification" />
         </div>
       </div>
       <div className={compTiaSingle.courseContainer}>
