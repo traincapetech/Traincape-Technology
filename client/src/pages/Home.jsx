@@ -197,7 +197,7 @@ const Home = () => {
         >
           <h1>TOP IT</h1>
           <h1>SUPPORT & MANAGEMENT</h1>
-          <p>
+          <div>
             <Typewriter
               options={{
                 autoStart: true,
@@ -208,7 +208,7 @@ const Home = () => {
                 ],
               }}
             />
-          </p>
+          </div>
           <button onClick={() => navigate("/about-us")}>ABOUT US</button>
         </div>
       </div>
